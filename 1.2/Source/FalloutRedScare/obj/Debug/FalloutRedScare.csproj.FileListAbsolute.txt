@@ -1,5 +1,0 @@
-c:\GAMES\Rimworld\Mods\fallout_red_dawn_mod\1.2\Assemblies\FalloutRedScare.dll
-c:\GAMES\Rimworld\Mods\fallout_red_dawn_mod\1.2\Source\FalloutRedScare\obj\Debug\FalloutRedScare.csprojAssemblyReference.cache
-c:\GAMES\Rimworld\Mods\fallout_red_dawn_mod\1.2\Source\FalloutRedScare\obj\Debug\FalloutRedScare.csproj.CoreCompileInputs.cache
-c:\GAMES\Rimworld\Mods\fallout_red_dawn_mod\1.2\Source\FalloutRedScare\obj\Debug\FalloutRedScare.csproj.CopyComplete
-c:\GAMES\Rimworld\Mods\fallout_red_dawn_mod\1.2\Source\FalloutRedScare\obj\Debug\FalloutRedScare.dll
