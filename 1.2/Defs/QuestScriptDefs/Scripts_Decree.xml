@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>FRS_ProduceItem</defName>
+		<decreeSelectionWeight>1</decreeSelectionWeight>
+		<defaultChallengeRating>1</defaultChallengeRating>
+		<autoAccept>true</autoAccept>
+		<canGiveRoyalFavor>true</canGiveRoyalFavor>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->[defToProduce_label] production decree</li>
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->[askerFaction_name] You must produce:
+\n - [thingToProduceLabel]
+\n</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="FalloutRedScare.QuestNode_GetFactionFromDef">
+					<factionDef>FRS_PR</factionDef>
+					<storeAs>askerFaction</storeAs>
+					<minimumGoodwillWithPlayer>10</minimumGoodwillWithPlayer>
+				</li>
+
+				<li Class="QuestNode_GetMap" />
+
+				<li Class="FalloutRedScare.QuestNode_GetThingPlayerCanProduce">
+					<storeProductionItemDefAs>defToProduce</storeProductionItemDefAs>
+					<storeProductionItemStuffAs>stuffToProduce</storeProductionItemStuffAs>
+					<storeProductionItemCountAs>countToProduce</storeProductionItemCountAs>
+					<storeProductionItemLabelAs>thingToProduceLabel</storeProductionItemLabelAs>
+					<thingDefCandidates>
+						<li>MeleeWeapon_Club</li>
+						<li>MeleeWeapon_Knife</li>
+						<li>MeleeWeapon_Ikwa</li>
+						<li>MeleeWeapon_Spear</li>
+					</thingDefCandidates>
+					<thingStuffCandidates>
+						<li>Steel</li>
+						<li>WoodLog</li>
+					</thingStuffCandidates>
+					<totalMarketValuePerPlayerWealth>0.3~0.6</totalMarketValuePerPlayerWealth>
+				</li>
+
+				<li Class="QuestNode_ThingsProduced">
+					<def>$defToProduce</def>
+					<stuff>$stuffToProduce</stuff>
+					<count>$countToProduce</count>
+					<outSignalComplete>AllProduced</outSignalComplete>
+				</li>
+
+				<li Class="FalloutRedScare.QuestNode_SetRewards">
+					<inSignal>AllProduced</inSignal>
+					<goodwillRange>10~20</goodwillRange>
+					<favorRange>10~20</favorRange>
+				</li>
+
+				<li Class="QuestNode_Signal">
+					<inSignal>AllProduced</inSignal>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_Letter">
+								<label TKey="LetterLabelQuestProductionSuccess">Quest is finished: [resolvedQuestName]</label>
+								<text TKey="LetterTextQuestProductionSuccess">All produced.</text>
+							</li>
+							<li Class="QuestNode_End">
+								<outcome>Success</outcome>
+							</li>
+						</nodes>
+					</node>
+				</li>
+
+
+			</nodes>
+		</root>
+	</QuestScriptDef>
+</Defs>
