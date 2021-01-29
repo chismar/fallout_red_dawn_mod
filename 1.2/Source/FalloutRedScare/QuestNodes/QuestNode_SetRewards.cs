@@ -27,11 +27,19 @@ namespace FalloutRedScare
 			Slate slate = QuestGen.slate;
 
 			QuestPart_Choice questPart_Choice = new QuestPart_Choice();
+
+			QuestPart_FactionGoodwillChange questPart_FactionGoodwillChange = new QuestPart_FactionGoodwillChange();
+			questPart_FactionGoodwillChange.faction = slate.Get<Faction>("askerFaction");
+			questPart_FactionGoodwillChange.change = goodwillRange.GetValue(slate).RandomInRange;
+			questPart_FactionGoodwillChange.inSignal = (QuestGenUtility.HardcodedSignalWithQuestID(inSignal.GetValue(slate)) ?? QuestGen.slate.Get<string>("inSignal"));
+			QuestGen.quest.AddPart(questPart_FactionGoodwillChange);
+
 			QuestPart_Choice.Choice choice = new QuestPart_Choice.Choice();
 			Reward_Goodwill reward_Goodwill = new Reward_Goodwill();
 			reward_Goodwill.faction = slate.Get<Faction>("askerFaction");
 			reward_Goodwill.amount = goodwillRange.GetValue(slate).RandomInRange;
 			choice.rewards.Add(reward_Goodwill);
+			choice.questParts.Add(questPart_FactionGoodwillChange);
 			questPart_Choice.choices.Add(choice);
 
 			QuestPart_GiveRoyalFavor questPart_GiveRoyalFavor = new QuestPart_GiveRoyalFavor();
