@@ -45,8 +45,9 @@ namespace FalloutRedScare
 			QuestPart_Choice.Choice choice2 = new QuestPart_Choice.Choice();
 			Reward_RoyalFavor reward_Favor = new Reward_RoyalFavor();
 			reward_Favor.faction = slate.Get<Faction>("askerFaction");
-			reward_Favor.amount = questPart_GiveRoyalFavor.amount;
+			reward_Favor.amount = favorRange.GetValue(slate).RandomInRange;// questPart_GiveRoyalFavor.amount;
 			choice2.rewards.Add(reward_Favor);
+			choice2.questParts.Add(questPart_GiveRoyalFavor);
 			questPart_Choice.choices.Add(choice2);
 
 			QuestGen.quest.AddPart(questPart_Choice);
