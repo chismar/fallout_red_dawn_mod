@@ -60,8 +60,7 @@ namespace FalloutRedScare
                 var goalMarketValue = totalWealth * totalMarketValuePerPlayerWealth.GetValue(slate).RandomInRange;
                 var stuffCandidate = GetStuffFor(candidate, slate);
                 var thingMarketValue = StatWorker_MarketValue.CalculatedBaseMarketValue(candidate, stuffCandidate);
-                //var goalThingCount = (int)(goalMarketValue / thingMarketValue);
-                var goalThingCount = 1; // for easier testing
+                var goalThingCount = (int)(goalMarketValue / thingMarketValue);
                 Log.Message($"candidate: {candidate} - totalWealth: {totalWealth} - goalMarketValue: {goalMarketValue} - goalThingCount: {goalThingCount} " +
                     $"- stuffCandidate: {stuffCandidate} - thingMarketValue: {thingMarketValue}");
                 tmpCandidates.Add(new Pair<ThingStuffPair, int>(new ThingStuffPair(candidate, stuffCandidate), goalThingCount));
