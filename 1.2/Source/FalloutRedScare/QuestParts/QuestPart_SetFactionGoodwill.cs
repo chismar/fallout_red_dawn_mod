@@ -15,6 +15,8 @@ namespace FalloutRedScare
 	{
 		public string inSignal;
 
+		public string outSignal = "ScapegoatSelected";
+
 		public FactionRelationKind relationKind;
 
 		public int goodwillFixed;
@@ -59,7 +61,6 @@ namespace FalloutRedScare
 				}
 			}
 		}
-
 		public override void Notify_QuestSignalReceived(Signal signal)
 		{
 			base.Notify_QuestSignalReceived(signal);
@@ -81,7 +82,7 @@ namespace FalloutRedScare
 				{
 					text = "\n\n" + text;
 				}
-				Find.SignalManager.SendSignal(new Signal("ScapegoatSelected"));
+				Find.SignalManager.SendSignal(new Signal(outSignal));
 			}
 		}
 

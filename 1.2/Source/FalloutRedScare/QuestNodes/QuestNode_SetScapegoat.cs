@@ -32,6 +32,7 @@ namespace FalloutRedScare
 			questPart_FactionGoodwillChange.goodwillFixed = setGoodwill.GetValue(slate);
 			questPart_FactionGoodwillChange.relationKind = factionRelation.GetValue(slate);
 			questPart_FactionGoodwillChange.inSignal = QuestGenUtility.HardcodedSignalWithQuestID("Initiate");
+			questPart_FactionGoodwillChange.outSignal = QuestGenUtility.HardcodedSignalWithQuestID(questPart_FactionGoodwillChange.outSignal);
 			QuestGen.quest.AddPart(questPart_FactionGoodwillChange);
 
 			QuestPart_SelectScapegoat questPart_SelectScapegoat = new QuestPart_SelectScapegoat();
