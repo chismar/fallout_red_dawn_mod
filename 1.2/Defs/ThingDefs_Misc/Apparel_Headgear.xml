@@ -9,7 +9,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgear/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgear/RedArmyWinterHeadgear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -34,7 +34,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgear/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgear/RedArmyWinterHeadgear</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -70,7 +70,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgear/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgear/RedArmySummerHeadgear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -95,7 +95,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgear/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgear/RedArmySummerHeadgear</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -131,7 +131,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyCommandoHelmet/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyCommandoHelmet/RedArmyCommandoHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -156,7 +156,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyCommandoHelmet/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyCommandoHelmet/RedArmyCommandoHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -193,7 +193,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -218,7 +218,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -254,7 +254,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySubmarinerHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySubmarinerHat/RedArmySubmarinerHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -279,7 +279,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySubmarinerHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySubmarinerHat/RedArmySubmarinerHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -315,7 +315,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedViperHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedViperHat/RedViperHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -340,7 +340,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedViperHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedViperHat/RedViperHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -376,7 +376,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -401,7 +401,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -437,7 +437,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/CivilianHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/CivilianHat/CivilianHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -462,7 +462,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/CivilianHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/CivilianHat/CivilianHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -498,7 +498,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinEnvironmentSuitHelmet/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinEnvironmentSuitHelmet/GagarinEnvironmentSuitHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -523,7 +523,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinEnvironmentSuitHelmet/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinEnvironmentSuitHelmet/GagarinEnvironmentSuitHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -559,7 +559,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/GagarinPowerArmorHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -584,7 +584,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/GagarinPowerArmorHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -620,7 +620,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -645,7 +645,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -681,7 +681,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySpyHat/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySpyHat/RedArmySpyHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -706,7 +706,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySpyHat/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmySpyHat/RedArmySpyHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -742,7 +742,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/TrapperHat</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -767,7 +767,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/TrapperHat</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>

@@ -83,7 +83,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -117,7 +117,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -151,7 +151,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -185,7 +185,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -220,7 +220,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -254,7 +254,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -289,7 +289,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -323,7 +323,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -358,7 +358,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -392,7 +392,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -427,7 +427,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -461,7 +461,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -496,7 +496,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -530,7 +530,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -565,7 +565,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/CivilianSuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/CivilianSuit/CivilianSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -599,7 +599,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/CivilianSuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/CivilianSuit/CivilianSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -634,7 +634,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/PartyOfficialSuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/PartyOfficialSuit/PartyOfficialSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -668,7 +668,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/PartyOfficialSuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/PartyOfficialSuit/PartyOfficialSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -704,7 +704,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/GagarinEnvironmentSuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/GagarinEnvironmentSuit/GagarinEnvironmentSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -738,7 +738,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinEnvironmentSuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinEnvironmentSuit/GagarinEnvironmentSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -773,7 +773,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/GagarinPowerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -807,7 +807,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/GagarinPowerArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -842,7 +842,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedViperSuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedViperSuit/RedViperSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -876,7 +876,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedViperSuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedViperSuit/RedViperSuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
