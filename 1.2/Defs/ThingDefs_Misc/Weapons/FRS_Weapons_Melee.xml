@@ -5,7 +5,7 @@
     <label>chinese sword</label>
     <description>chinese sword</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponMelee/ChineseSword</texPath>
+      <texPath>FRS/Things/WeaponMelee/ChineseSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -63,7 +63,7 @@
     <label>chinese sword</label>
     <description>chinese sword</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponMelee/ChineseEletricSword</texPath>
+      <texPath>FRS/Things/WeaponMelee/ChineseEletricSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>

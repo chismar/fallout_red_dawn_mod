@@ -22,7 +22,7 @@
     <settlementNameMaker>NamerSettlementPR</settlementNameMaker>
     <pawnNameMaker>NamerPersonPR</pawnNameMaker>
     <pawnNameMakerFemale>NamerPersonPRFemale</pawnNameMakerFemale>
-    <factionIconPath>World/WorldObjects/Expanding/PR</factionIconPath>
+    <factionIconPath>FRS/World/WorldObjects/Expanding/PR</factionIconPath>
     <permanentEnemyToEveryoneExcept>
       <li>OutlanderCivil</li>
       <li>TribeCivil</li>

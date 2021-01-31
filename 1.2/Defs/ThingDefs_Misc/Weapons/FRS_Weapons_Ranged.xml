@@ -7,7 +7,7 @@
     <label>laser shot</label>
     <description>A focused laser beam.</description>
     <textures>
-      <li>Things/FRS/Projectile/Shot_LaserRifle</li>
+      <li>FRS/Things/Projectile/Shot_LaserRifle</li>
     </textures>
     <seam>0</seam>
     <causefireChance>0.1</causefireChance>
@@ -27,7 +27,7 @@
     <label>laser pistol</label>
     <description>An ultratech pistol capable of emitting a concentrated beam of light with enough power to deal considerable damage.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/RussianLaserPistol</texPath>
+      <texPath>FRS/Things/WeaponRanged/RussianLaserPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>VWE_Interact_LaserGun</soundInteract>
@@ -108,7 +108,7 @@
     <label>laser SMG</label>
     <description>An ultratech submachine gun capable of emitting a concentrated beam of light with enough power to deal considerable damage.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/RussianLaserRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/RussianLaserRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>VWE_Interact_LaserGun</soundInteract>
@@ -188,7 +188,7 @@
     <label>chinese assault rifle</label>
     <description>chinese assault rifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/Type93AssaultRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/Type93AssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -271,7 +271,7 @@
     <label>chinese pistol</label>
     <description>chinese pistol</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/ChinesePistol</texPath>
+      <texPath>FRS/Things/WeaponRanged/ChinesePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -339,7 +339,7 @@
     <label>chinese incendiary pistol</label>
     <description>chinese incendiary pistol</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/ChineseIncendiaryPistol</texPath>
+      <texPath>FRS/Things/WeaponRanged/ChineseIncendiaryPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
@@ -407,7 +407,7 @@
     <label>chinese prestige assault rifle</label>
     <description>chinese prestige assault rifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/PrestigeType93AssaultRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/PrestigeType93AssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -476,7 +476,7 @@
     <label>chinese carbine</label>
     <description>chinese carbine</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/Type93Carabin</texPath>
+      <texPath>FRS/Things/WeaponRanged/Type93Carabin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -536,7 +536,7 @@
     <label>chinese bolt action rifle</label>
     <description>chinese bolt action rifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/ChineseBoltActionRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/ChineseBoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -596,7 +596,7 @@
     <label>chinese LMG</label>
     <description>chinese LMG</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/LightMachineGun</texPath>
+      <texPath>FRS/Things/WeaponRanged/LightMachineGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -665,7 +665,7 @@
     <label>chinese sniper rifle</label>
     <description>chinese sniper rifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/SniperRifleType93</texPath>
+      <texPath>FRS/Things/WeaponRanged/SniperRifleType93</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -745,7 +745,7 @@
     <label>chinese large caliber sniper rifle</label>
     <description>chinese large caliber sniper rifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/SniperRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/SniperRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -812,7 +812,7 @@
     <label>FRS_GaussRifle</label>
     <description>FRS_GaussRifle</description>
     <graphicData>
-      <texPath>Things/FRS/WeaponRanged/GaussRifle</texPath>
+      <texPath>FRS/Things/WeaponRanged/GaussRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_ChargeLance</soundInteract>
@@ -842,7 +842,6 @@
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <weaponTags>
-      <li>MechanoidGunMedium</li>
       <li>SpacerGun</li>
     </weaponTags>
     <verbs>
