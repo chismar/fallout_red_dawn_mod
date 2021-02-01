@@ -18,11 +18,18 @@ namespace FalloutRedScare
 		public SlateRef<FactionRelationKind> factionRelation;
 		public SlateRef<RoyalTitleDef> minimumTitle;
 		protected override bool TestRunInt(Slate slate)
-        {
+		{
 			return PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep.Any(x => x.royalty.GetCurrentTitle(slate.Get<Faction>("askerFaction")) != null);
+			var faction = slate.Get<Faction>("askerFaction");
+			var warComp = Find.World.GetComponent<WorldComponent_TotalWar>();
+			if (TotalWarUtils.TryGetFactionWarData(faction, out FactionWar factionWar) && factionWar.CanSpawnScapeGoatQuest)
+			{
+				return PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep.Any(x => x.royalty.GetCurrentTitle(faction) != null);
+			}
+			return false;
 		}
 
-        protected override void RunInt()
+		protected override void RunInt()
         {
 			Slate slate = QuestGen.slate;
 			QuestPart_Choice questPart_Choice = new QuestPart_Choice();

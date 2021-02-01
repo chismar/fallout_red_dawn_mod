@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FalloutRedScare.TotalWarDef>
+		<defName>FRS_PR_TotalWar</defName>
+		<factionDef>FRS_PR</factionDef>
+		<scapegoatCooldownDays>6~12</scapegoatCooldownDays>
+		<scapegoatQuestScript>FRS_Scapegoat</scapegoatQuestScript>
+		<baseIncidentsCooldown>60000~120000</baseIncidentsCooldown>
+		<powerPointsPerBase>2000</powerPointsPerBase>
+		<powerPointsToUpgrade>20000</powerPointsToUpgrade>
+		<factionBaseSpawnIncidents>
+			<li>FRS_PR_SmallBaseSpawned</li>
+			<li>FRS_PR_BigBaseSpawned</li>
+		</factionBaseSpawnIncidents>
+		<factionBaseAbandonIncident>FRS_PR_BaseAbandoned</factionBaseAbandonIncident>
+		<powerPointsLossPerPawnCombatPowerRatio>0.5</powerPointsLossPerPawnCombatPowerRatio>
+		<powerPointPassigeGainPerDay>100</powerPointPassigeGainPerDay>
+	</FalloutRedScare.TotalWarDef>
+
+
+</Defs>

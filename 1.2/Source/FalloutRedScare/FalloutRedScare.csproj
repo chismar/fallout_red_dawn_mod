@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TotalWarUtils.cs" />
+    <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
+    <Compile Include="Incidents\IncidentWorker_BaseAbandoned.cs" />
+    <Compile Include="Incidents\IncidentWorker_FactionBaseSpawned.cs" />
+    <Compile Include="Defs\TotalWarDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestParts\QuestPart_SetFactionGoodwill.cs" />
     <Compile Include="QuestNodes\QuestNode_SetScapegoat.cs" />
@@ -48,6 +53,8 @@
     <Compile Include="QuestNodes\QuestNode_GetThingPlayerCanProduce.cs" />
     <Compile Include="QuestNodes\QuestNode_GetFactionFromDef.cs" />
     <Compile Include="QuestParts\QuestPart_SelectScapegoat.cs" />
+    <Compile Include="FactionWar.cs" />
+    <Compile Include="WorldComponent_TotalWar.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
