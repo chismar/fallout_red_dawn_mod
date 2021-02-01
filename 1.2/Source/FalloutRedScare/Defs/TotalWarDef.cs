@@ -1,21 +1,14 @@
 ﻿using RimWorld;
-using RimWorld.Planet;
-using RimWorld.QuestGen;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
 
 namespace FalloutRedScare
 {
-	public class TotalWarDef : Def
+    public class TotalWarDef : Def
 	{
 		public FloatRange scapegoatCooldownDays;
 		public QuestScriptDef scapegoatQuestScript;
-		public IntRange baseIncidentsCooldown;
+		public FloatRange baseIncidentsCooldownDays;
 		public float powerPointsPerBase;
 		public float powerPointsToUpgrade;
 		public FactionDef factionDef;
@@ -23,6 +16,6 @@ namespace FalloutRedScare
 		public IncidentDef factionBaseAbandonIncident;
 		
 		public float powerPointsLossPerPawnCombatPowerRatio;
-		public float powerPointPassigeGainPerDay;
+		public float powerPointPassiveGainPerDay;
 	}
 }

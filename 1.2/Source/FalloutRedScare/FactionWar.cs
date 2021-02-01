@@ -20,7 +20,7 @@ namespace FalloutRedScare
         public int curBaseIncidentsCooldown;
         public bool CanSpawnScapeGoatQuest => Find.TickManager.TicksGame >= curScapeGoatCooldownTicks && faction.HostileTo(Faction.OfPlayer);
         public IEnumerable<Settlement> FactionBases => Find.WorldObjects.SettlementBases.Where(x => x.Faction == faction);
-        public bool CanSpawnBases => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points > FactionBases.Count() * this.def.powerPointsPerBase;
+        public bool CanSpawnBases => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points > (FactionBases.Count() + 1) * this.def.powerPointsPerBase;
         public bool CanAbandonBase => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points < FactionBases.Count() * this.def.powerPointsPerBase;
         public FactionWar()
         {
@@ -61,7 +61,7 @@ namespace FalloutRedScare
                 var randomSpawnIncident = this.def.factionBaseSpawnIncidents.RandomElement();
                 if (randomSpawnIncident.Worker.CanFireNow(parms) && randomSpawnIncident.Worker.TryExecute(parms))
                 {
-                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + this.def.baseIncidentsCooldown.RandomInRange;
+                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
                 }
             }
             else if (CanAbandonBase)
@@ -71,14 +71,12 @@ namespace FalloutRedScare
                 var abandonBaseIncident = this.def.factionBaseAbandonIncident;
                 if (abandonBaseIncident.Worker.CanFireNow(parms) && abandonBaseIncident.Worker.TryExecute(parms))
                 {
-                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + this.def.baseIncidentsCooldown.RandomInRange;
+                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
                 }
             }
 
-            if (Find.TickManager.TicksGame % 60000 == 0)
-            {
-                this.points += this.def.powerPointPassigeGainPerDay;
-            }
+            this.points += this.def.powerPointPassiveGainPerDay / GenDate.TicksPerDay;
+            
         }
     }
 }

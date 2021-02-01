@@ -6,7 +6,7 @@
 		<factionDef>FRS_PR</factionDef>
 		<scapegoatCooldownDays>6~12</scapegoatCooldownDays>
 		<scapegoatQuestScript>FRS_Scapegoat</scapegoatQuestScript>
-		<baseIncidentsCooldown>60000~120000</baseIncidentsCooldown>
+		<baseIncidentsCooldownDays>6~12</baseIncidentsCooldownDays>
 		<powerPointsPerBase>2000</powerPointsPerBase>
 		<powerPointsToUpgrade>20000</powerPointsToUpgrade>
 		<factionBaseSpawnIncidents>
@@ -15,7 +15,7 @@
 		</factionBaseSpawnIncidents>
 		<factionBaseAbandonIncident>FRS_PR_BaseAbandoned</factionBaseAbandonIncident>
 		<powerPointsLossPerPawnCombatPowerRatio>0.5</powerPointsLossPerPawnCombatPowerRatio>
-		<powerPointPassigeGainPerDay>100</powerPointPassigeGainPerDay>
+		<powerPointPassiveGainPerDay>10000</powerPointPassiveGainPerDay>
 	</FalloutRedScare.TotalWarDef>
 
 
