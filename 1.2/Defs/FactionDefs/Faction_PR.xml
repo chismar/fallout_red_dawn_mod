@@ -100,7 +100,7 @@
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
       <!-- Traders - TODO -->
-      <li>
+      <li Class="FalloutRedScare.PawnGroupMakerPR">
         <kindDef>Trader</kindDef>
         <traders>
           <FRS_PR_Common_Trader>1</FRS_PR_Common_Trader>
@@ -119,7 +119,7 @@
           <FRS_PR_Fighter_Champion>10</FRS_PR_Fighter_Champion>
         </guards>
       </li>
-      <li>
+      <li Class="FalloutRedScare.PawnGroupMakerPR">
         <!-- Normal fights -->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
@@ -130,7 +130,7 @@
           <FRS_PR_Fighter_Champion>4</FRS_PR_Fighter_Champion>
         </options>
       </li>
-      <li>
+      <li Class="FalloutRedScare.PawnGroupMakerPR">
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>

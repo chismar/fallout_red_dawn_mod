@@ -14,6 +14,7 @@ namespace FalloutRedScare
         static HarmonyInit()
         {
             new Harmony("Chismar.FalloutRedScare").PatchAll();
+            
         }
     }
 
