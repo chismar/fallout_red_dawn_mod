@@ -19,6 +19,7 @@ namespace FalloutRedScare
             Faction faction = parms.faction;
             settlement.SetFaction(faction);
             settlement.Name = SettlementNameGenerator.GenerateSettlementName(settlement, parms.faction.def.settlementNameMaker);
+            settlement.Tile = TileFinder.RandomSettlementTileFor(faction);
             Find.WorldObjects.Add(settlement);
             string letterLabel = this.def.letterLabel;
             string letterText = this.def.letterText;

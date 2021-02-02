@@ -64,6 +64,10 @@
 					<inSignal>AllProduced</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
+							<li Class="FalloutRedScare.QuestNode_FactionPointsChange">
+								<faction>$askerFaction</faction>
+								<points>5000</points>
+							</li>
 							<li Class="QuestNode_Letter">
 								<label TKey="LetterLabelQuestProductionSuccess">Quest is finished: [resolvedQuestName]</label>
 								<text TKey="LetterTextQuestProductionSuccess">All produced.</text>
