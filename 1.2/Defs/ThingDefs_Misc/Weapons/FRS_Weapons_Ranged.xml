@@ -57,7 +57,7 @@
     </recipeMaker>
     <techLevel>Ultra</techLevel>
     <weaponTags Inherit="False">
-      <li>SpacerGun</li>
+      <li>RedArmy</li>
       <li>LaserGun</li>
     </weaponTags>
     <generateCommonality>0.1</generateCommonality>
@@ -139,7 +139,7 @@
     </recipeMaker>
     <techLevel>Spacer</techLevel>
     <weaponTags Inherit="False">
-      <li>SpacerGun</li>
+      <li>RedArmy</li>
       <li>LaserGun</li>
     </weaponTags>
     <generateCommonality>0.1</generateCommonality>
@@ -229,7 +229,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>RedArmy</li>
     </weaponTags>
     <tools>
       <li>
@@ -289,8 +289,7 @@
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>SimpleGun</li>
-      <li>Revolver</li>
+      <li>RedArmy</li>
     </weaponTags>
     <costList>
       <Steel>30</Steel>
@@ -357,8 +356,7 @@
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>SimpleGun</li>
-      <li>Revolver</li>
+      <li>RedArmy</li>
     </weaponTags>
     <costList>
       <Steel>30</Steel>
@@ -448,7 +446,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>RedArmy</li>
     </weaponTags>
     <tools>
       <li>
@@ -637,7 +635,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>RedArmy</li>
     </weaponTags>
     <tools>
       <li>
@@ -722,8 +720,8 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <weaponTags Inherit="False">
-      <li>SniperRifle</li>
+    <weaponTags>
+      <li>RedArmy</li>
     </weaponTags>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
@@ -802,8 +800,8 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <weaponTags Inherit="False">
-      <li>SniperRifle</li>
+    <weaponTags>
+      <li>RedArmy</li>
     </weaponTags>
   </ThingDef>
 
@@ -842,7 +840,8 @@
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <weaponTags>
-      <li>SpacerGun</li>
+      <li>RedArmy</li>
+      <li>HeavyGun</li>
     </weaponTags>
     <verbs>
       <li>

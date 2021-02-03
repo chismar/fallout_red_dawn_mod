@@ -23,7 +23,7 @@
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <isFighter>false</isFighter>
     <apparelTags>
-      <li>IndustrialBasic</li>
+      <li>RedArmy</li>
     </apparelTags>
     <apparelMoney>200~1000</apparelMoney>
     <gearHealthRange>1~1</gearHealthRange>
@@ -71,20 +71,11 @@
     <weaponMoney>1100~3500</weaponMoney>
     <apparelMoney>1250~2500</apparelMoney>
     <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
+      <li>RedArmy</li>
     </apparelTags>
     <apparelDisallowTags>
       <li>Western</li>
     </apparelDisallowTags>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-    </specificApparelRequirements>
     <techHediffsChance>0.15</techHediffsChance>
     <techHediffsMoney>1000~1800</techHediffsMoney>
     <techHediffsTags>
@@ -123,7 +114,7 @@
       <li>Firefighting</li>
     </requiredWorkTags>
     <apparelTags>
-      <li>IndustrialBasic</li>
+      <li>RedArmy</li>
     </apparelTags>
     <apparelMoney>200~1000</apparelMoney>
     <gearHealthRange>1~1</gearHealthRange>
@@ -167,11 +158,11 @@
     <weaponMoney>1100~2500</weaponMoney>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     <apparelMoney>1250~2500</apparelMoney>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
     <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
+      <li>RedArmy</li>
     </apparelTags>
     <apparelDisallowTags>
       <li>Western</li>
@@ -195,28 +186,12 @@
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
-    <apparelRequired>
-      <li>Apparel_FlakJacket</li>
-      <li>Apparel_FlakVest</li>
-      <li>Apparel_FlakPants</li>
-    </apparelRequired>
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_TrooperBase">
     <defName>FRS_PR_Fighter_Trooper</defName>
     <label>trooper</label>
     <apparelColor>(130,130,130)</apparelColor>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Gunlink</tag>
-            <chance>0.25</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
     <techHediffsTags>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
@@ -237,15 +212,9 @@
     <combatPower>100</combatPower>
     <weaponMoney>1550~2700</weaponMoney>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>SpacerGun</li>
-      <li>SniperRifle</li>
+      <li>RedArmy</li>
     </weaponTags>
     <apparelMoney>6000~9000</apparelMoney>
-    <apparelRequired>
-      <li>Apparel_ArmorHelmetRecon</li>
-      <li>Apparel_ArmorRecon</li>
-    </apparelRequired>
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
@@ -285,19 +254,11 @@
     <maxGenerationAge>40</maxGenerationAge>
     <combatPower>100</combatPower>
     <weaponTags>
-      <li>MedievalMeleeDecent</li>
-      <li>UltratechMelee</li>
+      <li>RedArmyMelee</li>
     </weaponTags>
     <apparelRequired>
-      <li>Apparel_PlateArmor</li>
       <li>Apparel_ShieldBelt</li>
     </apparelRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Shell</apparelLayer>
-      </li>
-    </specificApparelRequirements>
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
@@ -324,31 +285,16 @@
     <defName>FRS_PR_Fighter_Cataphract</defName>
     <label>cataphract</label>
     <royalTitleChance>0.1</royalTitleChance>
-    <titleSelectOne>
-      <li>Freeholder</li>
-      <li>Yeoman</li>
-    </titleSelectOne>
     <combatPower>150</combatPower>
     <weaponTags>
       <li>GunHeavy</li>
-      <li>SpacerGun</li>
+      <li>RedArmy</li>
     </weaponTags>
     <apparelColor>(250,250,250)</apparelColor>
     <apparelRequired>
       <li>Apparel_ArmorHelmetCataphract</li>
       <li>Apparel_ArmorCataphract</li>
     </apparelRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Gunlink</tag>
-            <chance>0.2</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
@@ -367,88 +313,6 @@
     </disallowedTraits>
   </PawnKindDef>
 
-  <!-- Stellic Guard -->
-
-  <PawnKindDef Name="FRS_PR_StellicGuardBase" Abstract="True" ParentName="FRS_PR_CataphractBase">
-    <royalTitleChance>1</royalTitleChance>
-    <combatPower>175</combatPower>
-    <chemicalAddictionChance>0.03</chemicalAddictionChance>
-    <itemQuality>Excellent</itemQuality>
-    <weaponMoney>3000~3500</weaponMoney>
-    <apparelColor>(150,50,50)</apparelColor>
-    <apparelRequired>
-      <li>Apparel_ArmorHelmetCataphractPrestige</li>
-      <li>Apparel_ArmorCataphractPrestige</li>
-    </apparelRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>FullHead</bodyPartGroup>
-        <color>(68,68,68)</color>
-      </li>
-    </specificApparelRequirements>
-    <techHediffsMoney>1000~4000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-      <li>ImplantEmpireRoyal</li>
-    </techHediffsTags>
-    <techHediffsDisallowTags>
-      <li>PainCauser</li>
-    </techHediffsDisallowTags>
-    <techHediffsRequired>
-      <li>BionicEye</li>
-      <li>BionicEye</li>
-      <li>StoneskinGland</li>
-    </techHediffsRequired>
-    <disallowedTraits>
-      <li>Wimp</li>
-      <li>Nudist</li>
-      <li>BodyPurist</li>
-    </disallowedTraits>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_StellicGuardBase">
-    <defName>FRS_PR_Fighter_StellicGuardRanged</defName>
-    <label>stellic defender</label>
-    <titleSelectOne>
-      <li>Freeholder</li>
-      <li>Yeoman</li>
-      <li>Esquire</li>
-      <li>Knight</li>
-    </titleSelectOne>
-    <weaponTags>
-      <li>SpacerGun</li>
-    </weaponTags>
-    <skills>
-      <li>
-        <skill>Shooting</skill>
-        <range>11~16</range>
-      </li>
-    </skills>
-    <disallowedTraits>
-      <li>Brawler</li>
-    </disallowedTraits>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_StellicGuardBase">
-    <defName>FRS_PR_Fighter_StellicGuardMelee</defName>
-    <label>stellic warden</label>
-    <titleSelectOne>
-      <li>Knight</li>
-    </titleSelectOne>
-    <weaponTags>
-      <li>Bladelink</li>
-    </weaponTags>
-    <apparelRequired>
-      <li>Apparel_ShieldBelt</li>
-    </apparelRequired>
-    <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>11~16</range>
-      </li>
-    </skills>
-  </PawnKindDef>
 
   <!-- Royals -->
 
