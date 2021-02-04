@@ -20,13 +20,13 @@ namespace FalloutRedScare
 		protected override bool TestRunInt(Slate slate)
 		{
 			return PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep.Any(x => x.royalty.GetCurrentTitle(slate.Get<Faction>("askerFaction")) != null);
-			var faction = slate.Get<Faction>("askerFaction");
+			/*var faction = slate.Get<Faction>("askerFaction");
 			var warComp = Find.World.GetComponent<WorldComponent_TotalWar>();
 			if (TotalWarUtils.TryGetFactionWarData(faction, out FactionWar factionWar) && factionWar.CanSpawnScapeGoatQuest)
 			{
 				return PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoCryptosleep.Any(x => x.royalty.GetCurrentTitle(faction) != null);
 			}
-			return false;
+			return false;*/
 		}
 
 		protected override void RunInt()
