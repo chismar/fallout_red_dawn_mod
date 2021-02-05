@@ -51,7 +51,7 @@
     <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
     <Compile Include="QuestNodes\QuestNode_FactionPointsChange.cs" />
-    <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />=======
+    <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />
     <Compile Include="StandaloneMachine.cs" />
     <Compile Include="TotalWarUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
