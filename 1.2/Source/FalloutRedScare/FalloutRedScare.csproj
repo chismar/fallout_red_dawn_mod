@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
+    <Compile Include="QuestNodes\QuestNode_FactionPointsChange.cs" />
+    <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />
     <Compile Include="TotalWarUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="Incidents\IncidentWorker_BaseAbandoned.cs" />

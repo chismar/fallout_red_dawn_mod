@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ============================= Permits from royal titles ============================= -->
-
+	<!--
   <RoyalTitlePermitDef>
     <defName>TradeSettlement_PR</defName>
     <label>trade with settlements</label>
@@ -18,10 +17,6 @@
     <label>trade with caravans</label>
   </RoyalTitlePermitDef>
 
-
-  <!-- ============================= Faction permits ============================= -->
-
-  <!-- Econ -->
 
   <RoyalTitlePermitDef Name="DropResourcesBase_PR" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
@@ -91,7 +86,38 @@
       <favorCost>8</favorCost>
     </royalAid>
   </RoyalTitlePermitDef>
+-->
 
+	<FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_ShuttleSquadAirdrop</defName>
+		<label>shuttle squad airdrop</label>
+		<description>shuttle squad airdrop.</description>
+		<workerClass>FalloutRedScare.CallAirSupport</workerClass>
+		<workerSettings Class="FalloutRedScare.AirSupportSettings"> 
+			<shuttleDef>FRS_Shuttle</shuttleDef>
+			<shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
+			<pawnGroupMakers>
+				<li Class="FalloutRedScare.PawnGroupMakerPR">
+					<kindDef>Combat</kindDef>
+					<commonality>100</commonality>
+					<options>
+						<FRS_PR_Fighter_Trooper>5</FRS_PR_Fighter_Trooper>
+						<FRS_PR_Fighter_Janissary>3.5</FRS_PR_Fighter_Janissary>
+						<FRS_PR_Fighter_Cataphract>2</FRS_PR_Fighter_Cataphract>
+						<FRS_PR_Fighter_Champion>4</FRS_PR_Fighter_Champion>
+					</options>
+				</li>
+			</pawnGroupMakers>
+			<points>5000</points>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,2)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+	</FalloutRedScare.FRSRoyalTitlePermitDef>
+
+	<!--
   <RoyalTitlePermitDef>
     <defName>CallLaborerTeam_PR</defName>
     <label>red call laborer team</label>
@@ -109,7 +135,7 @@
     </royalAid>
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
-
+ 
   <RoyalTitlePermitDef>
     <defName>CallLaborerGang_PR</defName>
     <label>red call laborer gang</label>
@@ -129,8 +155,6 @@
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
 
-
-  <!-- Combat -->
 
   <RoyalTitlePermitDef>
     <defName>CallMilitaryAidSmall_PR</defName>
@@ -231,8 +255,6 @@
   </RoyalTitlePermitDef>
   
   
-  <!-- Utility -->
-
   <RoyalTitlePermitDef>
     <defName>CallTransportShuttle_PR</defName>
     <label>red call transport shuttle</label>
@@ -251,4 +273,5 @@
     </royalAid>
   </RoyalTitlePermitDef>
   
+  -->
 </Defs>
