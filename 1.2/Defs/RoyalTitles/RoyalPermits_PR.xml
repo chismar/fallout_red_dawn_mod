@@ -117,7 +117,43 @@
 		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 
+	<FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_StartRebellion</defName>
+		<label>start rebellion</label>
+		<description>start rebellion.</description>
+		<workerClass>FalloutRedScare.StartRebellion</workerClass>
+		<workerSettings Class="FalloutRedScare.RebellionSettings"> 
+			<rebellionCommandKey>FRS.StartRebellionLabel</rebellionCommandKey>
+			<rebellionNoPrisonersAvailableKey>FRS.NoPrisonersAvailableLabel</rebellionNoPrisonersAvailableKey>
+			<weaponsToGivePrisoners>
+				<li>MeleeWeapon_Club</li>
+			</weaponsToGivePrisoners>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,2)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+	</FalloutRedScare.FRSRoyalTitlePermitDef>
+	
+	<FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_SwitchSides</defName>
+		<label>switch sides</label>
+		<description>switch sides.</description>
+		<workerClass>FalloutRedScare.SwitchSides</workerClass>
+		<workerSettings Class="FalloutRedScare.SwitchSidesSettings"> 
+			<switchSidesCommandKey>FRS.StartRebellionLabel</switchSidesCommandKey>
+			<radiusToSwitch>10</radiusToSwitch>
+			<giveThoughtToPlayerPawns>DebugBad</giveThoughtToPlayerPawns>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,2)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+	</FalloutRedScare.FRSRoyalTitlePermitDef>
 	<!--
+	
   <RoyalTitlePermitDef>
     <defName>CallLaborerTeam_PR</defName>
     <label>red call laborer team</label>

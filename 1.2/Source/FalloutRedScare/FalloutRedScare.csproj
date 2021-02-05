@@ -40,7 +40,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="VFECore">
-      <HintPath>..\..\..\..\__LocalCopy_Vanilla Expanded Framework_-4-2\1.2\Assemblies\VFECore.dll</HintPath>
+      <HintPath>..\..\..\..\VanillaExpandedFramework\1.2\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -50,6 +50,9 @@
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
     <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
+    <Compile Include="PermitWorkers\SwitchSides.cs" />
+    <Compile Include="PermitWorkers\StartRebellion.cs" />
+    <Compile Include="PermitWorkers\CallAirSupport.cs" />
     <Compile Include="QuestNodes\QuestNode_FactionPointsChange.cs" />
     <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />
     <Compile Include="StandaloneMachine.cs" />
