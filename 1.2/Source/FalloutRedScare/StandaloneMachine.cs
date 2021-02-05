@@ -10,10 +10,27 @@ using VFE.Mechanoids.Needs;
 
 namespace FalloutRedScare
 {
+    public class CaravaneerMachine : ThingComp
+    {
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            var myPawn = this.parent as Pawn;
+            if (myPawn.psychicEntropy == null)
+                myPawn.psychicEntropy = new Pawn_PsychicEntropyTracker(myPawn);
+        }
+    }
+    public class CompProperties_CaravaneerMachine : CompProperties
+    {
+        public CompProperties_CaravaneerMachine()
+        {
+            this.compClass = typeof(CaravaneerMachine);
+        }
+    }
     public class StandaloneMachine : ThingComp
     {
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
+            
             var props = this.props as CompProperties_StandaloneMachine;
             var myPawn = this.parent as Pawn;
             if (myPawn.story == null)
@@ -42,8 +59,11 @@ namespace FalloutRedScare
                     myPawn.drafter = new Pawn_DraftController(myPawn);
                 if (props.spawnWithWeapon != null)
                 {
-                    ThingWithComps thing = (ThingWithComps)ThingMaker.MakeThing(props.spawnWithWeapon);
-                    myPawn.equipment.AddEquipment(thing);
+                    if (!myPawn.equipment.HasAnything())
+                    {
+                        ThingWithComps thing = (ThingWithComps)ThingMaker.MakeThing(props.spawnWithWeapon);
+                        myPawn.equipment.AddEquipment(thing);
+                    }
                 }
             }
             if (myPawn.needs.TryGetNeed<Need_Power>() == null)

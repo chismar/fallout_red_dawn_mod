@@ -45,8 +45,8 @@ namespace FalloutRedScare
         {
             if (Find.TickManager.TicksGame % 60 == 0)
             {
-                Log.Message($"Faction: {faction}, points: {points}, def: {def}, curBaseIncidentsCooldown: {curBaseIncidentsCooldown}, curScapeGoatCooldownTicks: {curScapeGoatCooldownTicks}" +
-                    $", CanSpawnBases: {CanSpawnBases}, CanAbandonBase: {CanAbandonBase}");
+                //Log.Message($"Faction: {faction}, points: {points}, def: {def}, curBaseIncidentsCooldown: {curBaseIncidentsCooldown}, curScapeGoatCooldownTicks: {curScapeGoatCooldownTicks}" +
+                //    $", CanSpawnBases: {CanSpawnBases}, CanAbandonBase: {CanAbandonBase}");
             }
             if (CanSpawnScapeGoatQuest)
             {

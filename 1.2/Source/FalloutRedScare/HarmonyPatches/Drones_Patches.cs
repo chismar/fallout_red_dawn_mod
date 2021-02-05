@@ -13,6 +13,18 @@ using VFE.Mechanoids.Needs;
 
 namespace FalloutRedScare
 {
+    [HarmonyPatch(typeof(CompMachine), nameof(CompMachine.PostSpawnSetup))]
+    public static class FixPowerInMachine
+    {
+        public static void Prefix(ref CompMachine __instance, out float __state)
+        {
+            __state = (__instance.parent as Pawn).needs.TryGetNeed<Need_Power>()?.CurLevel ?? 0;
+        }
+        public static void Postfix(ref CompMachine __instance, float __state)
+        {
+            (__instance.parent as Pawn).needs.TryGetNeed<Need_Power>().CurLevel = __state;
+        }
+    }
     [HarmonyPatch(typeof(Need_Power), nameof(Need_Power.NeedInterval))]
     public static class NeedPowerFixNullRefOnMissingChargingPad
     {

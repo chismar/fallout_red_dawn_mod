@@ -52,6 +52,8 @@
         <violent>true</violent>
         <hoursActive>240000</hoursActive>
       </li>
+      <li Class="FalloutRedScare.CompProperties_CaravaneerMachine">
+      </li>
     </comps>
   </ThingDef>
 

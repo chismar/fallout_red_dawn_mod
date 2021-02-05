@@ -15,6 +15,11 @@
 				<li Class="ThinkNode_QueuedJob" />
 
 
+				<li Class="ThinkNode_ConditionalHasLord">
+					<subNodes>
+						<li Class="ThinkNode_Duty"/>
+					</subNodes>
+				</li>
 				<!-- Drafted -->
 				<li Class="VFEMech.ThinkNode_ConditionalHasPower">
 					<subNodes>
@@ -41,7 +46,7 @@
 						<li Class="JobGiver_AIFightEnemies"/>
 						<li Class="ThinkNode_Tagger">
 							<tagToGive>Idle</tagToGive>
-							<subNodes>              
+							<subNodes>
 								<!-- Wander -->
 								<li Class="JobGiver_WanderColony">
 									<maxDanger>None</maxDanger>
@@ -68,6 +73,11 @@
 				<li Class="ThinkNode_QueuedJob" />
 
 
+				<li Class="ThinkNode_ConditionalHasLord">
+					<subNodes>
+						<li Class="ThinkNode_Duty"/>
+					</subNodes>
+				</li>
 				<!-- Drafted -->
 				<li Class="VFEMech.ThinkNode_ConditionalHasPower">
 					<subNodes>
@@ -90,20 +100,10 @@
 				<li Class="ThinkNode_Priority">
 					<subNodes>
 						<li Class="JobGiver_AIFightEnemies"/>
-						
-						<!-- Lord directives (high priority) -->
-						<li Class="ThinkNode_JoinVoluntarilyJoinableLord">
-						<dutyHook>HighPriority</dutyHook>
-						<subNodes>
-							<li Class="ThinkNode_Subtree">
-							<treeDef>LordDuty</treeDef>
-							</li>
-						</subNodes>
-						</li>
 
 						<li Class="ThinkNode_Tagger">
 							<tagToGive>Idle</tagToGive>
-							<subNodes>              
+							<subNodes>
 								<!-- Wander -->
 								<li Class="JobGiver_WanderColony">
 									<maxDanger>None</maxDanger>
@@ -116,5 +116,6 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+
 
 </Defs>
