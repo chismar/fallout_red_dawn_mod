@@ -15,7 +15,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/Jumpsuit</texPath>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
@@ -49,12 +49,12 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/Jumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -122,7 +122,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -190,7 +190,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -259,7 +259,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -328,7 +328,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -397,7 +397,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -466,7 +466,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -535,7 +535,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -604,7 +604,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -673,7 +673,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -743,7 +743,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -812,7 +812,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -881,7 +881,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
