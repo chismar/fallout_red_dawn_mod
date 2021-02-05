@@ -15,8 +15,10 @@ namespace FalloutRedScare
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             var myPawn = this.parent as Pawn;
-            if (myPawn.psychicEntropy == null)
-                myPawn.psychicEntropy = new Pawn_PsychicEntropyTracker(myPawn);
+            if (myPawn.TryGetComp<StandaloneMachine>() != null)
+                return;
+            var mcs = myPawn.TryGetComp<CompMachine>().myBuilding.TryGetComp<CompMachineChargingStation>();
+            StandaloneMachine.Setup(mcs.Props.allowedWorkTypes, mcs.Props.skillLevel, myPawn);
         }
     }
     public class CompProperties_CaravaneerMachine : CompProperties
@@ -30,29 +32,10 @@ namespace FalloutRedScare
     {
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            
+
             var props = this.props as CompProperties_StandaloneMachine;
             var myPawn = this.parent as Pawn;
-            if (myPawn.story == null)
-                myPawn.story = new Pawn_StoryTracker(myPawn);
-            if (myPawn.skills == null)
-                myPawn.skills = new Pawn_SkillTracker(myPawn);
-            if (myPawn.workSettings == null)
-                myPawn.workSettings = new Pawn_WorkSettings(myPawn);
-            if (myPawn.relations == null)
-                myPawn.relations = new Pawn_RelationsTracker(myPawn);
-            DefMap<WorkTypeDef, int> priorities = new DefMap<WorkTypeDef, int>();
-            priorities.SetAll(0);
-            typeof(Pawn_WorkSettings).GetField("priorities", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).SetValue(myPawn.workSettings, priorities);
-            foreach (WorkTypeDef workType in props.allowedWorkTypes)
-            {
-                foreach (SkillDef skill in workType.relevantSkills)
-                {
-                    SkillRecord record = myPawn.skills.skills.Find(rec => rec.def == skill);
-                    record.levelInt = props.skillLevel;
-                }
-                myPawn.workSettings.SetPriority(workType, 1);
-            }
+            Setup(props.allowedWorkTypes, props.skillLevel, myPawn);
             if (myPawn.TryGetComp<CompMachine>().Props.violent)
             {
                 if (myPawn.drafter == null)
@@ -72,7 +55,38 @@ namespace FalloutRedScare
             if (myPawn.Faction == null)
                 myPawn.SetFactionDirect(Find.World.factionManager.OfPlayer);
         }
-        
+
+        public static void Setup(List<WorkTypeDef> allowedWorkTypes, int skillLevel, Pawn myPawn)
+        {
+            if (myPawn.psychicEntropy == null)
+                myPawn.psychicEntropy = new Pawn_PsychicEntropyTracker(myPawn);
+            if (myPawn.story == null)
+                myPawn.story = new Pawn_StoryTracker(myPawn);
+            if (myPawn.skills == null)
+                myPawn.skills = new Pawn_SkillTracker(myPawn);
+            if (myPawn.workSettings == null)
+                myPawn.workSettings = new Pawn_WorkSettings(myPawn);
+            if (myPawn.relations == null)
+                myPawn.relations = new Pawn_RelationsTracker(myPawn);
+            DefMap<WorkTypeDef, int> priorities = new DefMap<WorkTypeDef, int>();
+            priorities.SetAll(0);
+            typeof(Pawn_WorkSettings).GetField("priorities", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).SetValue(myPawn.workSettings, priorities);
+            foreach (WorkTypeDef workType in allowedWorkTypes)
+            {
+                foreach (SkillDef skill in workType.relevantSkills)
+                {
+                    SkillRecord record = myPawn.skills.skills.Find(rec => rec.def == skill);
+                    record.levelInt = skillLevel;
+                }
+                myPawn.workSettings.SetPriority(workType, 1);
+            }
+
+            if (myPawn.TryGetComp<CompMachine>().Props.violent)
+            {
+                if (myPawn.drafter == null)
+                    myPawn.drafter = new Pawn_DraftController(myPawn);
+            }
+        }
     }
     public class CompProperties_StandaloneMachine : CompProperties
     {
