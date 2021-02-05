@@ -10,9 +10,35 @@ using Verse;
 using VFE.Mechanoids;
 using VFE.Mechanoids.HarmonyPatches;
 using VFE.Mechanoids.Needs;
+using VFEMech;
 
 namespace FalloutRedScare
 {
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.ExitMap))]
+    public static class ForbidPlayerPawnsFromDissapearingIntoTheAbyss
+    {
+        public static bool Prefix(Pawn __instance, bool __0)
+        {
+            if (!__0)
+                return true;
+            if (__instance is Machine && __instance.Faction == Faction.OfPlayer)
+            {
+                if (!CaravanExitMapUtility.CanExitMapAndJoinOrCreateCaravanNow(__instance))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    [HarmonyPatch(typeof(CaravanExitMapUtility), nameof(CaravanExitMapUtility.FindCaravanToJoinFor))]
+    public static class DebugStuff
+    {
+        public static void Postix(Pawn __0, Caravan __result)
+        {
+            Log.Message($"Find caravan {__0.Name} {__result != null}");
+        }
+    }
     [HarmonyPatch(typeof(CompMachine), nameof(CompMachine.PostSpawnSetup))]
     public static class FixPowerInMachine
     {

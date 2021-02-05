@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using Verse;
 using VFE.Mechanoids;
 using VFE.Mechanoids.Needs;
+using VFEMech;
 
 namespace FalloutRedScare
 {
@@ -14,6 +16,7 @@ namespace FalloutRedScare
     {
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
+            Log.Message($"MACHINE IS COLONIST {((Pawn)parent).IsColonist}");
             var myPawn = this.parent as Pawn;
             if (myPawn.TryGetComp<StandaloneMachine>() != null)
                 return;
