@@ -128,7 +128,7 @@
 			<shuttleBomberDef>FRS_ShuttleBomber</shuttleBomberDef>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
 			<shells>
-				<li>Bullet_Shell_AntigrainWarhead</li>
+				<li>Bullet_Shell_EMP</li>
 			</shells>
 		</workerSettings>
 		<minTitle>FRS_PartyCommitte</minTitle>

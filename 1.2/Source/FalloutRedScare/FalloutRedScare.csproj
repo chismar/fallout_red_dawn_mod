@@ -52,7 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comps\CompShuttleBomber.cs" />
+    <Compile Include="Comps\ShuttleBomber.cs" />
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="HarmonyPatches\Drones_Patches.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />

@@ -1,110 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="FRS_ShuttleBomberBase" ParentName="BuildingBase">
-    <defName>FRS_ShuttleBomber</defName>
-    <label>red shuttle</label>
-    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
-    <altitudeLayer>Building</altitudeLayer>
-    <pathCost>50</pathCost>
-    <blockWind>true</blockWind>
-    <passability>Impassable</passability>
-    <fillPercent>1.0</fillPercent>
-    <size>(5,3)</size>
-    <graphicData>
-      <texPath>Things/Building/Misc/Shuttle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(6,3)</drawSize>
-      <color>(162,164,149)</color>
-      <shadowData>
-        <volume>(4.1, 1.0, 1.8)</volume>
-        <offset>(0, 0, -0.1)</offset>
-      </shadowData>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <Flammability>1</Flammability>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <killedLeavings>
-      <Steel>100</Steel>
-      <Plasteel>35</Plasteel>
-      <ChunkSlagSteel>4</ChunkSlagSteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </killedLeavings>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-    <drawerType>MapMeshOnly</drawerType>
-    <repairEffect>ConstructMetal</repairEffect>
-    <forceDebugSpawnable>true</forceDebugSpawnable>
-    <uiIconScale>1.4</uiIconScale>
-    <building>
-      <claimable>false</claimable>
-      <soundAmbient>ShuttleIdle_Ambience</soundAmbient>
-      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
-    </building>
-    <inspectorTabs>
-      <li>ITab_ContentsTransporter</li>
-    </inspectorTabs>
-    <comps>
-      <li Class="CompProperties_Shuttle" />
-	  <li Class="FalloutRedScare.CompProperties_ShuttleBomber"></li>
-      <li Class="CompProperties_Launchable">
-        <requireFuel>false</requireFuel>
-        <fixedLaunchDistanceMax>70</fixedLaunchDistanceMax>
-        <skyfallerLeaving>ShuttleLeaving</skyfallerLeaving>
-      </li>
-      <li Class="CompProperties_Transporter">
-        <massCapacity>1000</massCapacity>
-        <max1PerGroup>true</max1PerGroup>
-        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
-        <showOverallStats>false</showOverallStats>
-        <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
-        <pawnExitSound>Shuttle_PawnExit</pawnExitSound>
-      </li>
-    </comps>
-  </ThingDef>
 
-  <ThingDef ParentName="ShuttleSkyfallerBase">
+  <ThingDef ParentName="SkyfallerBase">
     <defName>FRS_ShuttleBomberLeaving</defName>
-    <label>shuttle (leaving)</label>
-    <thingClass>DropPodLeaving</thingClass>
+    <label>aircraft (incoming)</label>
+    <thingClass>FalloutRedScare.ShuttleBomber</thingClass>
+    <graphicData>
+      <texPath>Things/Special/DropPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
     <skyfaller>
-      <reversed>true</reversed>
-      <anticipationSound>Shuttle_Leaving</anticipationSound>
-      <anticipationSoundTicks>-10</anticipationSoundTicks>
-      <ticksToImpactRange>-40~-15</ticksToImpactRange>
-      <moteSpawnTime>0.05</moteSpawnTime>
-      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
-      <shadowSize>(5.5,3.5)</shadowSize>
-      <motesPerCell>1</motesPerCell>
-      <angleCurve>
-        <points>
-          <li>(0,90)</li>
-          <li>(1,70)</li>
-        </points>
-      </angleCurve>
-      <rotationCurve>
-        <points>
-          <li>(0,0)</li>
-          <li>(0.15,10)</li>
-          <li>(0.5,-5)</li>
-        </points>
-      </rotationCurve>
-      <zPositionCurve>
-        <points>
-          <li>(0,0)</li>
-          <li>(0.08,2)</li>
-        </points>
-      </zPositionCurve>
-      <speedCurve>
-        <points>
-          <li>(0,0.2)</li>
-          <li>(0.4,0.7)</li>
-        </points>
-      </speedCurve>
+      <movementType>Decelerate</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+      <shadowSize>(2, 2)</shadowSize>
+      <anticipationSound>DropPod_Fall</anticipationSound>
+      <anticipationSoundTicks>100</anticipationSoundTicks>
+      <motesPerCell>0</motesPerCell>
     </skyfaller>
   </ThingDef>
 
