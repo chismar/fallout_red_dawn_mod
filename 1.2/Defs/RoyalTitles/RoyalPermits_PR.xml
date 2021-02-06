@@ -113,7 +113,28 @@
 		<minTitle>FRS_PartyCommitte</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,2)</uiPosition>
+		<uiPosition>(0,0)</uiPosition>
+		<cooldownDays>60</cooldownDays>
+	</FalloutRedScare.FRSRoyalTitlePermitDef>
+	
+	<FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_AirBombing</defName>
+		<label>air bombing</label>
+		<description>air bombing.</description>
+		<workerClass>FalloutRedScare.AirBombing</workerClass>
+		<workerSettings Class="FalloutRedScare.AirBombingSettings"> 
+			<airBombingCommandKey>FRS.AirBombingLabel</airBombingCommandKey>
+			<shootingLineAngle>0</shootingLineAngle>
+			<shuttleBomberDef>FRS_ShuttleBomber</shuttleBomberDef>
+			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
+			<shells>
+				<li>Bullet_Shell_AntigrainWarhead</li>
+			</shells>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,1)</uiPosition>
 		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 
@@ -149,7 +170,7 @@
 		<minTitle>FRS_PartyCommitte</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,2)</uiPosition>
+		<uiPosition>(0,3)</uiPosition>
 		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 	<!--

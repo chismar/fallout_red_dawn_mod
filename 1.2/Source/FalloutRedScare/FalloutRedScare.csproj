@@ -52,11 +52,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompShuttleBomber.cs" />
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="HarmonyPatches\Drones_Patches.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
     <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
+    <Compile Include="PermitWorkers\AirBombing.cs" />
     <Compile Include="PermitWorkers\SwitchSides.cs" />
     <Compile Include="PermitWorkers\StartRebellion.cs" />
     <Compile Include="PermitWorkers\CallAirSupport.cs" />

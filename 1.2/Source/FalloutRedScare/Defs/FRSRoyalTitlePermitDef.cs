@@ -8,6 +8,7 @@ using Verse.AI.Group;
 
 namespace FalloutRedScare
 {
+
 	public class FRSRoyalTitlePermitDef : RoyalTitlePermitDef
 	{
 		public object workerSettings;
@@ -20,5 +21,12 @@ namespace FalloutRedScare
 	public class FRS_ScriptedTitlePermitWorker<T> : FRS_TitlePermitWorker where T : class
 	{
 		public T workerSettings => def.workerSettings as T;
+
+		public static TargetingParameters ForLoc()
+		{
+			TargetingParameters targetingParameters = new TargetingParameters();
+			targetingParameters.canTargetLocations = true;
+			return targetingParameters;
+		}
 	}
 }

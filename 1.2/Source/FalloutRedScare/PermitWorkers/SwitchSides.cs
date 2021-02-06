@@ -17,12 +17,6 @@ namespace FalloutRedScare
 	}
 	public class SwitchSides : FRS_ScriptedTitlePermitWorker<SwitchSidesSettings>
 	{
-		public static TargetingParameters ForLoc()
-		{
-			TargetingParameters targetingParameters = new TargetingParameters();
-			targetingParameters.canTargetLocations = true;
-			return targetingParameters;
-		}
 		public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction)
 		{
 			if (AidDisabled(map, pawn, faction, out string reason))
