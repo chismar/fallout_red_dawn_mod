@@ -133,7 +133,7 @@
         <allowedWorkTypes>
         </allowedWorkTypes>
         <extraChargingPower>1200</extraChargingPower>
-        <spawnWithWeapon>VFE_Gun_CombatMechanoidGun</spawnWithWeapon>
+        <spawnWithWeapon>FRS_Gun_LaserPistol</spawnWithWeapon>
       </li>
     </comps>
   </ThingDef>
@@ -146,7 +146,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Automation/CombatMechanoid/CombatMechanoid</texPath>
+          <texPath>FRS/Drones/Liberator/Liberator</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>1.8</drawSize>
           <shadowData>

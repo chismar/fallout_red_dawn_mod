@@ -22,7 +22,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseLaserGun">
-    <defName>FLW_Gun_LaserPistol</defName>
+    <defName>FRS_Gun_LaserPistol</defName>
     <thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
     <label>laser pistol</label>
     <description>An ultratech pistol capable of emitting a concentrated beam of light with enough power to deal considerable damage.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
