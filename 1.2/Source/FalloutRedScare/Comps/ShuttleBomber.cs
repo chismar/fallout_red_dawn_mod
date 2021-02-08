@@ -24,27 +24,32 @@ namespace FalloutRedScare
 		public List<ThingDef> shells;
 
 		public Map targetMap;
-        public override Vector3 DrawPos => SkyfallerDrawPosUtility.DrawPos_ConstantSpeed(this.TrueCenter(), this.ticksToImpact, this.angle, this.def.skyfaller.speed);
+        public override Vector3 DrawPos => SkyfallerDrawPosUtility.DrawPos_ConstantSpeed(this.TrueCenter(), ticksToImpactDraw == -1 ? ticksToImpact : ticksToImpactDraw, reversed ? this.angle + 180 : this.angle, this.def.skyfaller.speed);
         public IntVec3 GetPos()
         {
             return DrawPos.ToIntVec3();
         }
         bool reversed;
+        int midTick;
+        int ticksToImpactDraw = -1;
         public override void Tick()
         {
-            if(this.ticksToImpact == 1)
+            if (ticksToImpactDraw == -1 && this.ticksToImpact != 0)
+                ticksToImpactDraw = this.ticksToImpact;
+            var tickPre = ticksToImpact;
+            base.Tick();
+            if(ticksToImpactDraw != -1)
             {
-                reversed = true;
-                this.angle = angle+180;
+                var delta = (ticksToImpact - tickPre) * 2;
+                ticksToImpactDraw += reversed ? -delta : delta;
+                if (ticksToImpactDraw <= 0)
+                {
+                    ticksToImpactDraw = 0;
+                    reversed = true;
+                }
             }
-            if (reversed)
-                ticksToImpact++;
-            if (ticksToImpact == 220)
-                ticksToImpact = 0;
-                base.Tick();
-            if(reversed && ticksToImpact != 0)
-                ticksToImpact++;
-            
+                
+                            
             if (Find.TickManager.TicksGame % 20 == 0)
 			{
 				var curCell = GetPos();

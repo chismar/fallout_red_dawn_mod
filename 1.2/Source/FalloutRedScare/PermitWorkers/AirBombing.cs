@@ -41,15 +41,17 @@ namespace FalloutRedScare
 						// compTransporter = ThingCompUtility.TryGetComp<CompTransporter>(shuttle);
 						//var startingCell = CellRect.WholeMap(map).EdgeCells.OrderBy(cell => cell.DistanceTo(x.Cell)).FirstOrDefault();
 						var sk = SkyfallerMaker.MakeSkyfaller(workerSettings.skyfallerBomber);
-						GenPlace.TryPlaceThing(sk, x.Cell, map, ThingPlaceMode.Near, null, null, default(Rot4));
+						var dir = (x.Cell - pawn.Position).ToVector3();
+						dir.x = -dir.x;
+						var angle = Vector3.SignedAngle(dir, Vector3.back, Vector3.up);
+						GenPlace.TryPlaceThing(sk, x.Cell, map, ThingPlaceMode.Near, null, null, default);
 						//comp.requiredColonistCount = 0;
 						//comp.missionShuttleTarget = map.Parent;
 						//comp.missionShuttleHome = null;
 						var compBomber = sk as ShuttleBomber;
 						compBomber.shells = workerSettings.shells;
 						compBomber.targetMap = map;
-						var dir = (x.Cell - pawn.Position).ToVector3();
-						compBomber.angle = Vector3.SignedAngle(dir, Vector3.forward, Vector3.up);
+						compBomber.angle = angle;
 					}, null, null);
 				};
 			}

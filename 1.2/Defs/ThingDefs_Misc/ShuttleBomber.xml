@@ -7,10 +7,10 @@
     <label>aircraft (incoming)</label>
     <thingClass>FalloutRedScare.ShuttleBomber</thingClass>
     <graphicData>
-      <texPath>Things/Special/DropPod</texPath>
+      <texPath>FRS/Things/Skyfaller/ChineseBomber</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutFlying</shaderType>
-      <drawSize>1.9</drawSize>
+      <drawSize>5</drawSize>
     </graphicData>
     <skyfaller>
       <movementType>Decelerate</movementType>
@@ -19,6 +19,7 @@
       <anticipationSound>DropPod_Fall</anticipationSound>
       <anticipationSoundTicks>100</anticipationSoundTicks>
       <motesPerCell>0</motesPerCell>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
     </skyfaller>
   </ThingDef>
 
