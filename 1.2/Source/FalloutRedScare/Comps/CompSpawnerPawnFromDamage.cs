@@ -27,7 +27,7 @@ namespace FalloutRedScare
 		public int pawnsLeftToSpawn = -1;
 
 		public List<Pawn> spawnedPawns = new List<Pawn>();
-
+		
 		public bool aggressive = true;
 
 		public bool canSpawnPawns = true;
@@ -148,7 +148,6 @@ namespace FalloutRedScare
 			if (!CellFinder.TryFindRandomCellNear(byThing.PositionHeld, curMap, 5, (IntVec3 c) => c.Standable(curMap) 
 				&& curMap.reachability.CanReach(c, byThing.PositionHeld, PathEndMode.OnCell, TraverseParms.For(TraverseMode.PassDoors)), out IntVec3 result))
 			{
-				Log.Error("Found no place for mechanoids to defend " + byThing);
 				result = IntVec3.Invalid;
 			}
 			LordJob lordJob = null;
