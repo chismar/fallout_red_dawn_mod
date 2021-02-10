@@ -21,8 +21,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -60,16 +58,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyWinterJumpsuit</defName>
@@ -89,8 +77,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -128,16 +114,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmySpySuit</defName>
@@ -157,8 +133,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -196,16 +170,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -226,8 +190,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -265,16 +227,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -295,8 +247,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -334,16 +284,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -364,8 +304,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -403,16 +341,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -433,8 +361,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -472,16 +398,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -502,8 +418,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -549,16 +463,6 @@
         </restrictBodyTypes>
       </li>
     </comps>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -579,8 +483,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -618,16 +520,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -648,8 +540,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -687,16 +577,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
 
@@ -718,8 +598,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -757,16 +635,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -787,8 +655,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -826,16 +692,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
@@ -856,8 +712,6 @@
     </graphicData>
     <costList>
       <Cloth>50</Cloth>
-      <Steel>70</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -895,15 +749,5 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <only>(0.44,0.44,0.44)</only>
-        </li>
-        <li>
-          <only>(0.62,0.62,0.62)</only>
-        </li>
-      </options>
-    </colorGenerator>
   </ThingDef>
 </Defs>

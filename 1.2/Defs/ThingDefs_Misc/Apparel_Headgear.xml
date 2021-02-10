@@ -13,11 +13,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -45,22 +43,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySummerHeadgear</defName>
@@ -74,11 +57,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -106,22 +87,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">
@@ -136,11 +102,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -168,22 +132,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySummerHeadgearWithMask</defName>
@@ -197,11 +146,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -229,22 +176,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">
@@ -259,11 +191,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -291,22 +221,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">
@@ -321,11 +236,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -353,22 +266,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySubmarinerHat</defName>
@@ -382,11 +280,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -414,22 +310,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedViperHat</defName>
@@ -443,11 +324,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -475,22 +354,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyStealthSuitHelmet</defName>
@@ -504,11 +368,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -536,22 +398,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_CivilianHat</defName>
@@ -565,11 +412,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -597,22 +442,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_GagarinEnvironmentSuitHelmet</defName>
@@ -626,11 +456,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -658,22 +486,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_GagarinPowerArmorHelmet</defName>
@@ -687,11 +500,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -719,22 +530,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyOfficerHat</defName>
@@ -748,11 +544,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -780,22 +574,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySpyHat</defName>
@@ -809,11 +588,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -841,22 +618,7 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyPowerArmorHelmet</defName>
@@ -870,11 +632,9 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -885,7 +645,7 @@
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact> 
+      <SocialImpact>0.10</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -902,21 +662,6 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
+
   </ThingDef>
 </Defs>
