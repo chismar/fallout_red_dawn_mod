@@ -101,6 +101,69 @@
     </tools>
   </ThingDef>
 
+  <ThingDef ParentName="BaseLaserGun">
+    <defName>FRS_Gun_LaserGunLiberator</defName>
+    <thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>liberator laser gun</label>
+    <description>liberator laser gun</description>
+    <graphicData>
+      <texPath>FRS/Things/WeaponRanged/EmptyWeapon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VWE_Interact_LaserGun</soundInteract>
+    <statBases>
+      <WorkToMake>82500</WorkToMake>
+      <MarketValue>2000</MarketValue>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.56</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+    </weaponTags>
+    <generateCommonality>0.1</generateCommonality>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <label>Standard</label>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FRS_Bullet_LaserPistol</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>22.9</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>VWE_LaserShot_Light</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
   <ThingDef ParentName="BaseLaserGun">
     <defName>FRS_Gun_LaserSMG</defName>

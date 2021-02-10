@@ -118,6 +118,28 @@
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 	
 	<FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_AirBombingLiberators</defName>
+		<label>liberator bombing bombing</label>
+		<description>liberator bombing.</description>
+		<workerClass>FalloutRedScare.AirBombing</workerClass>
+		<workerSettings Class="FalloutRedScare.AirBombingSettings"> 
+			<airBombingCommandKey>FRS.AirBombingLabelLiberators</airBombingCommandKey>
+			<shootingLineAngle>0</shootingLineAngle>
+			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
+			<shells>
+				<li>FRS_Bullet_Shell_Liberator</li>
+			</shells>
+      <shellsCount>3</shellsCount>
+      <bombingRunAroundTargetMeters>-10~10</bombingRunAroundTargetMeters>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,1)</uiPosition>
+    <cooldownDays>60</cooldownDays>
+  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  
+	<FalloutRedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombing</defName>
 		<label>air bombing</label>
 		<description>air bombing.</description>
@@ -125,8 +147,9 @@
 		<workerSettings Class="FalloutRedScare.AirBombingSettings"> 
 			<airBombingCommandKey>FRS.AirBombingLabel</airBombingCommandKey>
 			<shootingLineAngle>0</shootingLineAngle>
-			<shuttleBomberDef>FRS_ShuttleBomber</shuttleBomberDef>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
+      <shellsCount>3</shellsCount>
+      <bombingRunAroundTargetMeters>-10~10</bombingRunAroundTargetMeters>
 			<shells>
 				<li>Bullet_Shell_EMP</li>
 			</shells>
@@ -134,7 +157,7 @@
 		<minTitle>FRS_PartyCommitte</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,1)</uiPosition>
+		<uiPosition>(0,5)</uiPosition>
 		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 

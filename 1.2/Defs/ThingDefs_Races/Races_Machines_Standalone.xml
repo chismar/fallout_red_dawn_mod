@@ -133,7 +133,7 @@
         <allowedWorkTypes>
         </allowedWorkTypes>
         <extraChargingPower>1200</extraChargingPower>
-        <spawnWithWeapon>FRS_Gun_LaserPistol</spawnWithWeapon>
+        <spawnWithWeapon>FRS_Gun_LaserGunLiberator</spawnWithWeapon>
       </li>
     </comps>
   </ThingDef>
@@ -148,7 +148,7 @@
         <bodyGraphicData>
           <texPath>FRS/Drones/Liberator/Liberator</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>

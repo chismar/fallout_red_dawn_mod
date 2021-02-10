@@ -17,7 +17,7 @@
 				<wickTicks>30~60</wickTicks>
 			</li>
 		</comps>
-		<projectileWhenLoaded>FRS_Bullet_Shell_HighExplosive</projectileWhenLoaded>
+		<projectileWhenLoaded>FRS_Bullet_Shell_Liberator</projectileWhenLoaded>
 		<costList>
 			<Steel>25</Steel>
 			<Chemfuel>15</Chemfuel>
@@ -28,10 +28,10 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>FRS_Bullet_Shell_HighExplosive</defName>
+		<defName>FRS_Bullet_Shell_Liberator</defName>
 		<label>high-explosive shell</label>
 		<graphicData>
-			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<texPath>FRS/Drones/Liberator/Liberator_shell</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>

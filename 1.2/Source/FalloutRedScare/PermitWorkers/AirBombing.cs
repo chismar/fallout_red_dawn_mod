@@ -14,9 +14,10 @@ namespace FalloutRedScare
 	{
 		public string airBombingCommandKey;
 		public float shootingLineAngle;
-		public ThingDef shuttleBomberDef;
 		public ThingDef skyfallerBomber;
 		public List<ThingDef> shells;
+		public int shellsCount = 1;
+		public FloatRange bombingRunAroundTargetMeters;
 	}
 	public class AirBombing : FRS_ScriptedTitlePermitWorker<AirBombingSettings>
 	{
@@ -35,21 +36,15 @@ namespace FalloutRedScare
 				{
 					Find.Targeter.BeginTargeting(ForLoc(), delegate (LocalTargetInfo x)
 					{
-						//var shuttle = ThingMaker.MakeThing(workerSettings.shuttleBomberDef, null);
-
-						//var comp = shuttle.TryGetComp<CompShuttle>();
-						// compTransporter = ThingCompUtility.TryGetComp<CompTransporter>(shuttle);
-						//var startingCell = CellRect.WholeMap(map).EdgeCells.OrderBy(cell => cell.DistanceTo(x.Cell)).FirstOrDefault();
 						var sk = SkyfallerMaker.MakeSkyfaller(workerSettings.skyfallerBomber);
 						var dir = (x.Cell - pawn.Position).ToVector3();
 						dir.x = -dir.x;
 						var angle = Vector3.SignedAngle(dir, Vector3.back, Vector3.up);
 						GenPlace.TryPlaceThing(sk, x.Cell, map, ThingPlaceMode.Near, null, null, default);
-						//comp.requiredColonistCount = 0;
-						//comp.missionShuttleTarget = map.Parent;
-						//comp.missionShuttleHome = null;
 						var compBomber = sk as ShuttleBomber;
 						compBomber.shells = workerSettings.shells;
+						compBomber.shellsCount = workerSettings.shellsCount;
+						compBomber.bombingRunAroundTargetMeters = workerSettings.bombingRunAroundTargetMeters;
 						compBomber.targetMap = map;
 						compBomber.angle = angle;
 					}, null, null);
