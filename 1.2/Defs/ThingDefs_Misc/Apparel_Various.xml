@@ -485,7 +485,7 @@
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>FRS_Apparel_StealthSuit</defName>
+    <defName>FRS_Apparel_RedArmyStealthSuit</defName>
     <label>red army stealth suit</label>
     <description>red army stealth suit</description>
     <recipeMaker>
@@ -541,6 +541,14 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <comps>
+      <li Class="FalloutRedScare.CompProperties_ApparelComp_RestrictBodyType">
+        <restrictBodyTypes>
+          <li>Hulk</li>
+          <li>Fat</li>
+        </restrictBodyTypes>
+      </li>
+    </comps>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -551,8 +559,8 @@
         </li>
       </options>
     </colorGenerator>
-  </ThingDef> 
-  
+  </ThingDef>
+
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_CivilianSuit</defName>
     <label>people's republic civilian suit</label>
@@ -830,7 +838,7 @@
     </colorGenerator>
   </ThingDef>
 
-    <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedViperSuit</defName>
     <label>red viper suit</label>
     <description>red viper suit</description>
