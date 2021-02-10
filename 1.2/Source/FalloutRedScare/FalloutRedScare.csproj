@@ -52,9 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApparelComp_RestrictBodyType.cs" />
     <Compile Include="Comps\ShuttleBomber.cs" />
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="HarmonyPatches\Drones_Patches.cs" />
+    <Compile Include="HarmonyPatches\Apparel_Patches.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
     <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
