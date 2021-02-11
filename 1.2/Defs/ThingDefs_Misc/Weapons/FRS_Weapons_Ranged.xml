@@ -600,6 +600,7 @@
       <texPath>FRS/Things/WeaponRanged/ChineseBoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -729,6 +730,7 @@
       <texPath>FRS/Things/WeaponRanged/SniperRifleType93</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -810,6 +812,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <equippedAngleOffset>45</equippedAngleOffset>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -876,6 +879,7 @@
       <texPath>FRS/Things/WeaponRanged/GaussRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_ChargeLance</soundInteract>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
