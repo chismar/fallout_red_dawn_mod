@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>FRS_Mechanoids_AutocleanerBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label> red autocleaner charging station</label>
-    <description> red A station for assembling and recharging autocleaners.</description>
+    <description>red A station for assembling and recharging autocleaners.</description>
     <graphicData>
       <texPath>Things/Automation/AutocleanerChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -78,7 +78,7 @@
     <defName>FRS_Mechanoids_AutohaulerBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label>  red autohauler charging station</label>
-    <description> red A station for assembling and recharging autohaulers.</description>
+    <description>red A station for assembling and recharging autohaulers.</description>
     <graphicData>
       <texPath>Things/Automation/AutohaulerChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -152,7 +152,7 @@
     <defName>FRS_Mechanoids_AutominerBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label>  red autominer charging station</label>
-    <description> red A station for assembling and recharging autominers.</description>
+    <description>red A station for assembling and recharging autominers.</description>
     <graphicData>
       <texPath>Things/Automation/AutominerChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -226,7 +226,7 @@
     <defName>FRS_Mechanoids_CombatBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label>  red combat mechanoid charging station</label>
-    <description> red A station for assembling and recharging combat mechanoids.</description>
+    <description>red A station for assembling and recharging combat mechanoids.</description>
     <graphicData>
       <texPath>Things/Automation/CombatMechanoidChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -300,7 +300,7 @@
     <defName>FRS_Mechanoids_RiotBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label>  red riot mechanoid charging station</label>
-    <description> red A station for assembling and recharging riot mechanoids.</description>
+    <description>red A station for assembling and recharging riot mechanoids.</description>
     <graphicData>
       <texPath>Things/Automation/RiotMechanoidChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -373,7 +373,7 @@
     <defName>FRS_Mechanoids_TurretBase</defName>
     <thingClass>VFE.Mechanoids.Buildings.Building_BedMachine</thingClass>
     <label>  red mobile turret charging station</label>
-    <description> red A station for assembling and recharging mobile turrets.</description>
+    <description>red A station for assembling and recharging mobile turrets.</description>
     <graphicData>
       <texPath>Things/Automation/MobileTurretChargingStation</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -462,7 +462,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>FRS_Mechanoids_Autosower</defName>
     <label>  red autosower</label>
-    <description> red An extremely large, slow moving trough-like structure mounted on a series of wheels. Undermounted sprinklers and piston-driven dibblers allow rapid planting of a very wide variety of crops. This machine in particular is programmed to move in a pre-defined direction and distance.</description>
+    <description>red An extremely large, slow moving trough-like structure mounted on a series of wheels. Undermounted sprinklers and piston-driven dibblers allow rapid planting of a very wide variety of crops. This machine in particular is programmed to move in a pre-defined direction and distance.</description>
     <thingClass>VFE.Mechanoids.Buildings.Building_AutoSower</thingClass>
     <graphicData>
       <texPath>Things/Automation/AutoSower/AutoSower</texPath>
@@ -526,7 +526,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>FRS_Mechanoids_Autoharvester</defName>
     <label>  red autoharvester</label>
-    <description> red An extremely large, slow moving arched structure mounted on a series of wheels. Undermounted trowels and scythes allow swift harvesting of both crops and lumber alike. This machine in particular is programmed to move in a pre-defined direction and distance.</description>
+    <description>red An extremely large, slow moving arched structure mounted on a series of wheels. Undermounted trowels and scythes allow swift harvesting of both crops and lumber alike. This machine in particular is programmed to move in a pre-defined direction and distance.</description>
     <thingClass>VFE.Mechanoids.Buildings.Building_AutoHarvester</thingClass>
     <graphicData>
       <texPath>Things/Automation/Autoharvester/AutoHarvester</texPath>

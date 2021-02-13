@@ -77,7 +77,6 @@
       <WorkToMake>18000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
