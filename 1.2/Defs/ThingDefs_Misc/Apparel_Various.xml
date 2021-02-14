@@ -162,7 +162,7 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
