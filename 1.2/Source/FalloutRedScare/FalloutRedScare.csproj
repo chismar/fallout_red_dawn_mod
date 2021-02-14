@@ -58,6 +58,7 @@
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="HarmonyPatches\Apparel_Patches.cs" />
     <Compile Include="HarmonyPatches\Drones_Patches.cs" />
+    <Compile Include="HarmonyPatches\GeneratePawn_Patches.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
     <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="PermitWorkers\CallAirSupport.cs" />
     <Compile Include="QuestNodes\QuestNode_FactionPointsChange.cs" />
     <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />
+    <Compile Include="RestrictedBodyPawnKindDef.cs" />
     <Compile Include="StandaloneMachine.cs" />
     <Compile Include="TotalWarUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
