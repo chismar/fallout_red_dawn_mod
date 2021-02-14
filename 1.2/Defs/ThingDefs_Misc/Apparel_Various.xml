@@ -115,176 +115,8 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>FRS_Apparel_RedArmySpySuit</defName>
-    <label>red army spy suit</label>
-    <description>red army spy suit</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.00</drawSize>
-    </graphicData>
-    <costList>
-      <Cloth>50</Cloth>
-    </costList>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</wornGraphicPath>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>RedArmy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>FRS_Apparel_RedArmyMilitantJumpsuit</defName>
-    <label>red army militant jumpsuit</label>
-    <description>red army militant jumpsuit</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.00</drawSize>
-    </graphicData>
-    <costList>
-      <Cloth>50</Cloth>
-    </costList>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</wornGraphicPath>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>RedArmy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>FRS_Apparel_RedArmyCommandoJumpsuit</defName>
-    <label>red army commando jumpsuit</label>
-    <description>red army commando jumpsuit</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.00</drawSize>
-    </graphicData>
-    <costList>
-      <Cloth>50</Cloth>
-    </costList>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</wornGraphicPath>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>RedArmy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyPowerArmor</defName>
@@ -343,62 +175,6 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>FRS_Apparel_RedArmySubmarinerJumpsuit</defName>
-    <label>red army submariner jumpsuit</label>
-    <description>red army submariner jumpsuit</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.00</drawSize>
-    </graphicData>
-    <costList>
-      <Cloth>50</Cloth>
-    </costList>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</wornGraphicPath>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>RedArmy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyStealthSuit</defName>
@@ -464,7 +240,121 @@
       </li>
     </comps>
   </ThingDef>
+<!--
+  
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FRS_Apparel_RedArmySpySuit</defName>
+    <label>red army spy suit</label>
+    <description>red army spy suit</description>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold> 
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySpySuit/RedArmySpySuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
 
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FRS_Apparel_RedArmySubmarinerJumpsuit</defName>
+    <label>red army submariner jumpsuit</label>
+    <description>red army submariner jumpsuit</description>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmySubmarinerJumpsuit/RedArmySubmarinerJumpsuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_CivilianSuit</defName>
     <label>people's republic civilian suit</label>
@@ -495,7 +385,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
@@ -552,7 +442,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
@@ -610,7 +500,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
@@ -667,7 +557,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
@@ -724,7 +614,7 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
@@ -750,4 +640,119 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
+
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FRS_Apparel_RedArmyMilitantJumpsuit</defName>
+    <label>red army militant jumpsuit</label>
+    <description>red army militant jumpsuit</description>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/RedArmyMilitantJumpsuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>FRS_Apparel_RedArmyCommandoJumpsuit</defName>
+    <label>red army commando jumpsuit</label>
+    <description>red army commando jumpsuit</description>
+    <recipeMaker>
+      <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyCommandoJumpsuit/RedArmyCommandoJumpsuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef> -->
 </Defs>

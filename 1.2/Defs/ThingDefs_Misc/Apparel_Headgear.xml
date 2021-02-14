@@ -180,6 +180,185 @@
   </ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">
+    <defName>FRS_Apparel_RedArmyMilitantHat</defName>
+    <label>red army militant cap</label>
+    <description>red army militant cap</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+
+  </ThingDef>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>FRS_Apparel_RedArmyStealthSuitHelmet</defName>
+    <label>red army winter headgear</label>
+    <description>red army winter headgear</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+
+  </ThingDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>FRS_Apparel_RedArmyOfficerHat</defName>
+    <label>red army winter headgear</label>
+    <description>red army winter headgear</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+
+  </ThingDef>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>FRS_Apparel_RedArmyPowerArmorHelmet</defName>
+    <label>red army winter headgear</label>
+    <description>red army winter headgear</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+
+  </ThingDef>
+
+<!--
+  <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyCommandoHelmet</defName>
     <label>red army commando helmet</label>
     <description>red army commando helmet</description>
@@ -224,50 +403,6 @@
 
   </ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
-    <defName>FRS_Apparel_RedArmyMilitantHat</defName>
-    <label>red army winter headgear</label>
-    <description>red army winter headgear</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9, 0.9)</drawSize>
-    </graphicData>
-    <costList>
-      <Steel>50</Steel>
-    </costList>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
-
-  </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySubmarinerHat</defName>
     <label>red army winter headgear</label>
@@ -356,50 +491,7 @@
     </apparel>
 
   </ThingDef>
-  <ThingDef ParentName="HatMakeableBase">
-    <defName>FRS_Apparel_RedArmyStealthSuitHelmet</defName>
-    <label>red army winter headgear</label>
-    <description>red army winter headgear</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9, 0.9)</drawSize>
-    </graphicData>
-    <costList>
-      <Steel>50</Steel>
-    </costList>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
 
-  </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_CivilianHat</defName>
     <label>red army winter headgear</label>
@@ -532,50 +624,7 @@
     </apparel>
 
   </ThingDef>
-  <ThingDef ParentName="HatMakeableBase">
-    <defName>FRS_Apparel_RedArmyOfficerHat</defName>
-    <label>red army winter headgear</label>
-    <description>red army winter headgear</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9, 0.9)</drawSize>
-    </graphicData>
-    <costList>
-      <Steel>50</Steel>
-    </costList>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
 
-  </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySpyHat</defName>
     <label>red army winter headgear</label>
@@ -619,49 +668,6 @@
       </defaultOutfitTags>
     </apparel>
 
-  </ThingDef>
-  <ThingDef ParentName="HatMakeableBase">
-    <defName>FRS_Apparel_RedArmyPowerArmorHelmet</defName>
-    <label>red army winter headgear</label>
-    <description>red army winter headgear</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9, 0.9)</drawSize>
-    </graphicData>
-    <costList>
-      <Steel>50</Steel>
-    </costList>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.10</SocialImpact>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
+  </ThingDef>-->
 
-  </ThingDef>
 </Defs>
