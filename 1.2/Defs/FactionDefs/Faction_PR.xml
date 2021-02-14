@@ -113,10 +113,12 @@
         </carriers>
         <guards>
           <Villager>3</Villager>
-          <FRS_PR_Fighter_Trooper>10</FRS_PR_Fighter_Trooper>
-          <FRS_PR_Fighter_Cataphract>1.5</FRS_PR_Fighter_Cataphract>
-          <FRS_PR_Fighter_Janissary>7</FRS_PR_Fighter_Janissary>
-          <FRS_PR_Fighter_Champion>10</FRS_PR_Fighter_Champion>
+          <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
+          <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
+          <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
+          <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
+          <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
+          <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
         </guards>
       </li>
       <li Class="FalloutRedScare.PawnGroupMakerPR">
@@ -124,20 +126,24 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <FRS_PR_Fighter_Trooper>5</FRS_PR_Fighter_Trooper>
-          <FRS_PR_Fighter_Janissary>3.5</FRS_PR_Fighter_Janissary>
-          <FRS_PR_Fighter_Cataphract>2</FRS_PR_Fighter_Cataphract>
-          <FRS_PR_Fighter_Champion>4</FRS_PR_Fighter_Champion>
+          <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
+          <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
+          <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
+          <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
+          <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
+          <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
         </options>
       </li>
       <li Class="FalloutRedScare.PawnGroupMakerPR">
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
-          <FRS_PR_Fighter_Trooper>5</FRS_PR_Fighter_Trooper>
-          <FRS_PR_Fighter_Janissary>3.5</FRS_PR_Fighter_Janissary>
-          <FRS_PR_Fighter_Cataphract>2</FRS_PR_Fighter_Cataphract>
-          <FRS_PR_Fighter_Champion>4</FRS_PR_Fighter_Champion>
+          <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
+          <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
+          <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
+          <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
+          <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
+          <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
       </options>
       </li>
     </pawnGroupMakers>

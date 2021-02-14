@@ -60,26 +60,7 @@
 				<useQualityIncreasing>false</useQualityIncreasing>
 				<singleTimeIfNotQualityIncreasing>0.1</singleTimeIfNotQualityIncreasing>
 			</ItemProcessor.CombinationDef>
-			
-			<ItemProcessor.CombinationDef>
-				<defName>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith_FRS_Gun_LaserGunLiberator</defName>
-				<building>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith</building>
-				<items>
-					<li>Steel</li>
-				</items>
-				<secondItems>
-					<li>ComponentIndustrial</li>
-				</secondItems>
-				<amount>
-					<li>30</li>
-					<li>3</li>
-				</amount>
-				<result>FRS_Gun_LaserGunLiberator</result>
-				<yield>1</yield>
-				<useQualityIncreasing>false</useQualityIncreasing>
-				<singleTimeIfNotQualityIncreasing>0.1</singleTimeIfNotQualityIncreasing>
-			</ItemProcessor.CombinationDef>
-			
+						
 			<ItemProcessor.CombinationDef>
 				<defName>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith_FRS_Gun_LaserSMG</defName>
 				<building>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith</building>
@@ -293,4 +274,3 @@
 
 
 </Patch>
-

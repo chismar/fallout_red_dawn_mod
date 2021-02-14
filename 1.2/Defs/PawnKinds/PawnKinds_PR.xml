@@ -133,201 +133,197 @@
     </disallowedTraits>
   </PawnKindDef>
 
-  <!--===================== Imperial fighters =========================-->
 
-  <PawnKindDef Name="FRS_PR_FighterBase" Abstract="True">
+  <PawnKindDef Name="FRS_PR_RedArmySoldier" Abstract="True">
     <race>Human</race>
     <defaultFactionType>FRS_PR</defaultFactionType>
-    <maxGenerationAge>55</maxGenerationAge>
-    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>ImperialFighter</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <maxGenerationAge>35</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
     <hairTags>
       <li>Soldier</li>
     </hairTags>
-    <chemicalAddictionChance>0.1</chemicalAddictionChance>
-    <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
-    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
-    <weaponMoney>1100~2500</weaponMoney>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-    <apparelMoney>1250~2500</apparelMoney>
     <weaponTags>
       <li>RedArmy</li>
     </weaponTags>
     <apparelTags>
       <li>RedArmy</li>
     </apparelTags>
-    <apparelDisallowTags>
-      <li>Western</li>
-    </apparelDisallowTags>
     <techHediffsChance>0.3</techHediffsChance>
     <techHediffsMoney>1000~1500</techHediffsMoney>
-    <techHediffsRequired>
-      <li>DeathAcidifier</li>
-    </techHediffsRequired>
-    <biocodeWeaponChance>0.15</biocodeWeaponChance>
     <disallowedTraits>
       <li>BodyPurist</li>
-    </disallowedTraits>
-  </PawnKindDef>
-
-  <!-- Trooper -->
-
-  <PawnKindDef Name="FRS_PR_TrooperBase" Abstract="True" ParentName="FRS_PR_FighterBase">
+    </disallowedTraits>    
     <combatPower>60</combatPower>
-    <apparelMoney>5000~8000</apparelMoney>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
+    <apparelMoney>1500~11500</apparelMoney>
+    <weaponMoney>11100~12500</weaponMoney>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="FRS_PR_TrooperBase">
-    <defName>FRS_PR_Fighter_Trooper</defName>
-    <label>trooper</label>
-    <apparelColor>(130,130,130)</apparelColor>
-    <techHediffsTags>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
+  
+
+  <PawnKindDef Name="FRS_PR_RedArmyConscriptBase" ParentName="FRS_PR_RedArmySoldier" Abstract="True">
+    <label>conscript</label>
     <skills>
       <li>
         <skill>Shooting</skill>
         <range>4~10</range>
       </li>
     </skills>
+    <apparelTags Inherit="False">
+      <li>Conscript</li>
+    </apparelTags>
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
   </PawnKindDef>
-
-  <!-- Janissary -->
-
-  <PawnKindDef Name="FRS_PR_JanissaryBase" Abstract="True" ParentName="FRS_PR_FighterBase">
-    <combatPower>100</combatPower>
-    <weaponMoney>1550~2700</weaponMoney>
-    <weaponTags>
-      <li>RedArmy</li>
-    </weaponTags>
-    <apparelMoney>6000~9000</apparelMoney>
-    <disallowedTraits>
-      <li>Brawler</li>
-    </disallowedTraits>
+  
+  <PawnKindDef ParentName="FRS_PR_RedArmyConscriptBase">
+    <defName>FRS_PR_RedArmyConscriptSummer</defName>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyJumpsuit</li>
+      <li>FRS_Apparel_RedArmySummerHeadgear</li>
+    </apparelRequired>
+  </PawnKindDef>  
+  
+  <PawnKindDef ParentName="FRS_PR_RedArmyConscriptBase">
+    <defName>FRS_PR_RedArmyConscriptWinter</defName>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyWinterJumpsuit</li>
+      <li>FRS_Apparel_RedArmyWinterHeadgear</li>
+    </apparelRequired>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="FRS_PR_JanissaryBase">
-    <defName>FRS_PR_Fighter_Janissary</defName>
-    <label>janissary</label>
-    <apparelColor>(75,75,75)</apparelColor>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Gunlink</tag>
-            <chance>0.2</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
-    <techHediffsTags>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
+  <PawnKindDef ParentName="FRS_PR_RedArmyConscriptBase">
+    <defName>FRS_PR_RedArmyConscriptWinterWithMask</defName>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyWinterJumpsuit</li>
+      <li>FRS_Apparel_RedArmyWinterHeadgearWithMask</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FRS_PR_RedArmyConscriptBase">
+    <defName>FRS_PR_RedArmyConscriptSummerWithMask</defName>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyJumpsuit</li>
+      <li>FRS_Apparel_RedArmySummerHeadgearWithMask</li>
+    </apparelRequired>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FRS_PR_RedArmySoldier">
+    <defName>FRS_PR_RedArmyOfficer</defName>
+    <label>officer</label>
     <skills>
       <li>
         <skill>Shooting</skill>
-        <range>6~10</range>
+        <range>4~10</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>4~10</range>
       </li>
     </skills>
-  </PawnKindDef>
-
-  <!-- Champion -->
-
-  <PawnKindDef ParentName="FRS_PR_FighterBase">
-    <defName>FRS_PR_Fighter_Champion</defName>
-    <label>champion</label>
-    <maxGenerationAge>40</maxGenerationAge>
-    <combatPower>100</combatPower>
-    <weaponTags>
+    <weaponTags Inherit="False">
       <li>RedArmyMelee</li>
     </weaponTags>
     <apparelRequired>
-      <li>Apparel_ShieldBelt</li>
+      <li>FRS_Apparel_RedArmyOfficerHat</li>      
+      <li>FRS_Apparel_RedArmyJumpsuit</li>
     </apparelRequired>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>8~13</range>
-      </li>
-    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
   </PawnKindDef>
 
-   <!-- Cataphract -->
+  <PawnKindDef ParentName="FRS_PR_RedArmySoldier">
+    <defName>FRS_PR_RedArmyMilitant</defName>
+    <label>militant</label>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~7</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>4~7</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyMilitantHat</li>      
+      <li>FRS_Apparel_RedArmyJumpsuit</li>
+    </apparelRequired>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
 
-  <PawnKindDef Name="FRS_PR_CataphractBase" Abstract="True" ParentName="FRS_PR_FighterBase">
+  <PawnKindDef Name="FRS_PR_StealthDragoonBase" Abstract="True" ParentName="FRS_PR_RedArmySoldier">
+    <combatPower>100</combatPower>
+    <weaponMoney>11550~12700</weaponMoney>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
+    <apparelMoney>16000~19000</apparelMoney>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FRS_PR_StealthDragoonBase">
+    <defName>FRS_PR_StealthDragoon</defName>
+    <label>stealth dragoon</label>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>9~13</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>FRS_Apparel_RedArmyStealthSuit</li>
+      <li>FRS_Apparel_RedArmyStealthSuitHelmet</li>
+    </apparelRequired>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+
+  <PawnKindDef Name="FRS_PR_PowerArmorSoldierBase" Abstract="True" ParentName="FRS_PR_RedArmySoldier">
     <maxGenerationAge>40</maxGenerationAge>
-    <apparelMoney>7000~10000</apparelMoney>
+    <apparelMoney>17000~110000</apparelMoney>
+    <weaponMoney>11550~12700</weaponMoney>
     <techHediffsMoney>1000~4000</techHediffsMoney>
     <techHediffsMaxAmount>4</techHediffsMaxAmount>
     <allowRoyalRoomRequirements>False</allowRoyalRoomRequirements>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="FRS_PR_CataphractBase">
-    <defName>FRS_PR_Fighter_Cataphract</defName>
-    <label>cataphract</label>
-    <royalTitleChance>0.1</royalTitleChance>
+  <PawnKindDef ParentName="FRS_PR_PowerArmorSoldierBase">
+    <defName>FRS_PR_PowerArmorSoldier</defName>
+    <label>power armor specialist</label>
     <combatPower>150</combatPower>
     <weaponTags>
       <li>GunHeavy</li>
       <li>RedArmy</li>
     </weaponTags>
-    <apparelColor>(250,250,250)</apparelColor>
     <apparelRequired>
-      <li>Apparel_ArmorHelmetCataphract</li>
-      <li>Apparel_ArmorCataphract</li>
+      <li>FRS_Apparel_RedArmyPowerArmor</li>
+      <li>FRS_Apparel_RedArmyPowerArmorHelmet</li>
     </apparelRequired>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <techHediffsRequired>
-      <li>ArmorskinGland</li>
-    </techHediffsRequired>
     <skills>
       <li>
         <skill>Shooting</skill>
-        <range>8~12</range>
+        <range>7~12</range>
       </li>
     </skills>
-    <disallowedTraits>
-      <li>Brawler</li>
-    </disallowedTraits>
   </PawnKindDef>
 
-
-  <!-- Royals -->
 
   <PawnKindDef Name="FRS_PR_PartyBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>FRS_PR</defaultFactionType>
     <maxGenerationAge>80</maxGenerationAge>
-    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>ImperialRoyal</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
+    <backstoryCryptosleepCommonality>0.00</backstoryCryptosleepCommonality>
     <royalTitleChance>1</royalTitleChance>
     <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
@@ -335,42 +331,14 @@
     <combatPower>150</combatPower>
     <weaponMoney>2600~3100</weaponMoney>
     <weaponTags>
-      <li>UltratechMelee</li>
-      <li>Bladelink</li>
+      <li>RedArmy</li>
     </weaponTags>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     <apparelMoney>1000~1500</apparelMoney>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelTags>
-      <li>IndustrialBasic</li>
+      <li>RedArmy</li>
     </apparelTags>
-    <apparelDisallowTags>
-      <li>Western</li>
-    </apparelDisallowTags>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Psychic</tag>
-            <chance>0.08</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
-    <techHediffsChance>0.15</techHediffsChance>
-    <techHediffsMoney>500~1500</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireRoyal</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <techHediffsDisallowTags>
-      <li>PainCauser</li>
-    </techHediffsDisallowTags>
-    <hairTags>
-      <li>Royalty</li>
-    </hairTags>
     <disallowedTraits>
       <li>Nudist</li>
       <li>BodyPurist</li>
@@ -378,53 +346,22 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_PartyBase">
+    <defName>FRS_PR_PartyBase</defName>
+    <label>partcom</label>
+    <titleRequired>FRS_PartyCommitte</titleRequired>
+    <techHediffsMoney>0~500</techHediffsMoney>
+  </PawnKindDef>
+  <PawnKindDef ParentName="FRS_PR_PartyBase">
     <defName>FRS_PR_Sec_Partcom</defName>
     <label>partcom</label>
     <titleRequired>FRS_PartyCommitte</titleRequired>
     <techHediffsMoney>0~500</techHediffsMoney>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Cape</tag>
-            <chance>0.3</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_PartyBase">
     <defName>FRS_PR_Sec_Discom</defName>
     <label>discom</label>
     <titleRequired>FRS_DistrictCommitte</titleRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier3</requiredTag>
-        <alternateTagChoices>
-          <li>
-            <tag>Psychic</tag>
-            <chance>0.1</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>OnSkin</apparelLayer>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Cape</tag>
-            <chance>0.3</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
     <techHediffsMoney>300~800</techHediffsMoney>
   </PawnKindDef>
 
@@ -433,32 +370,6 @@
     <label>citycom</label>
     <labelFemale>citycom</labelFemale>
     <titleRequired>FRS_CityCommitte</titleRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier3</requiredTag>
-        <alternateTagChoices>
-          <li>
-            <tag>Psychic</tag>
-            <chance>0.3</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>OnSkin</apparelLayer>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Cape</tag>
-            <chance>0.3</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
     <techHediffsMoney>500~1000</techHediffsMoney>
   </PawnKindDef>
 
@@ -466,32 +377,6 @@
     <defName>FRS_PR_Sec_Statecom</defName>
     <label>statecom</label>
     <titleRequired>FRS_StateCommitte</titleRequired>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier3</requiredTag>
-        <alternateTagChoices>
-          <li>
-            <tag>Psychic</tag>
-            <chance>0.5</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>OnSkin</apparelLayer>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <alternateTagChoices>
-          <li>
-            <tag>Cape</tag>
-            <chance>0.3</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-    </specificApparelRequirements>
     <techHediffsMoney>1000~1500</techHediffsMoney>
   </PawnKindDef>
 
@@ -500,28 +385,6 @@
     <label>centcom</label>
     <titleRequired>FRS_CentralCommitte</titleRequired>
     <apparelMoney>9999999</apparelMoney>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier7</requiredTag>
-        <stuff>Gold</stuff>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Shell</apparelLayer>
-        <requiredTag>RoyalTier6</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Middle</apparelLayer>
-        <requiredTag>RoyalTier5</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>OnSkin</apparelLayer>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-    </specificApparelRequirements>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>3000~4000</techHediffsMoney>
     <techHediffsMaxAmount>3</techHediffsMaxAmount>
@@ -533,28 +396,6 @@
     <factionLeader>true</factionLeader>
     <titleRequired>FRS_CentralCommitte</titleRequired>
     <apparelMoney>9999999</apparelMoney>
-    <specificApparelRequirements>
-      <li>
-        <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>RoyalTier7</requiredTag>
-        <stuff>Gold</stuff>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Shell</apparelLayer>
-        <requiredTag>RoyalTier6</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Middle</apparelLayer>
-        <requiredTag>RoyalTier5</requiredTag>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>OnSkin</apparelLayer>
-        <requiredTag>RoyalTier2</requiredTag>
-      </li>
-    </specificApparelRequirements>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>3000~4000</techHediffsMoney>
     <techHediffsMaxAmount>3</techHediffsMaxAmount>

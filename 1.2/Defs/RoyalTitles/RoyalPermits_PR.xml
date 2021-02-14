@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--
+
   <RoyalTitlePermitDef>
     <defName>TradeSettlement_PR</defName>
     <label>trade with settlements</label>
@@ -16,7 +16,7 @@
     <defName>TradeCaravan_PR</defName>
     <label>trade with caravans</label>
   </RoyalTitlePermitDef>
-
+	<!--
 
   <RoyalTitlePermitDef Name="DropResourcesBase_PR" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
@@ -101,10 +101,14 @@
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
-						<FRS_PR_Fighter_Trooper>5</FRS_PR_Fighter_Trooper>
-						<FRS_PR_Fighter_Janissary>3.5</FRS_PR_Fighter_Janissary>
-						<FRS_PR_Fighter_Cataphract>2</FRS_PR_Fighter_Cataphract>
-						<FRS_PR_Fighter_Champion>4</FRS_PR_Fighter_Champion>
+            <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
+            <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
+            <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
+            <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
+            <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
+            <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
+            <FRS_PR_StealthDragoon>2</FRS_PR_StealthDragoon>
+            <FRS_PR_PowerArmorSoldier>2</FRS_PR_PowerArmorSoldier>
 					</options>
 				</li>
 			</pawnGroupMakers>

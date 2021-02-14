@@ -111,6 +111,10 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>VWE_Interact_LaserGun</soundInteract>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>82500</WorkToMake>
       <MarketValue>2000</MarketValue>
