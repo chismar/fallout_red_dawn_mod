@@ -54,7 +54,7 @@ namespace FalloutRedScare
 			var lord = caster.GetLord();
 			foreach (var pawn in pawnsToSwitchSide)
             {
-				pawn.SetFaction(caster.Faction);
+				pawn.SetFaction(Find.FactionManager.FirstFactionOfDef(def.faction));
 				if (lord != null)
                 {
 					lord.AddPawn(pawn);

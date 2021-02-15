@@ -12,10 +12,9 @@
     <fillPercent>1.0</fillPercent>
     <size>(5,3)</size>
     <graphicData>
-      <texPath>Things/Building/Misc/Shuttle</texPath>
+      <texPath>FRS/Things/Skyfaller/RedAirTransport</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(6,3)</drawSize>
-      <color>(162,164,149)</color>
+      <drawSize>(6,6)</drawSize>
       <shadowData>
         <volume>(4.1, 1.0, 1.8)</volume>
         <offset>(0, 0, -0.1)</offset>
@@ -49,11 +48,13 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="CompProperties_Shuttle" />
+      <li Class="FalloutRedScare.CompProperties_FRS_Shuttle" >
+        <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
+      </li>
       <li Class="CompProperties_Launchable">
         <requireFuel>false</requireFuel>
         <fixedLaunchDistanceMax>70</fixedLaunchDistanceMax>
-        <skyfallerLeaving>ShuttleLeaving</skyfallerLeaving>
+        <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
       </li>
       <li Class="CompProperties_Transporter">
         <massCapacity>1000</massCapacity>
@@ -70,7 +71,8 @@
     <defName>FRS_ShuttleCrashed</defName>
     <label>crashed red shuttle</label>
     <graphicData>
-      <texPath>Things/Building/Misc/CrashedShuttle</texPath>
+      <texPath>FRS/Things/Skyfaller/RedAirTransportCrushed</texPath>
+      <drawSize>(6,6)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -95,8 +97,23 @@
       <alwaysDeconstructible>true</alwaysDeconstructible>
     </building>
   </ThingDef>
-  
-  <ThingDef ParentName="ShuttleSkyfallerBase">
+
+  <ThingDef Name="FRS_ShuttleSkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+    <size>(5,3)</size>
+    <graphicData>
+      <texPath>FRS/Things/Skyfaller/RedAirTransport</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+      <shadowSize>(5.5,3.5)</shadowSize>
+      <motesPerCell>1</motesPerCell>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="FRS_ShuttleSkyfallerBase">
     <defName>FRS_ShuttleIncoming</defName>
     <label>shuttle (incoming)</label>
     <thingClass>ShuttleIncoming</thingClass>
@@ -133,7 +150,7 @@
     </skyfaller>
   </ThingDef>
 
-  <ThingDef ParentName="ShuttleSkyfallerBase">
+  <ThingDef ParentName="FRS_ShuttleSkyfallerBase">
     <defName>FRS_ShuttleLeaving</defName>
     <label>shuttle (leaving)</label>
     <thingClass>DropPodLeaving</thingClass>
@@ -174,7 +191,7 @@
     </skyfaller>
   </ThingDef>
 
-  <ThingDef ParentName="ShuttleSkyfallerBase">
+  <ThingDef ParentName="FRS_ShuttleSkyfallerBase">
     <defName>FRS_ShuttleCrashing</defName>
     <label>shuttle (crashing)</label>
     <thingClass>ShuttleIncoming</thingClass>

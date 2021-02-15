@@ -190,7 +190,7 @@
 		<description>switch sides.</description>
 		<workerClass>FalloutRedScare.SwitchSides</workerClass>
 		<workerSettings Class="FalloutRedScare.SwitchSidesSettings"> 
-			<switchSidesCommandKey>FRS.StartRebellionLabel</switchSidesCommandKey>
+			<switchSidesCommandKey>FRS.SwitchSidesLabel</switchSidesCommandKey>
 			<radiusToSwitch>10</radiusToSwitch>
 			<giveThoughtToPlayerPawns>DebugBad</giveThoughtToPlayerPawns>
 		</workerSettings>

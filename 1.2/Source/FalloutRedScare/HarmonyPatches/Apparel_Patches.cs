@@ -1,5 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -34,5 +37,31 @@ namespace FalloutRedScare
             }
         }
 
-    }
+		[HarmonyPatch(typeof(CompShuttle))]
+		[HarmonyPatch(nameof(CompShuttle.Send))]
+		public static class CompShuttleFixFrs
+        {
+            static ThingDef shuttleLeaving;
+            [HarmonyPrefix]
+            public static void Prefix(CompShuttle __instance)
+            {
+                if(__instance is FRS_Shuttle s)
+                {
+                    shuttleLeaving = ThingDefOf.ShuttleLeaving;
+                    ThingDefOf.ShuttleLeaving = (s.props as CompProperties_FRS_Shuttle).skyfallerLeaving;
+                }
+
+            }
+
+            [HarmonyPostfix]
+            public static void Postfix(CompShuttle __instance)
+            {
+                if (__instance is FRS_Shuttle s)
+                {
+                    ThingDefOf.ShuttleLeaving = shuttleLeaving;
+                }
+            }
+        }
+
+	}
 }
