@@ -22,10 +22,12 @@ namespace FalloutRedScare
 	{
 		public T workerSettings => def.workerSettings as T;
 
-		public static TargetingParameters ForLoc()
+		public static TargetingParameters ForLoc(Pawn caller = null, float? radius = null)
 		{
 			TargetingParameters targetingParameters = new TargetingParameters();
 			targetingParameters.canTargetLocations = true;
+			if(radius != null)
+				targetingParameters.validator = (TargetInfo target) => target.Cell.DistanceTo(caller.Position) <= radius.Value;
 			return targetingParameters;
 		}
 	}

@@ -119,6 +119,40 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,0)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  
+  <FalloutRedScare.FRSRoyalTitlePermitDef>
+		<defName>FRS_PR_ShuttleSquadAirdropInsertion</defName>
+		<label>shuttle squad airdrop insertion</label>
+		<description>shuttle squad airdrop insertion.</description>
+		<workerClass>FalloutRedScare.CallAirSupportTargeted</workerClass>
+		<workerSettings Class="FalloutRedScare.AirSupportSettingsTargeted"> 
+      <shuttleDef>FRS_Shuttle</shuttleDef>
+      <shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
+      <radius>50</radius>
+			<pawnGroupMakers>
+				<li Class="FalloutRedScare.PawnGroupMakerPR">
+					<kindDef>Combat</kindDef>
+					<commonality>100</commonality>
+					<options>
+            <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
+            <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
+            <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
+            <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
+            <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
+            <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
+            <FRS_PR_StealthDragoon>2</FRS_PR_StealthDragoon>
+            <FRS_PR_PowerArmorSoldier>2</FRS_PR_PowerArmorSoldier>
+					</options>
+				</li>
+			</pawnGroupMakers>
+			<points>500</points>
+		</workerSettings>
+		<minTitle>FRS_PartyCommitte</minTitle>
+		<faction>FRS_PR</faction>
+		<permitPointCost>1</permitPointCost>
+		<uiPosition>(0,4)</uiPosition>
+		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 	
 	<FalloutRedScare.FRSRoyalTitlePermitDef>
@@ -199,7 +233,29 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,3)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</FalloutRedScare.FRSRoyalTitlePermitDef>
+  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  
+  <FalloutRedScare.FRSRoyalTitlePermitDef>
+    <defName>CallTransportShuttle_PR</defName>
+    <label>red call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>FalloutRedScare.CallSpecifiedShuttle</workerClass>
+		<workerSettings Class="FalloutRedScare.CallSpecifiedShuttleSettings"> 
+			<shuttleQuestDef>FRS_Permit_CallShuttle</shuttleQuestDef>
+			<shuttleDef>FRS_Shuttle</shuttleDef>
+		</workerSettings>
+    <minTitle>FRS_PartyCommitte</minTitle>
+    <faction>FRS_PR</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(0,6)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+  </FalloutRedScare.FRSRoyalTitlePermitDef>
 	<!--
 	
   <RoyalTitlePermitDef>
@@ -339,23 +395,6 @@
   </RoyalTitlePermitDef>
   
   
-  <RoyalTitlePermitDef>
-    <defName>CallTransportShuttle_PR</defName>
-    <label>red call transport shuttle</label>
-    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
-    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <cooldownDays>40</cooldownDays>
-    <usableOnWorldMap>true</usableOnWorldMap>
-    <uiPosition>(0,6)</uiPosition>
-    <royalAid>
-      <favorCost>8</favorCost>
-      <targetingRange>44.9</targetingRange>
-      <targetingRequireLOS>false</targetingRequireLOS>
-    </royalAid>
-  </RoyalTitlePermitDef>
   
   -->
 </Defs>

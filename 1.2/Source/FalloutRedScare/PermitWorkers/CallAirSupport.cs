@@ -30,22 +30,29 @@ namespace FalloutRedScare
 			if (FillAidOption(pawn, faction, ref description, out bool free))
 			{
 				action = delegate
-				{
-					if (this.workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
-					{
-						PawnGroupMakerParms parms = new PawnGroupMakerParms();
-						parms.groupKind = PawnGroupKindDefOf.Combat;
-						parms.tile = map.Tile;
-						parms.points = this.workerSettings.points.RandomInRange;
-						parms.faction = faction;
-						parms.generateFightersOnly = true;
-						CallShuttle(pawnGroupMaker, parms, pawn, map, faction, free);
-					}
-				};
+                {
+                    CallShuttleWithParams(map, pawn, faction, free);
+                };
+				
 			}
 			yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
 		}
-		private void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Pawn pawn, Map map, Faction faction, bool free)
+
+        private void CallShuttleWithParams(Map map, Pawn pawn, Faction faction, bool free)
+        {
+            if (this.workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
+            {
+                PawnGroupMakerParms parms = new PawnGroupMakerParms();
+                parms.groupKind = PawnGroupKindDefOf.Combat;
+                parms.tile = map.Tile;
+                parms.points = this.workerSettings.points.RandomInRange;
+                parms.faction = faction;
+                parms.generateFightersOnly = true;
+                CallShuttle(pawnGroupMaker, parms, pawn, map, faction, free);
+            }
+        }
+
+        private void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Pawn pawn, Map map, Faction faction, bool free)
 		{
 			if (!faction.HostileTo(Faction.OfPlayer))
 			{
@@ -67,7 +74,7 @@ namespace FalloutRedScare
 			while (pawns.Any())
 			{
 				var group = pawns.Take(8);
-				pawns = pawns.Skip(8).ToList();
+				pawns = pawns.Skip(group.Count()).ToList();
 				IntVec3 dropCenter = DropCellFinder.RandomDropSpot(map);
 				LordMaker.MakeNewLord(faction, MakeLordJob(dropCenter, faction, map), map, group);
 				var shuttle = ThingMaker.MakeThing(shuttleDef, null);

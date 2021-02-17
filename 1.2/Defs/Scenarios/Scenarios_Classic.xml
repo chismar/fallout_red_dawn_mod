@@ -59,36 +59,33 @@
           <thingDef>ComponentIndustrial</thingDef>
           <count>30</count>
         </li>
+        
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Gun_BoltActionRifle</thingDef>
+          <thingDef>FRS_Pistol</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Gun_Revolver</thingDef>
+          <thingDef>FRS_Pistol</thingDef>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MeleeWeapon_Knife</thingDef>
+          <thingDef>FRS_Sword</thingDef>
           <stuff>Plasteel</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Apparel_FlakPants</thingDef>
+          <thingDef>FRS_Apparel_RedArmyJumpsuit</thingDef>
+          <count>3</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Apparel_FlakVest</thingDef>
+          <thingDef>FRS_Apparel_RedArmyMilitantHat</thingDef>
+          <count>2</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Apparel_AdvancedHelmet</thingDef>
-          <stuff>Plasteel</stuff>
-        </li>
-        <li Class="ScenPart_StartingAnimal">
-          <def>StartingAnimal</def>
-          <count>1</count>
-          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+          <thingDef>FRS_Apparel_RedArmyOfficerHat</thingDef>
         </li>
 
         <!-- Scatter some things near player start -->
