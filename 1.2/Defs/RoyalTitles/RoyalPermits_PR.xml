@@ -155,7 +155,6 @@
 		<cooldownDays>60</cooldownDays>
 	</FalloutRedScare.FRSRoyalTitlePermitDef>
 	
-	<!--
 	<FalloutRedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombingLiberators</defName>
 		<label>liberator bombing bombing</label>
@@ -176,7 +175,7 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,1)</uiPosition>
     <cooldownDays>60</cooldownDays>
-  </FalloutRedScare.FRSRoyalTitlePermitDef> -->
+  </FalloutRedScare.FRSRoyalTitlePermitDef>
   
 	<FalloutRedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombing</defName>
