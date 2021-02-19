@@ -30,9 +30,16 @@ namespace FalloutRedScare
             Scribe_Defs.Look(ref def, nameof(def));
             Scribe_Values.Look(ref curReinforcementCooldown, nameof(curReinforcementCooldown));
         }
-
+        bool disable = false;
         public void Tick()
         {
+            if (disable)
+                return;
+            if(!(def.reinforceOnlyIfPlayerIsOfFaction?.Any(x=>x == Faction.OfPlayer.def) ?? false))
+            {
+                disable = true;
+                return;
+            }
             if (Find.TickManager.TicksGame % 60 == 0)
             {
                 Log.Message($"Reinforcements {CanSendReinforcements} {Find.TickManager.TicksGame >= curReinforcementCooldown}");
@@ -44,7 +51,7 @@ namespace FalloutRedScare
                 var randomSpawnIncident = this.def.reinforcementIncidents.RandomElement();
                 if (randomSpawnIncident.Worker.CanFireNow(parms, true) && randomSpawnIncident.Worker.TryExecute(parms))
                 {
-                    if (Settings.overrideSpawnrange)
+                    if (Settings.overrideReinforcementsCooldown)
                     {
                         this.def.reinforcementCooldownDays = Settings.spawnRange;
                     }

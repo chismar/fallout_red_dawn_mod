@@ -71,6 +71,9 @@
     <caravanTraderKinds>
       <li>FRS_PR_Caravan_TraderGeneral</li>
     </caravanTraderKinds>
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+    </royalTitleInheritanceRelations>
     <raidCommonalityFromPointsCurve>
       <points>
         <li>(0, 1)</li> <!--Constant 1 at all points levels-->

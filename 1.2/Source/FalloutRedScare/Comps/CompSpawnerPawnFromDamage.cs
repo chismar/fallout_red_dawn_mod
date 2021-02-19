@@ -32,6 +32,8 @@ namespace FalloutRedScare
 
 		public bool canSpawnPawns = true;
 
+		public Faction faction;
+
 		private PawnKindDef chosenKind;
 
 		private CompCanBeDormant dormancyCompCached;
@@ -255,7 +257,7 @@ namespace FalloutRedScare
 				return false;
 			}
 			int index = chosenKind.lifeStages.Count - 1;
-			pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenKind, parent.Faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, null, null, null, null, chosenKind.race.race.lifeStageAges[index].minAge));
+			pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenKind, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, null, null, null, null, chosenKind.race.race.lifeStageAges[index].minAge));
 			spawnedPawns.Add(pawn);
 			GenSpawn.Spawn(pawn, parent.PositionHeld, map);
 			Lord lord = Lord;
@@ -293,6 +295,7 @@ namespace FalloutRedScare
 			Scribe_Values.Look(ref canSpawnPawns, "canSpawnPawns", defaultValue: true);
 			Scribe_Defs.Look(ref chosenKind, "chosenKind");
 			Scribe_Values.Look(ref pawnsSpawned, "pawnsSpawned");
+			Scribe_References.Look(ref faction, "faction");
 			if (Scribe.mode == LoadSaveMode.PostLoadInit)
 			{
 				spawnedPawns.RemoveAll((Pawn x) => x == null);

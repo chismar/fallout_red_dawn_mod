@@ -65,6 +65,7 @@ namespace FalloutRedScare
 			GenPlace.TryPlaceThing(sk, x.Cell, map, ThingPlaceMode.Near, null, null, default);
 			Find.LetterStack.ReceiveLetter("Bombing", "Bombing", LetterDefOf.NegativeEvent, new TargetInfo(x.Cell, map));
 			var compBomber = sk as ShuttleBomber;
+			compBomber.faction = pawn.Faction; 
 			compBomber.shells = workerSettings.shells;
 			compBomber.shellsCount = workerSettings.shellsCount;
 			compBomber.bombingRunAroundTargetMeters = workerSettings.bombingRunAroundTargetMeters;

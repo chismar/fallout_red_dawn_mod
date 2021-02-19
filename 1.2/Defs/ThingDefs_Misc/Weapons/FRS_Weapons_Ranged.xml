@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <DamageDef Name="Flame">    
+    <defName>FRS_Burn</defName>
+    <label>burn</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+  
 
   <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
     <defName>FRS_Bullet_LaserPistol</defName>
@@ -13,7 +31,7 @@
     <causefireChance>0.1</causefireChance>
 
     <projectile>
-      <damageDef>Burn</damageDef>
+      <damageDef>FRS_Burn</damageDef>
       <damageAmountBase>8</damageAmountBase>
       <armorPenetrationBase>0.66</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
@@ -400,10 +418,29 @@
     </tools>
   </ThingDef>
 
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Incendiary</defName>
+    <label>incendiary bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(254,189,58)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>FRS_Burn</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_IncendiaryPistol</defName>
     <label>PLA incendiary pistol</label>
-    <description>People's Liberation Army incendiary pistol. A devastating weapon in skilled hands. While it has no armor penetration capabilities, it's pretty much guaranteed to lit the target on fire. Can be seen in hands of both ruthless officers, partisans and shock troos.</description>
+    <description>People's Liberation Army incendiary pistol. A devastating weapon firing small explosive bullets. Can be seen in hands of both ruthless officers, partisans and shock troos.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/ChineseIncendiaryPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -438,7 +475,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <defaultProjectile>Bullet_Incendiary</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>Shot_Revolver</soundCast>

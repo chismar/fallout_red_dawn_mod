@@ -31,7 +31,7 @@ namespace FalloutRedScare
                 }
                 else
                 {
-                    if(Settings.overridePowerpoints)
+                    if(Settings.reinforcementsPowerPoints)
                     {
                         idef.airSupportSettings.points = new IntRange(Settings.powerpoints, Settings.powerpoints);
                     }

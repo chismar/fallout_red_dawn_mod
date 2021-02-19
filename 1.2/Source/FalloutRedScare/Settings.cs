@@ -11,10 +11,11 @@ namespace FalloutRedScare
     public class Settings : ModSettings
     {
         public static bool prUsesWealthForRaids;
-        public static bool overridePowerpoints;
-        public static bool overrideSpawnrange;
+        public static bool reinforcementsPowerPoints;
+        public static bool overrideReinforcementsCooldown;
         public static int powerpoints;
-        public static float spawnRangeMax = 100;
+        public static bool overrideMaxPawns;
+        public static int maxPawns;
         public static FloatRange spawnRange;
 
         public override void ExposeData()
@@ -22,8 +23,10 @@ namespace FalloutRedScare
             Scribe_Values.Look(ref prUsesWealthForRaids, nameof(prUsesWealthForRaids));
             Scribe_Values.Look(ref powerpoints, nameof(powerpoints));
             Scribe_Values.Look(ref spawnRange, nameof(spawnRange));
-            Scribe_Values.Look(ref overrideSpawnrange, nameof(overrideSpawnrange));
-            Scribe_Values.Look(ref overridePowerpoints, nameof(overridePowerpoints));
+            Scribe_Values.Look(ref overrideReinforcementsCooldown, nameof(overrideReinforcementsCooldown));
+            Scribe_Values.Look(ref overrideMaxPawns, nameof(overrideMaxPawns));
+            Scribe_Values.Look(ref maxPawns, nameof(maxPawns));
+            Scribe_Values.Look(ref reinforcementsPowerPoints, nameof(reinforcementsPowerPoints));
             base.ExposeData();
         }
     }
@@ -48,19 +51,36 @@ namespace FalloutRedScare
         /// The (optional) GUI part to set your settings.
         /// </summary>
         /// <param name="inRect">A Unity Rect with the size of the settings window.</param>
+        string buffer = "";
         public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
+
             listingStandard.CheckboxLabeled(nameof(Settings.prUsesWealthForRaids), ref Settings.prUsesWealthForRaids, nameof(Settings.prUsesWealthForRaids));
-            listingStandard.CheckboxLabeled(nameof(Settings.overridePowerpoints), ref Settings.overridePowerpoints, nameof(Settings.overridePowerpoints));
-            listingStandard.Label($"powerpoints {Settings.powerpoints}");
-            Settings.powerpoints = (int)listingStandard.Slider(Settings.powerpoints, 0, 10000);
-            listingStandard.CheckboxLabeled(nameof(Settings.overrideSpawnrange), ref Settings.overrideSpawnrange, nameof(Settings.overrideSpawnrange));
-            listingStandard.Label($"max draw {Settings.spawnRangeMax} min {Settings.spawnRange.min} max {Settings.spawnRange.max}");
-            Settings.spawnRangeMax = listingStandard.Slider(Settings.spawnRangeMax, 0.1f, 1000f);
-            Settings.spawnRange.min = listingStandard.Slider(Settings.spawnRange.min, 0.1f, Settings.spawnRangeMax);
-            Settings.spawnRange.max = listingStandard.Slider(Settings.spawnRange.max, 0.1f, Settings.spawnRangeMax);
+
+            listingStandard.CheckboxLabeled(nameof(Settings.reinforcementsPowerPoints), ref Settings.reinforcementsPowerPoints, nameof(Settings.reinforcementsPowerPoints));
+            if(Settings.reinforcementsPowerPoints)
+            {
+                listingStandard.Label($"Reinforcemenets power points: {Settings.powerpoints}");
+                listingStandard.TextFieldNumeric(ref Settings.powerpoints, ref buffer, 0, Settings.spawnRange.max);
+            }
+
+            listingStandard.CheckboxLabeled(nameof(Settings.overrideReinforcementsCooldown), ref Settings.overrideReinforcementsCooldown, nameof(Settings.overrideReinforcementsCooldown));
+            if(Settings.overrideReinforcementsCooldown)
+            {
+                listingStandard.Label($"Reinforcements cooldown days random range: min {Settings.spawnRange.min} max {Settings.spawnRange.max}");
+                listingStandard.TextFieldNumeric(ref Settings.spawnRange.min, ref buffer, 0, Settings.spawnRange.max);
+                listingStandard.TextFieldNumeric(ref Settings.spawnRange.max, ref buffer, Settings.spawnRange.min, 1000);
+            }
+
+            listingStandard.CheckboxLabeled(nameof(Settings.overrideMaxPawns), ref Settings.overrideMaxPawns, nameof(Settings.overrideMaxPawns));
+            if (Settings.overrideMaxPawns)
+            {
+                listingStandard.Label($"Reinforcements stop when colony pawns count reach: {Settings.maxPawns}");
+                listingStandard.TextFieldNumeric(ref Settings.maxPawns, ref buffer, 0, 1000);
+            }
+
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
@@ -72,7 +92,7 @@ namespace FalloutRedScare
         /// <returns>The (translated) mod name.</returns>
         public override string SettingsCategory()
         {
-            return "RedScare".Translate();
+            return "Red Scare Framework";
         }
     }
 }

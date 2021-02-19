@@ -25,7 +25,7 @@ namespace FalloutRedScare
 		public Map targetMap;
         public int shellsCount;
         public FloatRange bombingRunAroundTargetMeters;
-
+        public Faction faction;
         public override Vector3 DrawPos => SkyfallerDrawPosUtility.DrawPos_ConstantSpeed(this.TrueCenter(), ticksToImpactDraw == -1 ? ticksToImpact : ticksToImpactDraw, reversed ? this.angle + 180 : this.angle, this.def.skyfaller.speed);
         public IntVec3 GetPos()
         {
@@ -84,6 +84,11 @@ namespace FalloutRedScare
 				if (curCell.InBounds(targetMap))
                 {
                     Projectile projectile = (Projectile)GenSpawn.Spawn(shells.RandomElement(), curCell, targetMap, WipeMode.Vanish);
+                    var c = projectile.TryGetComp<CompSpawnerPawnFromDamage>();
+                    if (c != null)
+                    {
+                        c.faction = faction;
+                    }
                     projectile.Launch(null, curCell.ToVector3ShiftedWithAltitude(AltitudeLayer.Projectile), curCell, curCell, ProjectileHitFlags.All, null, null);
                 }
                 
@@ -94,7 +99,8 @@ namespace FalloutRedScare
         {
             base.ExposeData();
             Scribe_Collections.Look(ref shells, "shells", LookMode.Def);
-			Scribe_References.Look(ref targetMap, "targetMap");
+            Scribe_References.Look(ref faction, "faction");
+            Scribe_References.Look(ref targetMap, "targetMap");
         }
     }
 }
