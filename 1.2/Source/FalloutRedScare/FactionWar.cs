@@ -31,7 +31,7 @@ namespace FalloutRedScare
         {
             this.faction = faction;
             this.def = def;
-            this.points = FactionBases.Count() * this.def.powerPointsPerBase;
+            //this.points = FactionBases.Count() * this.def.powerPointsPerBase;
         }
         public void ExposeData()
         {
