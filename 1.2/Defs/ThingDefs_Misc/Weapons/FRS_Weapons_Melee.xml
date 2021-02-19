@@ -2,8 +2,8 @@
 <Defs>
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>FRS_Sword</defName>
-    <label>chinese sword</label>
-    <description>chinese sword</description>
+    <label>NCO sword</label>
+    <description>People's Republic non-commisioned officer sword. A symbol of a rank as well as a capable melee weapon.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponMelee/ChineseSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -60,8 +60,8 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>FRS_EnergySword</defName>
-    <label>chinese sword</label>
-    <description>chinese sword</description>
+    <label>Officer sword</label>
+    <description>People's Republic officer sword. It's energized blade is exceptional against both humans and mechanoids alike. Causes EMP and burns.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponMelee/ChineseEletricSword</texPath>
       <graphicClass>Graphic_Single</graphicClass>

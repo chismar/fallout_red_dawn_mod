@@ -71,19 +71,6 @@
     <caravanTraderKinds>
       <li>FRS_PR_Caravan_TraderGeneral</li>
     </caravanTraderKinds>
-    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
-    <royalTitleInheritanceRelations>
-      <li>Child</li>
-      <li>Grandchild</li>
-      <li>GreatGrandchild</li>
-      <li>NephewOrNiece</li>
-      <li>Spouse</li>
-      <li>Sibling</li>
-      <li>HalfSibling</li>
-      <li>Cousin</li>
-      <li>Parent</li>
-      <li>UncleOrAunt</li>
-    </royalTitleInheritanceRelations>
     <raidCommonalityFromPointsCurve>
       <points>
         <li>(0, 1)</li> <!--Constant 1 at all points levels-->

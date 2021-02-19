@@ -56,7 +56,7 @@ namespace FalloutRedScare
             listingStandard.CheckboxLabeled(nameof(Settings.overridePowerpoints), ref Settings.overridePowerpoints, nameof(Settings.overridePowerpoints));
             listingStandard.Label($"powerpoints {Settings.powerpoints}");
             Settings.powerpoints = (int)listingStandard.Slider(Settings.powerpoints, 0, 10000);
-            listingStandard.CheckboxLabeled(nameof(Settings.overridePowerpoints), ref Settings.overrideSpawnrange, nameof(Settings.overrideSpawnrange));
+            listingStandard.CheckboxLabeled(nameof(Settings.overrideSpawnrange), ref Settings.overrideSpawnrange, nameof(Settings.overrideSpawnrange));
             listingStandard.Label($"max draw {Settings.spawnRangeMax} min {Settings.spawnRange.min} max {Settings.spawnRange.max}");
             Settings.spawnRangeMax = listingStandard.Slider(Settings.spawnRangeMax, 0.1f, 1000f);
             Settings.spawnRange.min = listingStandard.Slider(Settings.spawnRange.min, 0.1f, Settings.spawnRangeMax);

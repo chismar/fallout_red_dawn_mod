@@ -5,8 +5,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyJumpsuit</defName>
-    <label>red army jumpsuit</label>
-    <description>red army jumpsuit</description>
+    <label>PLA jumpsuit</label>
+    <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -61,8 +61,8 @@
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyWinterJumpsuit</defName>
-    <label>red army winter jumpsuit</label>
-    <description>red army winter jumpsuit</description>
+    <label>PLA winter jumpsuit</label>
+    <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make. Warm.</description>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -120,8 +120,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyPowerArmor</defName>
-    <label>red army power armor</label>
-    <description>red army power armor</description>
+    <label>PLA power armor</label>
+    <description>An answer to the power armor of imperialist dogs, this suit turns the soldier into a walking tank, capable of withstanding even a nuclear blast. Warning, prolonged radiation exposure is still deadly!</description>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -178,8 +178,8 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>FRS_Apparel_RedArmyStealthSuit</defName>
-    <label>red army stealth suit</label>
-    <description>red army stealth suit</description>
+    <label>PLA stealth suit</label>
+    <description>A pinnacle of PLA military technology, as stealth suit is designed for sabotage operations against frontline enemy troops, as well as inflitration, assasination and spying. It doesn't protect the soldier much, but try shooting what you can't see!</description>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>

@@ -24,8 +24,8 @@
   <ThingDef ParentName="BaseLaserGun">
     <defName>FRS_Gun_LaserPistol</defName>
     <thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
-    <label>laser pistol</label>
-    <description>An ultratech pistol capable of emitting a concentrated beam of light with enough power to deal considerable damage.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <label>Cosmonaut's laser pistol</label>
+    <description>Cosmonaut's laser pistol is an advanced sidearm developed for the People's Republic space stations crew, praised by it's accuracy, effiency and low weight.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/RussianLaserPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -172,8 +172,8 @@
   <ThingDef ParentName="BaseLaserGun">
     <defName>FRS_Gun_LaserSMG</defName>
     <thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
-    <label>laser SMG</label>
-    <description>An ultratech submachine gun capable of emitting a concentrated beam of light with enough power to deal considerable damage.\n\nBy using advanced battery cells, this weapon is capable of warming up, boosting the firing speed with each consecutive shot when standing still.\n\nThis weapon can overheat when fully warmed up, resulting in a small battery explosion around the user.</description>
+    <label>Cosmonaut's laser SMG</label>
+    <description>Cosmonaut's laser SMG is an advanced standard issue weapon of People's Republic space troops. Capable of outputting high volumes of fire accurately, necessary to handle any threat encountered in deep space.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/RussianLaserRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -252,8 +252,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_AssaultRifle</defName>
-    <label>chinese assault rifle</label>
-    <description>chinese assault rifle</description>
+    <label>PLA assault rifle</label>
+    <description>Standard issue assault rifle of People's Liberation Army. It is sturdy, simple and fire a lot of lead, providing overwhelming firepower to the common soldier.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/Type93AssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -335,8 +335,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_Pistol</defName>
-    <label>chinese pistol</label>
-    <description>chinese pistol</description>
+    <label>PLA pistol</label>
+    <description>Standard issue pistol of the People's Liberation Army. It's cheap, designed for rear troops, NCOs and low ranking officers, police troops and self defence. Simple and cheap, but rather weak compared to other weapons of it's class, it's still capable of protecting the wielder from foreign imperialists. If they are unarmed...</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/ChinesePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -402,8 +402,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_IncendiaryPistol</defName>
-    <label>chinese incendiary pistol</label>
-    <description>chinese incendiary pistol</description>
+    <label>PLA incendiary pistol</label>
+    <description>People's Liberation Army incendiary pistol. A devastating weapon in skilled hands. While it has no armor penetration capabilities, it's pretty much guaranteed to lit the target on fire. Can be seen in hands of both ruthless officers, partisans and shock troos.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/ChineseIncendiaryPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -469,8 +469,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_PrestigeAssaultRifle</defName>
-    <label>chinese prestige assault rifle</label>
-    <description>chinese prestige assault rifle</description>
+    <label>PLA prestige assault rifle</label>
+    <description>A decorated rifle usually awarded to the high ranking members of the party or veteran officers. It's no different to the standard assault rifle in terms of capabilities, but being engraved and decorated it's a symbol of a status.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/PrestigeType93AssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -538,8 +538,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_Carbine</defName>
-    <label>chinese carbine</label>
-    <description>chinese carbine</description>
+    <label>PLA carbine</label>
+    <description>A carbine for PLA soldiers which are not to fight enemy main forces, but still expected to be able to protect themselves if sat in a trench.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/Type93Carabin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -598,8 +598,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_BoltAction</defName>
-    <label>chinese bolt action rifle</label>
-    <description>chinese bolt action rifle</description>
+    <label>Partisan carbine</label>
+    <description>A simple carbine mostly used by partisans and those who lack the ability to get their hands on a better weapon. It's weight coupled with a near-pistol caliber bullet allows to fire accurately in quick succession though.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/ChineseBoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -659,8 +659,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_LMG</defName>
-    <label>chinese LMG</label>
-    <description>chinese LMG</description>
+    <label>PLA LMG</label>
+    <description>A standard issue Light Machine Gun in the People's Republic armed forces. It had greater range and fire capabilites than an assault rifle, but makes the wield clumsy and slower.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/LightMachineGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -728,8 +728,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_SniperRifle</defName>
-    <label>chinese sniper rifle</label>
-    <description>chinese sniper rifle</description>
+    <label>Red Dragoon sniper rifle</label>
+    <description>A rifle that was specifically designed on a request of Red Dragoons stealth company founder, it combines deadly force, accuracy and bold red color, a sign of it's wielder boldness. Or posession of a stealth suit.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/SniperRifleType93</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -809,8 +809,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_SniperRifleLargeCaliber</defName>
-    <label>chinese large caliber sniper rifle</label>
-    <description>chinese large caliber sniper rifle</description>
+    <label>PLA large caliber sniper rifle</label>
+    <description>Standard issue rifle of People's Liberation Army, it provides precise fire support against unarmored and light armored targets.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/SniperRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -877,8 +877,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_GaussRifle</defName>
-    <label>FRS_GaussRifle</label>
-    <description>FRS_GaussRifle</description>
+    <label>PLA Gauss Rifle</label>
+    <description>A rifle, originally designed by People's Republic western allies, it has astonishing armor penetration and power, that proved itself both against old Earth power armored imperialists and mechanoids alike.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/GaussRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
