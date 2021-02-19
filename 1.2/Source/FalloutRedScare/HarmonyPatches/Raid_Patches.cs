@@ -42,26 +42,36 @@ namespace FalloutRedScare
             [HarmonyPrefix]
             public static void Prefix(ref IncidentParms parms)
             {
+                if (Settings.prUsesWealthForRaids)
+                    return;
                 if (parms.faction is null)
                     return;
                 if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                    if (fw.points <= fw.def.powerPointsPerBase)
+                {
+                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
+                    if (points <= fw.def.powerPointsPerBase)
                     {
                         Log.Message($"RaidFriendlyResolveFaction_Patch null");
                         parms.faction = null;
                     }
+                }
                 Log.Message($"RaidFriendlyResolveFaction_Patch Prefix ");
             }
 
             [HarmonyPostfix]
             public static void Postfix(ref IncidentParms parms)
             {
+                if (Settings.prUsesWealthForRaids)
+                    return;
                 if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                    if (fw.points >= fw.def.powerPointsPerBase)
+                {
+                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
+                    if (points >= fw.def.powerPointsPerBase)
                     {
                         Log.Message($"RaidFriendlyResolveFaction_Patch {fw.points}");
-                        parms.points = fw.points;
+                        parms.points = points;
                     }
+                }
                 Log.Message($"RaidFriendlyResolveFaction_Patch Postfix {parms.faction?.Name}");
             }
         }
@@ -71,26 +81,37 @@ namespace FalloutRedScare
             [HarmonyPrefix]
             public static void Prefix(ref IncidentParms parms)
             {
+                if (Settings.prUsesWealthForRaids)
+                    return;
                 if (parms.faction is null)
                     return;
                 if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                    if(fw.points <= fw.def.powerPointsPerBase)
+                {
+                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
+                    if (points == 0)
                     {
                         Log.Message($"RaidEnemyResolveFaction_Patch null");
                         parms.faction = null;
                     }
+
+                }
                 Log.Message($"RaidEnemyResolveFaction_Patch Prefix ");
             }
 
             [HarmonyPostfix]
             public static void Postfix(ref IncidentParms parms)
             {
+                if (Settings.prUsesWealthForRaids)
+                    return;
                 if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                    if (fw.points >= fw.def.powerPointsPerBase)
+                {
+                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
+                    if (points > 0)
                     {
                         Log.Message($"RaidEnemyResolveFaction_Patch {fw.points}");
-                        parms.points = fw.points;
+                        parms.points = points;
                     }
+                }
                 Log.Message($"RaidEnemyResolveFaction_Patch Postfix {parms.faction?.Name}");
             }
         }
@@ -101,6 +122,8 @@ namespace FalloutRedScare
             [HarmonyPostfix]
             public static void Postfix(PawnGroupMaker __instance, PawnGroupMakerParms parms, ref bool __result)
             {
+                if (Settings.prUsesWealthForRaids)
+                    return;
                 Log.Message($"GetRandomPawnGroupMaker_Patch {__instance is PawnGroupMakerPR}");
                 if (__instance is PawnGroupMakerPR pgmm)
                     __result &= pgmm.CanGenerate(parms);

@@ -10,6 +10,7 @@ namespace FalloutRedScare
 {
     public class Settings : ModSettings
     {
+        public static bool prUsesWealthForRaids;
         public static bool overridePowerpoints;
         public static bool overrideSpawnrange;
         public static int powerpoints;
@@ -18,6 +19,7 @@ namespace FalloutRedScare
 
         public override void ExposeData()
         {
+            Scribe_Values.Look(ref prUsesWealthForRaids, nameof(prUsesWealthForRaids));
             Scribe_Values.Look(ref powerpoints, nameof(powerpoints));
             Scribe_Values.Look(ref spawnRange, nameof(spawnRange));
             Scribe_Values.Look(ref overrideSpawnrange, nameof(overrideSpawnrange));
@@ -50,6 +52,7 @@ namespace FalloutRedScare
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
+            listingStandard.CheckboxLabeled(nameof(Settings.prUsesWealthForRaids), ref Settings.prUsesWealthForRaids, nameof(Settings.prUsesWealthForRaids));
             listingStandard.CheckboxLabeled(nameof(Settings.overridePowerpoints), ref Settings.overridePowerpoints, nameof(Settings.overridePowerpoints));
             listingStandard.Label($"powerpoints {Settings.powerpoints}");
             Settings.powerpoints = (int)listingStandard.Slider(Settings.powerpoints, 0, 10000);

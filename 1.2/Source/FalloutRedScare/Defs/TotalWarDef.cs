@@ -9,6 +9,7 @@ namespace FalloutRedScare
 		public FloatRange scapegoatCooldownDays;
 		public QuestScriptDef scapegoatQuestScript;
 		public FloatRange baseIncidentsCooldownDays;
+		public int raidPointsPerBase;
 		public float powerPointsPerBase;
 		public float powerPointsToUpgrade;
 		public FactionDef factionDef;

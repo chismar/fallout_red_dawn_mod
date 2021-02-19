@@ -19,9 +19,10 @@ namespace FalloutRedScare
         public int curScapeGoatCooldownTicks;
         public int curBaseIncidentsCooldown;
         public bool CanSpawnScapeGoatQuest => Find.TickManager.TicksGame >= curScapeGoatCooldownTicks && faction.HostileTo(Faction.OfPlayer);
-        public IEnumerable<Settlement> FactionBases => Find.WorldObjects.SettlementBases.Where(x => x.Faction == faction);
-        public bool CanSpawnBases => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points > (FactionBases.Count() + 1) * this.def.powerPointsPerBase;
-        public bool CanAbandonBase => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points < FactionBases.Count() * this.def.powerPointsPerBase;
+        public List<Settlement> FactionBases = new List<Settlement>();
+        public IEnumerable<Settlement> FactionBasesCollect => Find.WorldObjects.SettlementBases.Where(x => x.Faction == faction);
+        public bool CanSpawnBases => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points > (FactionBases.Count + 1) * this.def.powerPointsPerBase;
+        public bool CanAbandonBase => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points < FactionBases.Count * this.def.powerPointsPerBase;
         public FactionWar()
         {
 
@@ -31,7 +32,7 @@ namespace FalloutRedScare
         {
             this.faction = faction;
             this.def = def;
-            //this.points = FactionBases.Count() * this.def.powerPointsPerBase;
+            this.points = FactionBasesCollect.Count() * this.def.powerPointsPerBase + this.def.powerPointsPerBase * 0.1f;
         }
         public void ExposeData()
         {
@@ -46,38 +47,41 @@ namespace FalloutRedScare
         {
             if (Find.TickManager.TicksGame % 60 == 0)
             {
+                FactionBases.Clear();
+                FactionBases.AddRange(FactionBasesCollect);
                 //Log.Message($"Faction: {faction}, points: {points}, def: {def}, curBaseIncidentsCooldown: {curBaseIncidentsCooldown}, curScapeGoatCooldownTicks: {curScapeGoatCooldownTicks}" +
                 //    $", CanSpawnBases: {CanSpawnBases}, CanAbandonBase: {CanAbandonBase}");
-            }
-            if (CanSpawnScapeGoatQuest)
-            {
-                Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(this.def.scapegoatQuestScript, 0);
-                QuestUtility.SendLetterQuestAvailable(quest);
-                curScapeGoatCooldownTicks = (int)(Find.TickManager.TicksGame + (GenDate.TicksPerDay * this.def.scapegoatCooldownDays.RandomInRange));
-            }
-            if (CanSpawnBases)
-            {
-                var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
-                parms.faction = this.faction;
-                var randomSpawnIncident = this.def.factionBaseSpawnIncidents.RandomElement();
-                if (randomSpawnIncident.Worker.CanFireNow(parms, true) && randomSpawnIncident.Worker.TryExecute(parms))
+                if (CanSpawnScapeGoatQuest)
                 {
-                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
+                    Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(this.def.scapegoatQuestScript, 0);
+                    QuestUtility.SendLetterQuestAvailable(quest);
+                    curScapeGoatCooldownTicks = (int)(Find.TickManager.TicksGame + (GenDate.TicksPerDay * this.def.scapegoatCooldownDays.RandomInRange));
                 }
-            }
-            else if (CanAbandonBase)
-            {
-                var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
-                parms.faction = this.faction;
-                var abandonBaseIncident = this.def.factionBaseAbandonIncident;
-                if (abandonBaseIncident.Worker.CanFireNow(parms, true) && abandonBaseIncident.Worker.TryExecute(parms))
+                if (CanSpawnBases)
                 {
-                    curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
+                    var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
+                    parms.faction = this.faction;
+                    var randomSpawnIncident = this.def.factionBaseSpawnIncidents.RandomElement();
+                    if (randomSpawnIncident.Worker.CanFireNow(parms, true) && randomSpawnIncident.Worker.TryExecute(parms))
+                    {
+                        curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
+                    }
                 }
+                else if (CanAbandonBase)
+                {
+                    var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
+                    parms.faction = this.faction;
+                    var abandonBaseIncident = this.def.factionBaseAbandonIncident;
+                    if (abandonBaseIncident.Worker.CanFireNow(parms, true) && abandonBaseIncident.Worker.TryExecute(parms))
+                    {
+                        curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
+                    }
+                }
+                FactionBases.Clear();
+                FactionBases.AddRange(FactionBasesCollect);
             }
-
             this.points += this.def.powerPointPassiveGainPerDay / GenDate.TicksPerDay;
-            
+
         }
     }
 }

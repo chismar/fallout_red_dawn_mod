@@ -18,7 +18,8 @@ namespace FalloutRedScare
             var wctw = Find.World.GetComponent<WorldComponent_TotalWar>();
             if (!wctw.factions.TryGetValue(parms.faction, out var fw))
                 return true;
-            return fw.points >= minimumPower && fw.points < maximumPower;
+            var points = (int)(fw.FactionBases.Count * fw.def.raidPointsPerBase);
+            return points >= minimumPower && points < maximumPower;
         }
     }
 }
