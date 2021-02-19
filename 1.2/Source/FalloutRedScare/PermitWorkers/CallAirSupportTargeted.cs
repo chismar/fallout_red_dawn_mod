@@ -10,20 +10,12 @@ using Verse.AI.Group;
 
 namespace FalloutRedScare
 {
-	public class AirSupportSettingsTargeted
+	public class AirSupportSettingsTargeted : AirSupportSettings
 	{
-		public ThingDef shuttleDef;
-		public ThingDef shuttleSkyfallerIncoming;
-		public List<PawnGroupMaker> pawnGroupMakers;
-		public IntRange points;
 		public float radius;
 	}
 	public class CallAirSupportTargeted : FRS_ScriptedTitlePermitWorker<AirSupportSettingsTargeted>
 	{
-        private Faction calledFaction;
-        private bool free;
-        private Pawn caller;
-        private Map map;
 
         public static AcceptanceReport ShuttleCanLandHere(LocalTargetInfo target, Map map)
 		{
@@ -85,13 +77,13 @@ namespace FalloutRedScare
 		private static List<IntVec3> tempSourceList = new List<IntVec3>();
 		public bool CanHitTarget(LocalTargetInfo target)
 		{
-			if (!GenSight.LineOfSight(this.caller.Position, target.Cell, this.map, true, null, 0, 0))
+			if (!GenSight.LineOfSight(this.settings.caller.Position, target.Cell, this.settings.map, true, null, 0, 0))
 			{
 				bool flag = false;
-				ShootLeanUtility.LeanShootingSourcesFromTo(this.caller.Position, target.Cell, this.map, tempSourceList);
+				ShootLeanUtility.LeanShootingSourcesFromTo(this.settings.caller.Position, target.Cell, this.settings.map, tempSourceList);
 				for (int i = 0; i < tempSourceList.Count; i++)
 				{
-					if (GenSight.LineOfSight(tempSourceList[i], target.Cell, this.map, true, null, 0, 0))
+					if (GenSight.LineOfSight(tempSourceList[i], target.Cell, this.settings.map, true, null, 0, 0))
 					{
 						flag = true;
 						break;
@@ -114,19 +106,19 @@ namespace FalloutRedScare
 				}
 				return false;
 			}
-			AcceptanceReport acceptanceReport = ShuttleCanLandHere(target, this.map);
+			AcceptanceReport acceptanceReport = ShuttleCanLandHere(target, this.settings.map);
 			if (!acceptanceReport.Accepted)
 			{
-				Messages.Message(acceptanceReport.Reason, new LookTargets(target.Cell, this.map), MessageTypeDefOf.RejectInput, false);
+				Messages.Message(acceptanceReport.Reason, new LookTargets(target.Cell, this.settings.map), MessageTypeDefOf.RejectInput, false);
 			}
 			return acceptanceReport.Accepted;
 		}
 		private void BeginCallShuttle(Pawn caller, Map map, Faction faction, bool free)
 		{
-			this.caller = caller;
-			this.map = map;
-			this.calledFaction = faction;
-			this.free = free; 
+			this.settings.caller = caller;
+			this.settings.map = map;
+			this.settings.calledFaction = faction;
+			this.settings.free = free; 
 		}
 
 	
@@ -134,10 +126,10 @@ namespace FalloutRedScare
 
         public void DrawHighlight(LocalTargetInfo target)
 		{
-			if (caller == null)
+			if (settings.caller == null)
 				return;
-			GenDraw.DrawRadiusRing(this.caller.Position, workerSettings.radius, Color.white, null);
-			DrawShuttleGhost(target, this.map); 
+			GenDraw.DrawRadiusRing(this.settings.caller.Position, workerSettings.radius, Color.white, null);
+			DrawShuttleGhost(target, this.settings.map); 
 		}
 		public void DrawShuttleGhost(LocalTargetInfo target, Map map)
 		{
@@ -163,38 +155,45 @@ namespace FalloutRedScare
 					BeginCallShuttle(pawn, map, faction, free);
 					Find.Targeter.BeginTargeting(ForLoc(pawn, workerSettings.radius), delegate (LocalTargetInfo x)
 					{
-						CallShuttle(x.Cell);
+						CallShuttle(this.workerSettings, this.settings, x.Cell);
 					}, DrawHighlight, ValidateTarget, pawn);
 				};
 				
 			}
 			yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
 		}
-		private void CallShuttle(IntVec3 landingCell)
+		private AirSupportShuttleSettings settings = new AirSupportShuttleSettings();
+		public class AirSupportShuttleSettings
         {
-
-			if (this.workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
+			public Faction calledFaction;
+			public bool free;
+			public Pawn caller;
+			public Map map;
+		}
+		public static void CallShuttle(AirSupportSettings workerSettings, AirSupportShuttleSettings settings, IntVec3 landingCell)
+        {
+			if (workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
 			{
 				PawnGroupMakerParms parms = new PawnGroupMakerParms();
 				parms.groupKind = PawnGroupKindDefOf.Combat;
-				parms.tile = map.Tile;
-				parms.points = this.workerSettings.points.RandomInRange;
-				parms.faction = calledFaction;
+				parms.tile = settings.map.Tile;
+				parms.points = workerSettings.points.RandomInRange;
+				parms.faction = settings.calledFaction;
 				parms.generateFightersOnly = true;
-				CallShuttle(pawnGroupMaker, parms, caller, map, calledFaction, landingCell);
+				CallShuttle(pawnGroupMaker, parms, settings.map, settings.calledFaction, landingCell, workerSettings);
 			}
 		}
 
 
-        private void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Pawn pawn, Map map, Faction faction, IntVec3 landingCell)
+        private static void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Map map, Faction faction, IntVec3 landingCell, AirSupportSettings workerSettings)
 		{
 			if (!faction.HostileTo(Faction.OfPlayer))
 			{
 				var pawns = pawnGroupMaker.GeneratePawns(parms).ToList();
-				Arrive(pawns, faction, map, this.workerSettings.shuttleDef, this.workerSettings.shuttleSkyfallerIncoming, landingCell);
+				Arrive(pawns, faction, map, workerSettings.shuttleDef, workerSettings.shuttleSkyfallerIncoming, landingCell);
 			}
 		}
-		protected LordJob MakeLordJob(IntVec3 dropCenter, Faction faction, Map map)
+		protected static LordJob MakeLordJob(IntVec3 dropCenter, Faction faction, Map map)
 		{
 			if (faction.HostileTo(Faction.OfPlayer))
 			{
@@ -203,10 +202,11 @@ namespace FalloutRedScare
 			RCellFinder.TryFindRandomSpotJustOutsideColony(dropCenter, map, out IntVec3 result);
 			return new LordJob_AssistColony(faction, result);
 		}
-		public void Arrive(List<Pawn> pawns, Faction faction, Map map, ThingDef shuttleDef, ThingDef shuttleIncomingDef, IntVec3 landingCell)
+		public static void Arrive(List<Pawn> pawns, Faction faction, Map map, ThingDef shuttleDef, ThingDef shuttleIncomingDef, IntVec3 landingCell)
 		{
 			IntVec3 dropCenter = landingCell;
-			LordMaker.MakeNewLord(faction, MakeLordJob(dropCenter, faction, map), map, pawns);
+			if(Faction.OfPlayer != faction)
+				LordMaker.MakeNewLord(faction, MakeLordJob(dropCenter, faction, map), map, pawns);
 			var shuttle = ThingMaker.MakeThing(shuttleDef, null);
 			var comp = shuttle.TryGetComp<CompShuttle>();
 			var compTransporter = ThingCompUtility.TryGetComp<CompTransporter>(shuttle);

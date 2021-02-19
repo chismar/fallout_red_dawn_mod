@@ -35,10 +35,11 @@ namespace FalloutRedScare
         }
         public void ExposeData()
         {
-            Scribe_Defs.Look(ref def, "def");
-            Scribe_Values.Look(ref points, "points");
-            Scribe_Values.Look(ref curScapeGoatCooldownTicks, "curScapeGoatCooldownTicks");
-            Scribe_References.Look(ref faction, "faction");
+            Scribe_Defs.Look(ref def, nameof(def));
+            Scribe_Values.Look(ref points, nameof(points));
+            Scribe_Values.Look(ref curScapeGoatCooldownTicks, nameof(curScapeGoatCooldownTicks));
+            Scribe_Values.Look(ref curBaseIncidentsCooldown, nameof(curBaseIncidentsCooldown));
+            Scribe_References.Look(ref faction, nameof(faction));
         }
 
         public void Tick()
@@ -59,7 +60,7 @@ namespace FalloutRedScare
                 var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
                 parms.faction = this.faction;
                 var randomSpawnIncident = this.def.factionBaseSpawnIncidents.RandomElement();
-                if (randomSpawnIncident.Worker.CanFireNow(parms) && randomSpawnIncident.Worker.TryExecute(parms))
+                if (randomSpawnIncident.Worker.CanFireNow(parms, true) && randomSpawnIncident.Worker.TryExecute(parms))
                 {
                     curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
                 }
@@ -69,7 +70,7 @@ namespace FalloutRedScare
                 var parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
                 parms.faction = this.faction;
                 var abandonBaseIncident = this.def.factionBaseAbandonIncident;
-                if (abandonBaseIncident.Worker.CanFireNow(parms) && abandonBaseIncident.Worker.TryExecute(parms))
+                if (abandonBaseIncident.Worker.CanFireNow(parms, true) && abandonBaseIncident.Worker.TryExecute(parms))
                 {
                     curBaseIncidentsCooldown = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.baseIncidentsCooldownDays.RandomInRange);
                 }

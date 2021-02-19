@@ -16,7 +16,6 @@ namespace FalloutRedScare
     {
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            Log.Message($"MACHINE IS COLONIST {((Pawn)parent).IsColonist}");
             var myPawn = this.parent as Pawn;
             if (myPawn.TryGetComp<StandaloneMachine>() != null)
                 return;

@@ -39,17 +39,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="VFECore, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VFECore.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="VFEM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VFEM.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApparelComp_RestrictBodyType.cs" />
@@ -57,13 +46,17 @@
     <Compile Include="Comps\CompSpawnerPawnFromDamage.cs" />
     <Compile Include="Comps\ShuttleBomber.cs" />
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
+    <Compile Include="Defs\ReinforcementsIncidentDef.cs" />
+    <Compile Include="Defs\ReinforcementsDef.cs" />
+    <Compile Include="HarmonyPatches\Reinforcements_Patches.cs" />
+    <Compile Include="Incidents\IncidentWorker_Reinforcements.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Reinforcements.cs" />
     <Compile Include="HarmonyPatches\Apparel_Patches.cs" />
     <Compile Include="HarmonyPatches\CallShuttleFix.cs" />
     <Compile Include="HarmonyPatches\CompShuttleFixFrs.cs" />
-    <Compile Include="HarmonyPatches\Drones_Patches.cs" />
     <Compile Include="HarmonyPatches\GeneratePawn_Patches.cs" />
     <Compile Include="HarmonyPatches\Raid_Patches.cs" />
-    <Compile Include="HarmonyPatches\MachinesCanJoinCaravans.cs" />
     <Compile Include="PawnGroupMakerPR.cs" />
     <Compile Include="PermitWorkers\AirBombing.cs" />
     <Compile Include="PermitWorkers\CallSpecifiedShuttle.cs" />
@@ -75,7 +68,6 @@
     <Compile Include="QuestNodes\QuestNode_FactionPointsChange.cs" />
     <Compile Include="QuestParts\QuestPart_FactionPointsChange.cs" />
     <Compile Include="RestrictedBodyPawnKindDef.cs" />
-    <Compile Include="StandaloneMachine.cs" />
     <Compile Include="TotalWarUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="Incidents\IncidentWorker_BaseAbandoned.cs" />
@@ -89,6 +81,7 @@
     <Compile Include="QuestNodes\QuestNode_GetFactionFromDef.cs" />
     <Compile Include="QuestParts\QuestPart_SelectScapegoat.cs" />
     <Compile Include="FactionWar.cs" />
+    <Compile Include="WorldComponent_Reinforcements.cs" />
     <Compile Include="WorldComponent_TotalWar.cs" />
   </ItemGroup>
   <ItemGroup>
