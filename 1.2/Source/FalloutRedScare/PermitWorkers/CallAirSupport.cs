@@ -31,14 +31,14 @@ namespace FalloutRedScare
 			{
 				action = delegate
                 {
-                    CallShuttleWithParams(map, pawn, faction, free);
+                    CallShuttleWithParams(map, pawn, faction);
                 };
 				
 			}
 			yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
 		}
 
-        private void CallShuttleWithParams(Map map, Pawn pawn, Faction faction, bool free)
+        private void CallShuttleWithParams(Map map, Pawn pawn, Faction faction)
         {
             if (this.workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
             {
@@ -48,11 +48,11 @@ namespace FalloutRedScare
                 parms.points = this.workerSettings.points.RandomInRange;
                 parms.faction = faction;
                 parms.generateFightersOnly = true;
-                CallShuttle(pawnGroupMaker, parms, pawn, map, faction, free);
+                CallShuttle(pawnGroupMaker, parms, pawn, map, faction);
             }
         }
 
-        private void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Pawn pawn, Map map, Faction faction, bool free)
+        private void CallShuttle(PawnGroupMaker pawnGroupMaker, PawnGroupMakerParms parms, Pawn pawn, Map map, Faction faction)
 		{
 			if (!faction.HostileTo(Faction.OfPlayer))
 			{
@@ -93,5 +93,22 @@ namespace FalloutRedScare
 				comp.hideControls = true;
 			}
 		}
-	}
+
+        public override float CombatScore(Pawn caster, Map map, FactionPermit permit, out List<LocalTargetInfo> targets)
+        {
+			targets = null;
+			var hostiles = caster.Map.attackTargetsCache.GetPotentialTargetsFor(caster).Select(x => x.Thing);
+			if (hostiles.Any())
+            {
+				return 1f;
+            }
+			return 0f;
+		}
+
+        public override void DoPermitCast(Pawn caster, Map map, List<LocalTargetInfo> targets)
+        {
+            base.DoPermitCast(caster, map, targets);
+			CallShuttleWithParams(map, caster, caster.Faction);
+		}
+    }
 }
