@@ -63,6 +63,7 @@ namespace FalloutRedScare
 			dir.x = -dir.x;
 			var angle = Vector3.SignedAngle(dir, Vector3.back, Vector3.up);
 			GenPlace.TryPlaceThing(sk, x.Cell, map, ThingPlaceMode.Near, null, null, default);
+			Find.LetterStack.ReceiveLetter("Bombing", "Bombing", LetterDefOf.NegativeEvent, new TargetInfo(x.Cell, map));
 			var compBomber = sk as ShuttleBomber;
 			compBomber.shells = workerSettings.shells;
 			compBomber.shellsCount = workerSettings.shellsCount;

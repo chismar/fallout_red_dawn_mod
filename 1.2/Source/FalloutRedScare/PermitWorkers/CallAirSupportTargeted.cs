@@ -212,6 +212,7 @@ namespace FalloutRedScare
 				compTransporter.innerContainer.TryAdd(pawn, 1);
 			}
 			GenPlace.TryPlaceThing(SkyfallerMaker.MakeSkyfaller(shuttleIncomingDef, shuttle), dropCenter, map, ThingPlaceMode.Near, null, null, default(Rot4));
+			Find.LetterStack.ReceiveLetter("ShuttleArrival", "ShuttleArrival", LetterDefOf.NegativeEvent, new TargetInfo(dropCenter, map));
 			comp.requiredColonistCount = 0;
 			comp.missionShuttleTarget = map.Parent;
 			comp.missionShuttleHome = null;

@@ -49,6 +49,8 @@ namespace FalloutRedScare
 				var weaponDef = workerSettings.weaponsToGivePrisoners.RandomElement();
 				var weapon = ThingMaker.MakeThing(weaponDef);
 				prisoner.equipment.AddEquipment(weapon as ThingWithComps);
+				Log.Message(caster + " - DoRebellion: changing faction of " + prisoner + " to " + caster.Faction);
+
             }
 			LordMaker.MakeNewLord(caster.Faction, MakeLordJob(prisoners.RandomElement().Position, caster.Faction, caster.Map), caster.Map, prisoners);
 		}

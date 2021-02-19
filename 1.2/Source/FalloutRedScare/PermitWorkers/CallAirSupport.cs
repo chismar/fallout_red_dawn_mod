@@ -77,6 +77,7 @@ namespace FalloutRedScare
 				pawns = pawns.Skip(group.Count()).ToList();
 				IntVec3 dropCenter = DropCellFinder.RandomDropSpot(map);
 				LordMaker.MakeNewLord(faction, MakeLordJob(dropCenter, faction, map), map, group);
+				Find.LetterStack.ReceiveLetter("ShuttleArrival", "ShuttleArrival", LetterDefOf.NegativeEvent, new TargetInfo(dropCenter, map));
 				var shuttle = ThingMaker.MakeThing(shuttleDef, null);
 				var comp = shuttle.TryGetComp<CompShuttle>();
 				var compTransporter = ThingCompUtility.TryGetComp<CompTransporter>(shuttle);
