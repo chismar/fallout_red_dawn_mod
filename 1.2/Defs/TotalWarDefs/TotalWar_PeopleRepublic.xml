@@ -15,7 +15,7 @@
 		</factionBaseSpawnIncidents>
 		<factionBaseAbandonIncident>FRS_PR_BaseAbandoned</factionBaseAbandonIncident>
 		<powerPointsLossPerPawnCombatPowerRatio>100</powerPointsLossPerPawnCombatPowerRatio>
-		<powerPointPassiveGainPerDay>1000000</powerPointPassiveGainPerDay>
+		<powerPointPassiveGainPerDay>100</powerPointPassiveGainPerDay>
 	</FalloutRedScare.TotalWarDef>
 
 
