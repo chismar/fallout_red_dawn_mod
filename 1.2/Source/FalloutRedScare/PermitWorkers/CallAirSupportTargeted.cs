@@ -129,9 +129,6 @@ namespace FalloutRedScare
 			this.free = free; 
 		}
 
-	
-
-
         public void DrawHighlight(LocalTargetInfo target)
 		{
 			if (caller == null)
@@ -172,7 +169,6 @@ namespace FalloutRedScare
 		}
 		private void CallShuttle(IntVec3 landingCell)
         {
-
 			if (this.workerSettings.pawnGroupMakers.TryRandomElementByWeight(x => x.commonality, out PawnGroupMaker pawnGroupMaker))
 			{
 				PawnGroupMakerParms parms = new PawnGroupMakerParms();
@@ -221,7 +217,24 @@ namespace FalloutRedScare
 			comp.dropEverythingOnArrival = true;
 			comp.requiredPawns = pawns;
 			comp.hideControls = true;
-			
 		}
-	}
+
+		public override float CombatScore(Pawn caster, Map map, FactionPermit permit, out List<LocalTargetInfo> targets)
+		{
+			targets = null;
+			var hostiles = caster.Map.attackTargetsCache.GetPotentialTargetsFor(caster).Select(x => x.Thing);
+			if (hostiles.Any())
+			{
+				return 1f;
+			}
+			return 0f;
+		}
+
+        public override void DoPermitCast(Pawn caster, Map map, List<LocalTargetInfo> targets)
+        {
+            base.DoPermitCast(caster, map, targets);
+			BeginCallShuttle(caster, map, caster.Faction, free);
+			CallShuttle(CellFinder.RandomClosewalkCellNear(caster.Position, map, 10));
+		}
+    }
 }

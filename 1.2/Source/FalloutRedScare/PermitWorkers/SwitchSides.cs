@@ -17,7 +17,35 @@ namespace FalloutRedScare
 	}
 	public class SwitchSides : FRS_ScriptedTitlePermitWorker<SwitchSidesSettings>
 	{
-		public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction)
+        public override float CombatScore(Pawn caster, Map map, FactionPermit permit, out List<LocalTargetInfo> targets)
+        {
+			targets = null;
+			var candidates = caster.Map.mapPawns.AllPawns.Where(x => x.RaceProps.Humanlike && x.Faction != caster.Faction).OrderBy(x => x.Position.DistanceTo(caster.Position)).ToList();
+			if (candidates.Any())
+            {
+				var firstPawn = candidates.First();
+				candidates.Remove(firstPawn);
+				candidates = candidates.Where(x => x.Position.DistanceTo(firstPawn.Position) <= workerSettings.radiusToSwitch).ToList();
+				var cells = GenRadial.RadialCellsAround(firstPawn.Position, workerSettings.radiusToSwitch, true);
+
+				Predicate<IntVec3> validator = delegate (IntVec3 c)
+				{
+					foreach (var pawn in candidates)
+                    {
+						if (c.DistanceTo(pawn.Position) > workerSettings.radiusToSwitch)
+                        {
+							return false;
+                        }
+                    }
+					return true;
+				};
+				targets = new List<LocalTargetInfo> { cells.First(x => validator(x))};
+				return 1f;
+			}
+			return 0f;
+		}
+
+        public override IEnumerable<FloatMenuOption> GetRoyalAidOptions(Map map, Pawn pawn, Faction faction)
 		{
 			if (AidDisabled(map, pawn, faction, out string reason))
 			{
@@ -60,6 +88,12 @@ namespace FalloutRedScare
 					lord.AddPawn(pawn);
                 }
             }
+		}
+
+		public override void DoPermitCast(Pawn caster, Map map, List<LocalTargetInfo> targets)
+		{
+			base.DoPermitCast(caster, map, targets);
+			DoSwitchSides(caster, targets.First().Cell);
 		}
 	}
 }

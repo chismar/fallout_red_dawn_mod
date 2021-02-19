@@ -36,14 +36,13 @@ namespace FalloutRedScare
 			{
 				action = delegate
 				{
-					DoRebellion(pawn);
+					DoRebellion(pawn, pawn.Map.mapPawns.AllPawns.Where(x => x.IsPrisoner && x.guest.HostFaction != pawn.Faction).ToList());
 				};
 			}
 			yield return new FloatMenuOption(description, action, faction.def.FactionIcon, faction.Color);
 		}
-		private void DoRebellion(Pawn caster)
+		private void DoRebellion(Pawn caster, List<Pawn> prisoners)
 		{
-			var prisoners = caster.Map.mapPawns.AllPawns.Where(x => x.IsPrisoner);
 			foreach (var prisoner in prisoners)
             {
 				prisoner.SetFaction(caster.Faction);
@@ -62,5 +61,22 @@ namespace FalloutRedScare
 			}
 			return new LordJob_AssistColony(faction, cell);
 		}
-	}
+
+		public override float CombatScore(Pawn caster, Map map, FactionPermit permit, out List<LocalTargetInfo> targets)
+		{
+			targets = null;
+			var prisoners = map.mapPawns.AllPawns.Where(x => x.IsPrisoner && x.guest?.HostFaction != caster.Faction);
+			if (prisoners.Any())
+			{
+				return 1f;
+			}
+			return 0f;
+		}
+
+        public override void DoPermitCast(Pawn caster, Map map, List<LocalTargetInfo> targets)
+        {
+            base.DoPermitCast(caster, map, targets);
+			DoRebellion(caster, targets.Select(x => x.Thing).Cast<Pawn>().ToList());
+		}
+    }
 }

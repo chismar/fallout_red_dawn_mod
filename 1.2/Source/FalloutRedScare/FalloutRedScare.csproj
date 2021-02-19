@@ -68,6 +68,7 @@
     <Compile Include="PermitWorkers\AirBombing.cs" />
     <Compile Include="PermitWorkers\CallSpecifiedShuttle.cs" />
     <Compile Include="PermitWorkers\CallAirSupportTargeted.cs" />
+    <Compile Include="PermitWorkers\JobGiver_AIPermit.cs" />
     <Compile Include="PermitWorkers\SwitchSides.cs" />
     <Compile Include="PermitWorkers\StartRebellion.cs" />
     <Compile Include="PermitWorkers\CallAirSupport.cs" />

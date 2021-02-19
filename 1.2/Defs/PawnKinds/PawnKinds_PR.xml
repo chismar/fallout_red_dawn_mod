@@ -234,6 +234,7 @@
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
+    <titleRequired>FRS_CentralCommitte</titleRequired>
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_RedArmySoldier">
