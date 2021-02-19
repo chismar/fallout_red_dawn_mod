@@ -42,37 +42,13 @@ namespace FalloutRedScare
             [HarmonyPrefix]
             public static void Prefix(ref IncidentParms parms)
             {
-                if (Settings.prUsesWealthForRaids)
-                    return;
-                if (parms.faction is null)
-                    return;
-                if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                {
-                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
-                    if (points <= fw.def.powerPointsPerBase)
-                    {
-                        Log.Message($"RaidFriendlyResolveFaction_Patch null");
-                        parms.faction = null;
-                    }
-                }
-                Log.Message($"RaidFriendlyResolveFaction_Patch Prefix ");
+                RaidEnemyResolveFaction_Patch.Prefix(ref parms);
             }
 
             [HarmonyPostfix]
             public static void Postfix(ref IncidentParms parms)
-            {
-                if (Settings.prUsesWealthForRaids)
-                    return;
-                if (parms.faction != null && Find.World.GetComponent<WorldComponent_TotalWar>().factions.TryGetValue(parms.faction, out var fw))
-                {
-                    var points = fw.FactionBases.Count * fw.def.raidPointsPerBase;
-                    if (points >= fw.def.powerPointsPerBase)
-                    {
-                        Log.Message($"RaidFriendlyResolveFaction_Patch {fw.points}");
-                        parms.points = points;
-                    }
-                }
-                Log.Message($"RaidFriendlyResolveFaction_Patch Postfix {parms.faction?.Name}");
+            { 
+                RaidEnemyResolveFaction_Patch.Postfix(ref parms);
             }
         }
         [HarmonyPatch(typeof(IncidentWorker_RaidEnemy), "TryResolveRaidFaction")]
