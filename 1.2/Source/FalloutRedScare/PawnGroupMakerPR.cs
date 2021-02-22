@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     public class PawnGroupMakerPR : PawnGroupMaker
     {

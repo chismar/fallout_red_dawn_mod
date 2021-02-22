@@ -6,7 +6,13 @@
 	<modDependencies>
 	    <li>
 	      <packageId>VanillaExpanded.VWEL</packageId>
-	    </li>
+		</li>
+		<li>
+			<packageId>VanillaExpanded.VFEM</packageId>
+		</li>
+		<li>
+			<packageId>RedScareFramework.RedScareFramework</packageId>
+		</li>
 	</modDependencies>
 	<packageId>FalloutRedScare.FalloutRedScare</packageId>
 	<description>

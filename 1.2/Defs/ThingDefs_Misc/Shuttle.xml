@@ -48,7 +48,7 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="FalloutRedScare.CompProperties_FRS_Shuttle" >
+      <li Class="RedScare.CompProperties_FRS_Shuttle" >
         <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
       </li>
       <li Class="CompProperties_Launchable">

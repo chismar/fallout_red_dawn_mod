@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     public class Reinforcements : IExposable
     {
@@ -35,7 +35,7 @@ namespace FalloutRedScare
         {
             if (disable)
                 return;
-            if(!(def.reinforceOnlyIfPlayerIsOfFaction?.Any(x=>x == Faction.OfPlayer.def) ?? false))
+            if(def.reinforceOnlyIfPlayerIsOfFaction == null || def.reinforceOnlyIfPlayerIsOfFaction != null && !def.reinforceOnlyIfPlayerIsOfFaction.Any(x=>x == Faction.OfPlayer.def))
             {
                 disable = true;
                 return;

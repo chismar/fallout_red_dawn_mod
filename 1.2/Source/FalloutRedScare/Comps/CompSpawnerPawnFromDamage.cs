@@ -12,7 +12,7 @@ using Verse.AI;
 using Verse.AI.Group;
 using Verse.Sound;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 	public class CompProperties_SpawnerPawnFromDamage : CompProperties_SpawnerPawn
     {

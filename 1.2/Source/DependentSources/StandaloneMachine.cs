@@ -10,7 +10,7 @@ using VFE.Mechanoids;
 using VFE.Mechanoids.Needs;
 using VFEMech;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     public class CaravaneerMachine : ThingComp
     {

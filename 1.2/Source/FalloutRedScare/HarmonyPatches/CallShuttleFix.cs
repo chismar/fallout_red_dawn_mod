@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 
 
-namespace FalloutRedScare
+namespace RedScare
 {
 
     internal static partial class Apparel_Patches

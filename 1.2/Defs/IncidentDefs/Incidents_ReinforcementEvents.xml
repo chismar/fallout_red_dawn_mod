@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <FalloutRedScare.ReinforcementsIncidentDef>
+  <RedScare.ReinforcementsIncidentDef>
     <defName>FRS_PR_ReinforcementsArrived</defName>
     <label>reinforcements have arrived</label>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>FalloutRedScare.IncidentWorker_Reinforcements</workerClass>
+    <workerClass>RedScare.IncidentWorker_Reinforcements</workerClass>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>ThreatSmall</letterDef>
@@ -35,6 +35,6 @@
 			</pawnGroupMakers>
 			<points>500</points>
     </airSupportSettings>
-  </FalloutRedScare.ReinforcementsIncidentDef>
+  </RedScare.ReinforcementsIncidentDef>
   
 </Defs>

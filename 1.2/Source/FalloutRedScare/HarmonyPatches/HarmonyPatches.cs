@@ -6,14 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     [StaticConstructorOnStartup]
     internal static class HarmonyInit
     {
         static HarmonyInit()
         {
-            new Harmony("Chismar.FalloutRedScare").PatchAll();
+            new Harmony("Chismar.RedScare").PatchAll();
             
         }
     }

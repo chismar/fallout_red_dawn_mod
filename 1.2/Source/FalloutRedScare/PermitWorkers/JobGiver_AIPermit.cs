@@ -8,7 +8,7 @@ using Verse;
 using Verse.AI;
 using Verse.AI.Group;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 	internal class JobGiver_AIPermit : ThinkNode_JobGiver
 	{

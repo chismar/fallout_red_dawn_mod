@@ -21,7 +21,7 @@
 		</questDescriptionRules>
 		<root Class="QuestNode_Sequence">
 			<nodes>
-				<li Class="FalloutRedScare.QuestNode_GetFactionFromDef">
+				<li Class="RedScare.QuestNode_GetFactionFromDef">
 					<factionDef>FRS_PR</factionDef>
 					<storeAs>askerFaction</storeAs>
 					<minimumGoodwillWithPlayer>10</minimumGoodwillWithPlayer>
@@ -29,7 +29,7 @@
 
 				<li Class="QuestNode_GetMap" />
 
-				<li Class="FalloutRedScare.QuestNode_GetThingPlayerCanProduce">
+				<li Class="RedScare.QuestNode_GetThingPlayerCanProduce">
 					<storeProductionItemDefAs>defToProduce</storeProductionItemDefAs>
 					<storeProductionItemStuffAs>stuffToProduce</storeProductionItemStuffAs>
 					<storeProductionItemCountAs>countToProduce</storeProductionItemCountAs>
@@ -54,7 +54,7 @@
 					<outSignalComplete>AllProduced</outSignalComplete>
 				</li>
 
-				<li Class="FalloutRedScare.QuestNode_SetRewards">
+				<li Class="RedScare.QuestNode_SetRewards">
 					<inSignal>AllProduced</inSignal>
 					<goodwillRange>10~20</goodwillRange>
 					<favorRange>10~20</favorRange>
@@ -64,7 +64,7 @@
 					<inSignal>AllProduced</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
-							<li Class="FalloutRedScare.QuestNode_FactionPointsChange">
+							<li Class="RedScare.QuestNode_FactionPointsChange">
 								<faction>$askerFaction</faction>
 								<points>5000</points>
 							</li>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.AI.Group;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 	public class AirSupportSettings
 	{

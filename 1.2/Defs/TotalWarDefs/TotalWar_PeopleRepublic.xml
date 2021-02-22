@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FalloutRedScare.TotalWarDef>
+	<RedScare.TotalWarDef>
 		<defName>FRS_PR_TotalWar</defName>
 		<factionDef>FRS_PR</factionDef>
 		<scapegoatCooldownDays>6~12</scapegoatCooldownDays>
@@ -17,7 +17,7 @@
 		<powerPointsLossPerPawnCombatPowerRatio>100</powerPointsLossPerPawnCombatPowerRatio>
 		<powerPointPassiveGainPerDay>100</powerPointPassiveGainPerDay>
 		<raidPointsPerBase>300</raidPointsPerBase>
-	</FalloutRedScare.TotalWarDef>
+	</RedScare.TotalWarDef>
 
 
 </Defs>

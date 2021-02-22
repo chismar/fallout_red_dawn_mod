@@ -18,12 +18,12 @@
 		</questDescriptionRules>
 		<root Class="QuestNode_Sequence">
 			<nodes>
-				<li Class="FalloutRedScare.QuestNode_GetFactionFromDef">
+				<li Class="RedScare.QuestNode_GetFactionFromDef">
 					<factionDef>FRS_PR</factionDef>
 					<storeAs>askerFaction</storeAs>
 				</li>
 
-				<li Class="FalloutRedScare.QuestNode_SetScapegoat">
+				<li Class="RedScare.QuestNode_SetScapegoat">
 					<setGoodwill>80</setGoodwill>
 					<factionRelation>Ally</factionRelation>
 					<faction>$askerFaction</faction>

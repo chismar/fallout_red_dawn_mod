@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     public class Settings : ModSettings
     {

@@ -10,7 +10,7 @@ using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 	/*public class CompProperties_ShuttleBomber : CompProperties
     {

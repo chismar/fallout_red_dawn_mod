@@ -232,7 +232,7 @@
       </defaultOutfitTags>
     </apparel>
     <comps>
-      <li Class="FalloutRedScare.CompProperties_ApparelComp_RestrictBodyType">
+      <li Class="RedScare.CompProperties_ApparelComp_RestrictBodyType">
         <restrictBodyTypes>
           <li>Hulk</li>
           <li>Fat</li>

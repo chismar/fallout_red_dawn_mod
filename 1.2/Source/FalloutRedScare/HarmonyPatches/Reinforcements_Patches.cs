@@ -5,7 +5,7 @@ using RimWorld;
 using Verse;
 
 
-namespace FalloutRedScare
+namespace RedScare
 {
 
     internal static class Reinforcements_Patches

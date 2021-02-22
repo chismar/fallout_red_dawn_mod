@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- <FalloutRedScare.ReinforcementsDef>
+<!-- <RedScare.ReinforcementsDef>
 		<defName>FRS_PR_Reinforcements</defName>
 		<reinforcementCooldownDays>0.1~0.2</reinforcementCooldownDays>
 		<reinforcementIncidents>
 			<li>FRS_PR_ReinforcementsArrived</li>
 		</reinforcementIncidents>
-	</FalloutRedScare.ReinforcementsDef>
+	</RedScare.ReinforcementsDef>
 -->
 
 </Defs>

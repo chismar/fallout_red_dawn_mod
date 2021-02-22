@@ -14,7 +14,7 @@ using VFE.Mechanoids.HarmonyPatches;
 using VFE.Mechanoids.Needs;
 using VFEMech;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     [HarmonyPatch]
     public class MechSpawn_Patch

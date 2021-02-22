@@ -88,16 +88,16 @@
   </RoyalTitlePermitDef>
 -->
 
-	<FalloutRedScare.FRSRoyalTitlePermitDef>
+	<RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdrop</defName>
 		<label>shuttle squad airdrop</label>
 		<description>shuttle squad airdrop.</description>
-		<workerClass>FalloutRedScare.CallAirSupport</workerClass>
-		<workerSettings Class="FalloutRedScare.AirSupportSettings"> 
+		<workerClass>RedScare.CallAirSupport</workerClass>
+		<workerSettings Class="RedScare.AirSupportSettings"> 
 			<shuttleDef>FRS_Shuttle</shuttleDef>
 			<shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
 			<pawnGroupMakers>
-				<li Class="FalloutRedScare.PawnGroupMakerPR">
+				<li Class="RedScare.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
@@ -119,19 +119,19 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,0)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  </RedScare.FRSRoyalTitlePermitDef>
   
-  <FalloutRedScare.FRSRoyalTitlePermitDef>
+  <RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdropInsertion</defName>
 		<label>shuttle squad airdrop insertion</label>
 		<description>shuttle squad airdrop insertion.</description>
-		<workerClass>FalloutRedScare.CallAirSupportTargeted</workerClass>
-		<workerSettings Class="FalloutRedScare.AirSupportSettingsTargeted"> 
+		<workerClass>RedScare.CallAirSupportTargeted</workerClass>
+		<workerSettings Class="RedScare.AirSupportSettingsTargeted"> 
       <shuttleDef>FRS_Shuttle</shuttleDef>
       <shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
       <radius>50</radius>
 			<pawnGroupMakers>
-				<li Class="FalloutRedScare.PawnGroupMakerPR">
+				<li Class="RedScare.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
@@ -153,14 +153,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,4)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</FalloutRedScare.FRSRoyalTitlePermitDef>
+	</RedScare.FRSRoyalTitlePermitDef>
 	
-	<FalloutRedScare.FRSRoyalTitlePermitDef>
+	<RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombingLiberators</defName>
 		<label>liberator bombing bombing</label>
 		<description>liberator bombing.</description>
-		<workerClass>FalloutRedScare.AirBombing</workerClass>
-		<workerSettings Class="FalloutRedScare.AirBombingSettings"> 
+		<workerClass>RedScare.AirBombing</workerClass>
+		<workerSettings Class="RedScare.AirBombingSettings"> 
 			<airBombingCommandKey>FRS.AirBombingLabelLiberators</airBombingCommandKey>
 			<shootingLineAngle>0</shootingLineAngle>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
@@ -175,14 +175,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,1)</uiPosition>
     <cooldownDays>60</cooldownDays>
-  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  </RedScare.FRSRoyalTitlePermitDef>
   
-	<FalloutRedScare.FRSRoyalTitlePermitDef>
+	<RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombing</defName>
 		<label>air bombing</label>
 		<description>air bombing.</description>
-		<workerClass>FalloutRedScare.AirBombing</workerClass>
-		<workerSettings Class="FalloutRedScare.AirBombingSettings"> 
+		<workerClass>RedScare.AirBombing</workerClass>
+		<workerSettings Class="RedScare.AirBombingSettings"> 
 			<airBombingCommandKey>FRS.AirBombingLabel</airBombingCommandKey>
 			<shootingLineAngle>0</shootingLineAngle>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
@@ -197,14 +197,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,5)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</FalloutRedScare.FRSRoyalTitlePermitDef>
+	</RedScare.FRSRoyalTitlePermitDef>
 
-	<FalloutRedScare.FRSRoyalTitlePermitDef>
+	<RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_StartRebellion</defName>
 		<label>start rebellion</label>
 		<description>start rebellion.</description>
-		<workerClass>FalloutRedScare.StartRebellion</workerClass>
-		<workerSettings Class="FalloutRedScare.RebellionSettings"> 
+		<workerClass>RedScare.StartRebellion</workerClass>
+		<workerSettings Class="RedScare.RebellionSettings"> 
 			<rebellionCommandKey>FRS.StartRebellionLabel</rebellionCommandKey>
 			<rebellionNoPrisonersAvailableKey>FRS.NoPrisonersAvailableLabel</rebellionNoPrisonersAvailableKey>
 			<weaponsToGivePrisoners>
@@ -216,14 +216,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,2)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</FalloutRedScare.FRSRoyalTitlePermitDef>
+	</RedScare.FRSRoyalTitlePermitDef>
 	
-	<FalloutRedScare.FRSRoyalTitlePermitDef>
+	<RedScare.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_SwitchSides</defName>
 		<label>switch sides</label>
 		<description>switch sides.</description>
-		<workerClass>FalloutRedScare.SwitchSides</workerClass>
-		<workerSettings Class="FalloutRedScare.SwitchSidesSettings"> 
+		<workerClass>RedScare.SwitchSides</workerClass>
+		<workerSettings Class="RedScare.SwitchSidesSettings"> 
 			<switchSidesCommandKey>FRS.SwitchSidesLabel</switchSidesCommandKey>
 			<radiusToSwitch>10</radiusToSwitch>
 			<giveThoughtToPlayerPawns>DebugBad</giveThoughtToPlayerPawns>
@@ -233,14 +233,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,3)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  </RedScare.FRSRoyalTitlePermitDef>
   
-  <FalloutRedScare.FRSRoyalTitlePermitDef>
+  <RedScare.FRSRoyalTitlePermitDef>
     <defName>CallTransportShuttle_PR</defName>
     <label>red call transport shuttle</label>
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
-    <workerClass>FalloutRedScare.CallSpecifiedShuttle</workerClass>
-		<workerSettings Class="FalloutRedScare.CallSpecifiedShuttleSettings"> 
+    <workerClass>RedScare.CallSpecifiedShuttle</workerClass>
+		<workerSettings Class="RedScare.CallSpecifiedShuttleSettings"> 
 			<shuttleQuestDef>FRS_Permit_CallShuttle</shuttleQuestDef>
 			<shuttleDef>FRS_Shuttle</shuttleDef>
 		</workerSettings>
@@ -255,7 +255,7 @@
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>
     </royalAid>
-  </FalloutRedScare.FRSRoyalTitlePermitDef>
+  </RedScare.FRSRoyalTitlePermitDef>
 	<!--
 	
   <RoyalTitlePermitDef>

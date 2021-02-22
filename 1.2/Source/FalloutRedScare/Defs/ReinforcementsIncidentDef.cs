@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     public class ReinforcementsIncidentDef : IncidentDef
 	{

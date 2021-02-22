@@ -52,7 +52,7 @@
         <violent>true</violent>
         <hoursActive>240000</hoursActive>
       </li>
-      <li Class="FalloutRedScare.CompProperties_CaravaneerMachine">
+      <li Class="RedScare.CompProperties_CaravaneerMachine">
       </li>
     </comps>
   </ThingDef>
@@ -129,7 +129,7 @@
         <violent>true</violent>
         <hoursActive>240000</hoursActive>
       </li>
-      <li Class="FalloutRedScare.CompProperties_StandaloneMachine">
+      <li Class="RedScare.CompProperties_StandaloneMachine">
         <allowedWorkTypes>
         </allowedWorkTypes>
         <extraChargingPower>1200</extraChargingPower>

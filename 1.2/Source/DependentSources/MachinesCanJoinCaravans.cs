@@ -10,7 +10,7 @@ using Verse;
 using VFE.Mechanoids;
 using VFE.Mechanoids.HarmonyPatches;
 
-namespace FalloutRedScare
+namespace RedScare
 {
     [HarmonyPatch(typeof(MachinesCannotJoinCaravans), "Postfix")]
     public static class RedMachinesCanJoinCaravans

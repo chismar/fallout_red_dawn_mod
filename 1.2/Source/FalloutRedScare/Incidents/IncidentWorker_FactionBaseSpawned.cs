@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 	public class IncidentWorker_FactionBaseSpawned : IncidentWorker
 	{

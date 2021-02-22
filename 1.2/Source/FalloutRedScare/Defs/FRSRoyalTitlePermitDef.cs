@@ -6,7 +6,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI.Group;
 
-namespace FalloutRedScare
+namespace RedScare
 {
 
 	public class FRSRoyalTitlePermitDef : RoyalTitlePermitDef
