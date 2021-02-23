@@ -45,7 +45,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="StoneBlocksBase">
-		<defName>Stuff_RefConcreteAM</defName>
+		<defName>FRS_Stuff_RefConcreteAM</defName>
 		<label>prefab reinforced concrete panels</label>
 		<description>Prefabricated concrete panels used to quickly erect military structures</description>
 		<graphicData>

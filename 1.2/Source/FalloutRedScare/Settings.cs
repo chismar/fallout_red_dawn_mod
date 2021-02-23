@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,11 @@ using Verse;
 
 namespace RedScare
 {
+    [DefOf]
+    public static class FRSDefOf
+    {
+        public static FactionDef FRS_PR;
+    }
     public class Settings : ModSettings
     {
         public static bool prUsesWealthForRaids;
@@ -56,7 +62,7 @@ namespace RedScare
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-
+            if(FRSDefOf.FRS_PR != null)
             listingStandard.CheckboxLabeled(nameof(Settings.prUsesWealthForRaids), ref Settings.prUsesWealthForRaids, nameof(Settings.prUsesWealthForRaids));
 
             listingStandard.CheckboxLabeled(nameof(Settings.reinforcementsPowerPoints), ref Settings.reinforcementsPowerPoints, nameof(Settings.reinforcementsPowerPoints));

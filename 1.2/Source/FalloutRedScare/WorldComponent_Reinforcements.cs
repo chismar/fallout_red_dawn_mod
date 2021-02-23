@@ -39,7 +39,7 @@ namespace RedScare
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Collections.Look(ref reinforcements, "factions", LookMode.Reference, LookMode.Deep);
+            Scribe_Collections.Look(ref reinforcements, "reinforcements", LookMode.Deep);
         }
     }
 }

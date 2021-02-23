@@ -39,6 +39,7 @@
       <tags>
         <li>RedArmy</li>
         <li>Conscript</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -84,6 +85,7 @@
       <tags>
         <li>RedArmy</li>
         <li>Conscript</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -130,6 +132,7 @@
       <tags>
         <li>RedArmy</li>
         <li>Conscript</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -175,6 +178,7 @@
       <tags>
         <li>RedArmy</li>
         <li>Conscript</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -220,6 +224,7 @@
       </layers>
       <tags>
         <li>RedArmy</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -309,6 +314,7 @@
       </layers>
       <tags>
         <li>RedArmy</li>
+        <li>RedArmyConscript</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

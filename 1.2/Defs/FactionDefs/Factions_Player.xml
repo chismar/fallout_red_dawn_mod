@@ -8,12 +8,36 @@
     </colorSpectrum>
   </FactionDef>
   
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>FRS_Colonist</defName>
+    <label>colonist</label>
+    <defaultFactionType>AutonomousPeoplesRepublic</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelTags>
+      <li>RedArmyConscript</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>700~1100</apparelMoney>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
+    <weaponMoney>700~1100</weaponMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
   <FactionDef ParentName="PeoplesRepublic">
     <defName>AutonomousPeoplesRepublic</defName>
     <label>Socialists</label>
     <description>An outpost of socialists</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist</basicMemberKind>
+    <basicMemberKind>FRS_Colonist</basicMemberKind>
     <pawnSingular>comrade</pawnSingular>
     <pawnsPlural>comrades</pawnsPlural>
     <techLevel>Industrial</techLevel>

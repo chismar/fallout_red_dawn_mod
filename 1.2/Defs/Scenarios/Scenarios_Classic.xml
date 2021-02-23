@@ -60,34 +60,6 @@
           <count>30</count>
         </li>
         
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Pistol</thingDef>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Pistol</thingDef>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Sword</thingDef>
-          <stuff>Plasteel</stuff>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Apparel_RedArmyJumpsuit</thingDef>
-          <count>3</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Apparel_RedArmyMilitantHat</thingDef>
-          <count>2</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>FRS_Apparel_RedArmyOfficerHat</thingDef>
-        </li>
-
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>

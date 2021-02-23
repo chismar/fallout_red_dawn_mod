@@ -99,12 +99,6 @@
     <ItemGroup>
       <FrameworkToMod Include="$(SolutionDir)\..\..\..\Framework\**\*.*" />
     </ItemGroup>
-    <Copy 
-      SourceFiles="@(FrameworkToMod)" 
-      DestinationFolder="$(SolutionDir)\..\..\..\..\RedScareFramework\%(RecursiveDir)" 
-      SkipUnchangedFiles="true"
-      OverwriteReadOnlyFiles="true" 
-      Retries="3"
-      RetryDelayMilliseconds="300"/>
-    </Target>
+    <Copy SourceFiles="@(FrameworkToMod)" DestinationFolder="$(SolutionDir)\..\..\..\..\RedScareFramework\%(RecursiveDir)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" Retries="3" RetryDelayMilliseconds="300" />
+  </Target>
 </Project>
