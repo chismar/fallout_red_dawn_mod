@@ -50,6 +50,12 @@
     <Compile Include="Defs\ReinforcementsDef.cs" />
     <Compile Include="HarmonyPatches\Reinforcements_Patches.cs" />
     <Compile Include="Incidents\IncidentWorker_Reinforcements.cs" />
+    <Compile Include="Lasers\LaserMote.cs" />
+    <Compile Include="Lasers\LaserRay.cs" />
+    <Compile Include="Lasers\LaserRayDef.cs" />
+    <Compile Include="Lasers\LaserRayGraphic.cs" />
+    <Compile Include="Lasers\LaserRayGun.cs" />
+    <Compile Include="Lasers\LaserRayMaker.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Reinforcements.cs" />
     <Compile Include="HarmonyPatches\Apparel_Patches.cs" />

@@ -1,11 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- 
+	PLA Military Surplus (basic jumpsuit, pistol, pistol carbine)
+	PR Planned Military-Industrial Complex (basic automation)
+	PR Urban Planning (concrete)
+	PR Miniaturized Atomic Engines
+	PR Automated Military Drones
+	PLA Standard Issue Gear
+	PLA Mechanized Infantry
+	PLA Advanced Weapons
+	PLA Stealth Dragoons
+-->
+	<ResearchProjectDef>
+		<defName>FRS_PLA_Surplus</defName>
+		<label>PLA Military Surplus</label>
+		<description>basic jumpsuit, pistol, pistol carbine</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>FRS_Weapons</defName>
-		<label>Communist weapons</label>
-		<description>Learn to produce Communist weapons</description>
+		<defName>FRS_PR_PlannedIndustry</defName>
+		<label>PR Planned Military-Industrial Complex</label>
+		<description>basic automation</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PR_UrbanPlanning</defName>
+		<label>PR Urban Planning</label>
+		<description>concrete</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PR_MinitaturizedAtomicEngines</defName>
+		<label>PR Miniaturized Atomic Engines</label>
+		<description>long term drones</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PR_AutomatedMilitaryDrones</defName>
+		<label>PR Automated Military Drones</label>
+		<description>military drones</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PLA_StandardIssueGear</defName>
+		<label>PLA Standard Issue Gear</label>
+		<description>standard issue gear</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -18,6 +107,53 @@
 		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 	
+	<ResearchProjectDef>
+		<defName>FRS_PLA_MechanizedInfantry</defName>
+		<label>PLA Mechanized Infantry</label>
+		<description>power armor</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PLA_AdvancedWeapons</defName>
+		<label>PLA Advanced Weapons</label>
+		<description>gauss and</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PLA_StealthSuits</defName>
+		<label>PLA Stealth Armor</label>
+		<description>stealth suits</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>14</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
 
 
 </Defs>
