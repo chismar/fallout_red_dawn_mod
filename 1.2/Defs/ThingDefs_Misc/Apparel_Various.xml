@@ -3,22 +3,18 @@
 
 
 
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>FRS_Apparel_RedArmyJumpsuit</defName>
     <label>PLA jumpsuit</label>
     <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+    </recipeMaker>
     <costList>
       <Cloth>50</Cloth>
     </costList>
@@ -60,22 +56,19 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-  <ThingDef ParentName="ArmorMachineableBase">
+
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>FRS_Apparel_RedArmyWinterJumpsuit</defName>
     <label>PLA winter jumpsuit</label>
     <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make. Warm.</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+    </recipeMaker>
     <costList>
       <Cloth>50</Cloth>
     </costList>
@@ -124,18 +117,14 @@
     <defName>FRS_Apparel_RedArmyPowerArmor</defName>
     <label>PLA power armor</label>
     <description>An answer to the power armor of imperialist dogs, this suit turns the soldier into a walking tank, capable of withstanding even a nuclear blast. Warning, prolonged radiation exposure is still deadly!</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
+    </recipeMaker>
     <costList>
       <Cloth>50</Cloth>
     </costList>
@@ -182,18 +171,14 @@
     <defName>FRS_Apparel_RedArmyStealthSuit</defName>
     <label>PLA stealth suit</label>
     <description>A pinnacle of PLA military technology, as stealth suit is designed for sabotage operations against frontline enemy troops, as well as inflitration, assasination and spying. It doesn't protect the soldier much, but try shooting what you can't see!</description>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.00</drawSize>
     </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StealthSuits</researchPrerequisite>
+    </recipeMaker>
     <costList>
       <Cloth>50</Cloth>
     </costList>

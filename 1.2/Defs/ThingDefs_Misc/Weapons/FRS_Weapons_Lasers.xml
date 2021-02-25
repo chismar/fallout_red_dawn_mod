@@ -153,7 +153,7 @@
     <positionRadius>0.3</positionRadius>
   </EffecterDef>
 
-  <ThingDef Name="FRS_BaseLaserGun" Abstract="True" ParentName="BaseWeapon">
+  <RedScare.Lasers.LaserRayGunDef Name="FRS_BaseLaserGun" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Ultra</techLevel>
     <smeltable>true</smeltable>
 	  <tradeability>Sellable</tradeability>
@@ -187,9 +187,8 @@
       <soundWorking>Recipe_Smith</soundWorking>
       <recipeUsers />
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-      <researchPrerequisite>FRS_LaserWeapons</researchPrerequisite>
     </recipeMaker>
-  </ThingDef>
+  </RedScare.Lasers.LaserRayGunDef>
   
   <ThingDef>
     <defName>FRS_BeamGraphic</defName>
@@ -260,7 +259,7 @@
     </subSounds>
   </SoundDef>
 
-  <ThingDef ParentName="FRS_BaseLaserGun">
+  <RedScare.Lasers.LaserRayGunDef ParentName="FRS_BaseLaserGun">
     <defName>FRS_Gun_LaserPistol</defName>
     <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
     <barrelLength>1.2</barrelLength>
@@ -293,7 +292,7 @@
         <li>FabricationBench</li>
       </recipeUsers>
       <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
-      <researchPrerequisite Inherit="False">FRS_Weapons</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_AdvancedWeapons</researchPrerequisite>
     </recipeMaker>
     <techLevel>Ultra</techLevel>
     <weaponTags Inherit="False">
@@ -339,9 +338,9 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </RedScare.Lasers.LaserRayGunDef>
 
-  <ThingDef ParentName="FRS_BaseLaserGun">
+  <RedScare.Lasers.LaserRayGunDef ParentName="BaseGunWithQuality">
     <defName>FRS_Gun_LaserGunLiberator</defName>
     <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
     <label>liberator laser gun</label>
@@ -351,10 +350,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_ChargeLance</soundInteract>
-    <costList>
-      <Plasteel>60</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
     <statBases>
       <WorkToMake>82500</WorkToMake>
       <MarketValue>2000</MarketValue>
@@ -407,9 +402,9 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </RedScare.Lasers.LaserRayGunDef>
 
-  <ThingDef ParentName="FRS_BaseLaserGun">
+  <RedScare.Lasers.LaserRayGunDef ParentName="FRS_BaseLaserGun">
     <defName>FRS_Gun_LaserSMG</defName>
     <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
     <label>Cosmonaut's laser SMG</label>
@@ -433,7 +428,7 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_AdvancedWeapons</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -487,6 +482,6 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </RedScare.Lasers.LaserRayGunDef>
 
 </Defs>

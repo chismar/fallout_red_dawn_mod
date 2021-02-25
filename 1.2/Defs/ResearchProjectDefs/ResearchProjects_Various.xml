@@ -1,46 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- 
-	PLA Military Surplus (basic jumpsuit, pistol, pistol carbine)
-	PR Planned Military-Industrial Complex (basic automation)
-	PR Urban Planning (concrete)
-	PR Miniaturized Atomic Engines
-	PR Automated Military Drones
-	PLA Standard Issue Gear
-	PLA Mechanized Infantry
-	PLA Advanced Weapons
-	PLA Stealth Dragoons
--->
+
+	<ResearchTabDef>
+		<defName>FRS_PR_Research</defName>
+		<label>People's Science</label>
+	</ResearchTabDef>
+
 	<ResearchProjectDef>
 		<defName>FRS_PLA_Surplus</defName>
 		<label>PLA Military Surplus</label>
 		<description>basic jumpsuit, pistol, pistol carbine</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>FRS_PR_PlannedIndustry</defName>
-		<label>PR Planned Military-Industrial Complex</label>
-		<description>basic automation</description>
-		<baseCost>6000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -49,14 +29,33 @@
 		<description>concrete</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FRS_PR_PlannedIndustry</defName>
+		<label>PR Planned Military-Industrial Complex</label>
+		<description>basic automation</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
+		<prerequisites>
+			<li>FRS_PR_UrbanPlanning</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -65,14 +64,16 @@
 		<description>long term drones</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PR_PlannedIndustry</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -81,14 +82,16 @@
 		<description>military drones</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PR_MinitaturizedAtomicEngines</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -97,14 +100,15 @@
 		<description>standard issue gear</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -113,14 +117,15 @@
 		<description>power armor</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -129,14 +134,15 @@
 		<description>gauss and</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -145,14 +151,15 @@
 		<description>stealth suits</description>
 		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
+		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>14</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 

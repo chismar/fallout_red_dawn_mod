@@ -6,7 +6,7 @@
     <label>PLA winter hat</label>
     <description>Standard issue PLA winter hat. Doesn't protect the face very much. Warm. Reinforced with steel.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgear/RedArmyWinterHeadgear</texPath>
@@ -52,7 +52,7 @@
     <label>PLA helmet</label>
     <description>Standard issue PLA helmet. Doesn't protect the face very much. Its steel is good at stopping sharpnel and pistol caliber-equivalet energy bullets.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgear/RedArmySummerHeadgear</texPath>
@@ -99,7 +99,7 @@
     <label>PLA winter hat and mask</label>
     <description>Standard issue PLA winter hat. The face is covered with a mask. Warm. Reinforced with steel.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyWinterHeadgearWithMask/RedArmyWinterHeadgearWithMask</texPath>
@@ -145,7 +145,7 @@
     <label>PLA helmet and mask</label>
     <description>Standard issue PLA helmet. The face is covered with a mask. Its steel is good at stopping sharpnel and pistol caliber-equivalet energy bullets.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmySummerHeadgearWithMask/RedArmySummerHeadgearWithMask</texPath>
@@ -192,7 +192,7 @@
     <label>PLA cap</label>
     <description>A cap weared by PLA engineers, rear troops and communist insurgents alike.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyMilitantHat/RedArmyMilitantHat</texPath>
@@ -237,7 +237,7 @@
     <label>PLA stealth helmet</label>
     <description>A pinnacle of PLA military technology, as stealth suit is designed for sabotage operations against frontline enemy troops, as well as inflitration, assasination and spying. It doesn't protect the soldier much, but try shooting what you can't see!</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StealthSuits</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</texPath>
@@ -282,7 +282,7 @@
     <label>PLA officer cap</label>
     <description>PLA officer cap, signifiyng the rank of the officer, showing who's in charge from afar.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyOfficerHat/RedArmyOfficerHat</texPath>
@@ -327,7 +327,7 @@
     <label>PLA power armor helmet</label>
     <description>An answer to the power armor of imperialist dogs, this suit turns the soldier into a walking tank, capable of withstanding even a nuclear blast. Warning, prolonged radiation exposure is still deadly!</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</texPath>
