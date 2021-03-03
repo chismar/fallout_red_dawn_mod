@@ -58,6 +58,9 @@ namespace RedScare
         /// </summary>
         /// <param name="inRect">A Unity Rect with the size of the settings window.</param>
         string buffer = "";
+        string buffer2 = "";
+        string buffer3 = "";
+        string buffer4 = "";
         public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listingStandard = new Listing_Standard();
@@ -69,22 +72,22 @@ namespace RedScare
             if(Settings.reinforcementsPowerPoints)
             {
                 listingStandard.Label($"Reinforcemenets power points: {Settings.powerpoints}");
-                listingStandard.TextFieldNumeric(ref Settings.powerpoints, ref buffer, 0, Settings.spawnRange.max);
+                listingStandard.TextFieldNumeric(ref Settings.powerpoints, ref buffer, 0, 100000);
             }
 
             listingStandard.CheckboxLabeled(nameof(Settings.overrideReinforcementsCooldown), ref Settings.overrideReinforcementsCooldown, nameof(Settings.overrideReinforcementsCooldown));
             if(Settings.overrideReinforcementsCooldown)
             {
                 listingStandard.Label($"Reinforcements cooldown days random range: min {Settings.spawnRange.min} max {Settings.spawnRange.max}");
-                listingStandard.TextFieldNumeric(ref Settings.spawnRange.min, ref buffer, 0, Settings.spawnRange.max);
-                listingStandard.TextFieldNumeric(ref Settings.spawnRange.max, ref buffer, Settings.spawnRange.min, 1000);
+                listingStandard.TextFieldNumeric(ref Settings.spawnRange.min, ref buffer2, 0, Settings.spawnRange.max);
+                listingStandard.TextFieldNumeric(ref Settings.spawnRange.max, ref buffer3, Settings.spawnRange.min, 1000);
             }
 
             listingStandard.CheckboxLabeled(nameof(Settings.overrideMaxPawns), ref Settings.overrideMaxPawns, nameof(Settings.overrideMaxPawns));
             if (Settings.overrideMaxPawns)
             {
                 listingStandard.Label($"Reinforcements stop when colony pawns count reach: {Settings.maxPawns}");
-                listingStandard.TextFieldNumeric(ref Settings.maxPawns, ref buffer, 0, 1000);
+                listingStandard.TextFieldNumeric(ref Settings.maxPawns, ref buffer4, 0, 1000);
             }
 
             listingStandard.End();

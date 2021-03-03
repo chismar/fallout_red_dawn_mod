@@ -35,6 +35,8 @@ namespace RedScare
         {
             if (disable)
                 return;
+            if (Settings.overrideMaxPawns && PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_OfPlayerFaction.Count > Settings.maxPawns)
+                return;
             if(def.reinforceOnlyIfPlayerIsOfFaction == null || def.reinforceOnlyIfPlayerIsOfFaction != null && !def.reinforceOnlyIfPlayerIsOfFaction.Any(x=>x == Faction.OfPlayer.def))
             {
                 disable = true;
