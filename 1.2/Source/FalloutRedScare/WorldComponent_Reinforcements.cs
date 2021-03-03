@@ -22,6 +22,8 @@ namespace RedScare
         public override void FinalizeInit()
         {
             base.FinalizeInit();
+            if (reinforcements == null)
+                reinforcements = new List<Reinforcements>();
             foreach (var reinforcementsDef in DefDatabase<ReinforcementsDef>.AllDefs)
             {
                 reinforcements.Add(new Reinforcements(reinforcementsDef));
@@ -31,6 +33,8 @@ namespace RedScare
         public override void WorldComponentTick()
         {
             base.WorldComponentTick();
+            if (reinforcements == null)
+                reinforcements = new List<Reinforcements>();
             foreach (var reinforcement in reinforcements)
             {
                 reinforcement.Tick();
