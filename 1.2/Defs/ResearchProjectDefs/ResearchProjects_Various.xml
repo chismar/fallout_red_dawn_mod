@@ -10,15 +10,12 @@
 		<defName>FRS_PLA_Surplus</defName>
 		<label>PLA Military Surplus</label>
 		<description>basic jumpsuit, pistol, pistol carbine</description>
-		<baseCost>6000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<tab>FRS_PR_Research</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
 		<prerequisites>
+		<li>Gunsmithing</li>
 		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
+		<tab>FRS_PR_Research</tab>
 		<researchViewX>1</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
@@ -27,42 +24,36 @@
 		<defName>FRS_PR_UrbanPlanning</defName>
 		<label>PR Urban Planning</label>
 		<description>concrete</description>
-		<baseCost>6000</baseCost>
-		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
 		<prerequisites>
+		<li>Electricity</li>
 		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
 		<researchViewX>1</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>FRS_PR_PlannedIndustry</defName>
 		<label>PR Planned Military-Industrial Complex</label>
 		<description>basic automation</description>
-		<baseCost>6000</baseCost>
-		<techLevel>Spacer</techLevel>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
 			<li>FRS_PR_UrbanPlanning</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
 		<researchViewX>2</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>FRS_PR_MinitaturizedAtomicEngines</defName>
 		<label>PR Miniaturized Atomic Engines</label>
 		<description>long term drones</description>
-		<baseCost>6000</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
@@ -73,14 +64,14 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>3</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>FRS_PR_AutomatedMilitaryDrones</defName>
 		<label>PR Automated Military Drones</label>
 		<description>military drones</description>
-		<baseCost>6000</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
@@ -91,22 +82,19 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>4</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewY>4</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>FRS_PLA_StandardIssueGear</defName>
 		<label>PLA Standard Issue Gear</label>
 		<description>standard issue gear</description>
-		<baseCost>6000</baseCost>
-		<techLevel>Spacer</techLevel>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PLA_Surplus</li>
 		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
 		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
@@ -119,11 +107,9 @@
 		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PLA_StandardIssueGear</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
 		<researchViewX>3</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
@@ -136,13 +122,14 @@
 		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PLA_StandardIssueGear</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>4</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -153,13 +140,14 @@
 		<techLevel>Spacer</techLevel>
 		<tab>FRS_PR_Research</tab>
 		<prerequisites>
+			<li>FRS_PLA_StandardIssueGear</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>5</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 

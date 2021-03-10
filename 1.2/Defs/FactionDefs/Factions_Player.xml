@@ -16,12 +16,15 @@
     <apparelTags>
       <li>RedArmyConscript</li>
     </apparelTags>
+    <apparelRequired>  
+      <li>FRS_Apparel_RedArmyJumpsuit</li>
+    </apparelRequired>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <apparelMoney>700~1100</apparelMoney>
+    <apparelMoney>1000~2000</apparelMoney>
     <weaponTags>
       <li>RedArmy</li>
     </weaponTags>
-    <weaponMoney>700~1100</weaponMoney>
+    <weaponMoney>100~700</weaponMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
     <techHediffsChance>0.03</techHediffsChance>
     <techHediffsMoney>50~800</techHediffsMoney>
