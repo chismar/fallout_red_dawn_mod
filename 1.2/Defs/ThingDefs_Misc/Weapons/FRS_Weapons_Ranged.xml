@@ -732,10 +732,11 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_RPG</defName>
     <label>PLA RPG</label>
-    <description>Multiuse rocket launcher, with decent anti-armor and anti-personel capabilities</description>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <description>Rocket launcher, with decent anti-armor and anti-personel capabilities</description>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
+      <texPath>FRS/Things/WeaponRanged/RocketLauncher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

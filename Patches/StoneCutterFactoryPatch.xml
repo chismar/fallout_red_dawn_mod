@@ -14,11 +14,11 @@
 					<li>Plasteel</li>
 				</secondItems>
 				<amount>
-					<li>1</li>
-					<li>2</li>
+					<li>20</li>
+					<li>10</li>
 				</amount>
 				<result>FRS_Stuff_RefConcreteAM</result>
-				<yield>30</yield>
+				<yield>80</yield>
 				<useQualityIncreasing>false</useQualityIncreasing>
 				<singleTimeIfNotQualityIncreasing>0.1</singleTimeIfNotQualityIncreasing>
 			</ItemProcessor.CombinationDef>

@@ -1,6 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>FRS_Make_Concrete</defName>
+		<label>make concrete</label>
+		<description>Makes concrete from limestone</description>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>BlocksLimestone</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>BlocksLimestone</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <FRS_Stuff_ConcreteAM>15</FRS_Stuff_ConcreteAM>
+		</products>
+	</RecipeDef>
+	  
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>FRS_Make_ReinforcedConcrete</defName>
+		<label>make reinforced granite</label>
+		<description>Make reinforced granite from concrete and plasteel</description>
+		<ingredients>
+		<li>
+			<filter>
+			<thingDefs>
+				<li>FRS_Stuff_ConcreteAM</li>
+			</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>FRS_Stuff_ConcreteAM</li>
+			<li>Plasteel</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		<FRS_Stuff_RefConcreteAM>40</FRS_Stuff_RefConcreteAM>
+		</products>
+	</RecipeDef>
+
+
 	<ThingDef ParentName="StoneBlocksBase">
 		<defName>FRS_Stuff_ConcreteAM</defName>
 		<label>prefab concrete panels</label>
@@ -29,7 +87,7 @@
 			<stuffAdjective>concrete</stuffAdjective>
 			<appearance>ConcreteAM</appearance>
 			<statOffsets>
-				<WorkToBuild>160</WorkToBuild>
+				<WorkToBuild>20</WorkToBuild>
 			</statOffsets>
 			<statFactors>
 				<Beauty>1</Beauty>  
@@ -72,7 +130,7 @@
 			<stuffAdjective>reinforced concrete</stuffAdjective>
 			<appearance>ReinforcedConcreteAM</appearance>
 			<statOffsets>
-				<WorkToBuild>160</WorkToBuild>
+				<WorkToBuild>20</WorkToBuild>
 			</statOffsets>
 			<statFactors>
 				<Beauty>0.9</Beauty>  
