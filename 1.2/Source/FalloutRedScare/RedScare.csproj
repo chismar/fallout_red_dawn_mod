@@ -46,6 +46,7 @@
     <Compile Include="Comps\CompSpawnerPawnFromDamage.cs" />
     <Compile Include="Comps\RadialEffect.cs" />
     <Compile Include="Comps\ShuttleBomber.cs" />
+    <Compile Include="Comps\SpatialHash.cs" />
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="Defs\ReinforcementsIncidentDef.cs" />
     <Compile Include="Defs\ReinforcementsDef.cs" />
