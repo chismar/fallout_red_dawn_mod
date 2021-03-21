@@ -109,7 +109,11 @@ namespace RedScare
             for (int x = -radiusInCells; x <= radiusInCells; x++)
                 for (int z = -radiusInCells; z <= radiusInCells; z++)
                 {
-                    var cell = spatialHash[centralCell.x + x, centralCell.z + z];
+                    var cellX = centralCell.x + x;
+                    var cellZ = centralCell.z + z;
+                    if (cellX < 0 || cellZ < 0)
+                        continue;
+                    var cell = spatialHash[cellX, cellZ];
                     if (cell == null)
                         continue;
                     foreach (var thing in cell)
