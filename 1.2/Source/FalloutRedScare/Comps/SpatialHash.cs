@@ -113,6 +113,8 @@ namespace RedScare
                     var cellZ = centralCell.z + z;
                     if (cellX < 0 || cellZ < 0)
                         continue;
+                    if (cellX >= spatialHash.GetLength(0) || cellZ >= spatialHash.GetLength(1))
+                        continue;
                     var cell = spatialHash[cellX, cellZ];
                     if (cell == null)
                         continue;

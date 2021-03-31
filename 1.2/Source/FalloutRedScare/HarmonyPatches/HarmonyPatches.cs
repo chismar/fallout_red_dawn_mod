@@ -4,6 +4,7 @@ using RimWorld.Planet;
 using RimWorld.QuestGen;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace RedScare
@@ -13,6 +14,7 @@ namespace RedScare
     {
         static HarmonyInit()
         {
+            Debug.Log("PATCH RED SCARE");
             new Harmony("Chismar.RedScare").PatchAll();
             
         }

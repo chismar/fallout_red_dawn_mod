@@ -15,7 +15,7 @@
     <costStuffCount>100</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-      <WorkToMake>18000</WorkToMake>
+      <WorkToMake>1200</WorkToMake>
       <Mass>2</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
