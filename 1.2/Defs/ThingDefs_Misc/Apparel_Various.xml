@@ -110,6 +110,111 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>FRS_Apparel_RedArmyOfficerJumpsuit</defName>
+    <label>PLA officer jumpsuit</label>
+    <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>FRS_Apparel_RedArmyOfficerWinterJumpsuit</defName>
+    <label>PLA officer winter jumpsuit</label>
+    <description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make. Warm.</description>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
 
 
 

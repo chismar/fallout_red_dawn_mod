@@ -9,12 +9,15 @@
 		<canGiveRoyalFavor>true</canGiveRoyalFavor>
 		<questNameRules>
 			<rulesStrings>
-				<li>questName->[defToProduce_label] production decree</li>
+				<li>questName->[defToProduce_label] production plan</li>
 			</rulesStrings>
 		</questNameRules>
 		<questDescriptionRules>
 			<rulesStrings>
-				<li>questDescription->[askerFaction_name] You must produce:
+				<li>questDescription->[askerFaction_name]
+					The Party has issued a new plan for equipment production. Meeting it will increase your standing in the Party, as well as help our struggle against imperialism.
+
+					To complete the plan, produce items according to the list:
 \n - [thingToProduceLabel]
 \n</li>
 			</rulesStrings>
@@ -34,17 +37,14 @@
 					<storeProductionItemStuffAs>stuffToProduce</storeProductionItemStuffAs>
 					<storeProductionItemCountAs>countToProduce</storeProductionItemCountAs>
 					<storeProductionItemLabelAs>thingToProduceLabel</storeProductionItemLabelAs>
-					<thingDefCandidates>
-						<li>MeleeWeapon_Club</li>
-						<li>MeleeWeapon_Knife</li>
-						<li>MeleeWeapon_Ikwa</li>
-						<li>MeleeWeapon_Spear</li>
-					</thingDefCandidates>
+					<thingDefTags>
+						<li>RedArmy</li>
+					</thingDefTags>
 					<thingStuffCandidates>
 						<li>Steel</li>
 						<li>WoodLog</li>
 					</thingStuffCandidates>
-					<totalMarketValuePerPlayerWealth>0.3~0.6</totalMarketValuePerPlayerWealth>
+					<totalMarketValuePerPlayerWealth>0.05~0.15</totalMarketValuePerPlayerWealth>
 				</li>
 
 				<li Class="QuestNode_ThingsProduced">

@@ -28,7 +28,7 @@ namespace RedScare
         public SlateRef<FloatRange> totalMarketValuePerPlayerWealth;
 
         [NoTranslate]
-        public SlateRef<List<ThingDef>> thingDefCandidates;
+        public SlateRef<List<string>> thingDefTags;
 
         [NoTranslate]
         public SlateRef<List<ThingDef>> thingStuffCandidates;
@@ -45,6 +45,19 @@ namespace RedScare
             DoWork(QuestGen.slate);
         }
 
+
+        List<ThingDef> _possibleThingsInternal;
+        List<ThingDef> GetPossibleThings(Slate slate)
+        {
+            if (_possibleThingsInternal == null)
+            {
+                _possibleThingsInternal = DefDatabase<ThingDef>.AllDefsListForReading.Where(x =>
+            (x.weaponTags != null && x.weaponTags.Any(y => thingDefTags.GetValue(slate).Any(z => z == y))) ||
+            (x.apparel?.tags != null && x.apparel.tags.Any(y => thingDefTags.GetValue(slate).Any(z => z == y)))).ToList();
+            }
+            return _possibleThingsInternal;
+        }
+
         private bool DoWork(Slate slate)
         {
             Map map = slate.Get<Map>("map");
@@ -55,7 +68,8 @@ namespace RedScare
 
             tmpCandidates.Clear();
             var totalWealth = map.wealthWatcher.WealthTotal;
-            foreach (var candidate in thingDefCandidates.GetValue(slate))
+
+            foreach (var candidate in GetPossibleThings(slate))
             {
                 var goalMarketValue = totalWealth * totalMarketValuePerPlayerWealth.GetValue(slate).RandomInRange;
                 var stuffCandidate = GetStuffFor(candidate, slate);

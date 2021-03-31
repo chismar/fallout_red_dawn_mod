@@ -51,10 +51,12 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>FRS/World/WorldObjects/Expanding/Player_PR</factionIconPath>
-    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionIconPath>FRS/World/WorldObjects/Expanding/Player_PR</factionIconPath>    
+    <factionNameMaker>NamerFactionPR</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPR</settlementNameMaker>    
+    <pawnNameMaker>NamerPersonPR</pawnNameMaker>
+    <pawnNameMakerFemale>NamerPersonPRFemale</pawnNameMakerFemale>
+    <playerInitialSettlementNameMaker>NamerSettlementPR</playerInitialSettlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>ClassicStart</li>

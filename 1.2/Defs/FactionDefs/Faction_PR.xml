@@ -5,7 +5,7 @@
     <defName>FRS_PR</defName>
     <label>People's Republic</label>
     <categoryTag>FRS_PR</categoryTag>
-    <description>An advanced society that's based around socialist ideals, utilizing AI for automation of executive government and industrial tasks, with vanguard party as it's ruling body.</description>
+    <description>An advanced society that's based around socialist ideals, utilizing automation of executive government and industrial tasks, with vanguard Party as it's ruling body.</description>
     <pawnSingular>socialist</pawnSingular>
     <pawnsPlural>socialists</pawnsPlural>
     <listOrderPriority>101</listOrderPriority>
@@ -158,36 +158,53 @@
   <!-- =============================== Names =============================== -->
 
   <RulePackDef>
+    <defName>PRNameUtility</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>WordPR(p=4)->[SylB][SylB]</li>
+        <li>WordPR(p=2)->[SylB][SylB][SylB]</li>
+        <li>WordPR(p=0.2)->[SylB][SylB][SylB][SylB]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>PRNameFirstMale->Names/PR_First_Male</li>
+        <li>PRNameFirstFemale->Names/PR_First_Female</li>
+        <li>PRNameLast->Names/PR_Last</li>
+        <li>PRTown->Names/PR_Town</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
     <defName>NamerFactionPR</defName>
     <include>
-      <li>EmpireNameUtility</li>
+      <li>PRNameUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
 
         <li>r_name->People's Republic of [townname_wordgen]</li>
 
-        <li>townname_wordgen->[WordImperial][townend]</li>
-        <li>townend(p=3)->ium</li>
-        <li>townend(p=3)->ior</li>
-        <li>townend(p=3)->polis</li>
-        <li>townend->nor</li>
-        <li>townend->lan</li>
-        <li>townend->lax</li>
-        <li>townend->lix</li>
-        <li>townend->lin</li>
-        <li>townend->lian</li>
-        <li>townend->phrum</li>
-        <li>townend->phor</li>
-        <li>townend->teor</li>
-        <li>townend->ople</li>
-        <li>townend->opium</li>
+        <li>townname_wordgen->[PRTown][townend]</li>
+        <li>townend(p=3)->ovo</li>
+        <li>townend(p=3)->ov</li>
+        <li>townend(p=3)->od</li>
+        <li>townend->ka</li>
+        <li>townend->jing</li>
+        <li>townend->ghai</li>
+        <li>townend->kong</li>
+        <li>townend->den</li>
+        <li>townend->zhen</li>
+        <li>townend->zan</li>
+        <li>townend->la</li>
+        <li>townend->tsk</li>
+        <li>townend->vostok</li>
+        <li>townend->stok</li>
         <li>townend->or</li>
-        <li>townend->aetor</li>
-        <li>townend->aeum</li>
-        <li>townend->aetium</li>
-        <li>townend->am</li>
-        <li>townend->aeum</li>
+        <li>townend->sawa</li>
+        <li>townend->pest</li>
+        <li>townend->rest</li>
+        <li>townend->fia</li>
+        <li>townend->bovo</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -195,38 +212,35 @@
   <RulePackDef>
     <defName>NamerSettlementPR</defName>
     <include>
-      <li>EmpireNameUtility</li>
+      <li>PRNameUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
         <li>r_name->[townname_wordgen]</li>
-        <li>r_name->[townname_fixed]</li>
 
-        <li>townname_wordgen->[WordImperial]</li>
-        <li>townname_wordgen->[WordImperial][townend]</li>
-        <li>townend(p=3)->ium</li>
-        <li>townend(p=3)->ior</li>
-        <li>townend(p=3)->polis</li>
-        <li>townend->nor</li>
-        <li>townend->lan</li>
-        <li>townend->lax</li>
-        <li>townend->lix</li>
-        <li>townend->lin</li>
-        <li>townend->lian</li>
-        <li>townend->phrum</li>
-        <li>townend->phor</li>
-        <li>townend->teor</li>
-        <li>townend->ople</li>
-        <li>townend->opium</li>
+        <li>townname_wordgen->[PRTown][townend]</li>
+        <li>townend(p=3)->ovo</li>
+        <li>townend(p=3)->ov</li>
+        <li>townend(p=3)->od</li>
+        <li>townend->ka</li>
+        <li>townend->jing</li>
+        <li>townend->ghai</li>
+        <li>townend->kong</li>
+        <li>townend->den</li>
+        <li>townend->zhen</li>
+        <li>townend->zan</li>
+        <li>townend->la</li>
+        <li>townend->tsk</li>
+        <li>townend->vostok</li>
+        <li>townend->stok</li>
         <li>townend->or</li>
-        <li>townend->aetor</li>
-        <li>townend->aeum</li>
-        <li>townend->aetium</li>
-        <li>townend->am</li>
-        <li>townend->aeum</li>
+        <li>townend->sawa</li>
+        <li>townend->pest</li>
+        <li>townend->rest</li>
+        <li>townend->fia</li>
+        <li>townend->bovo</li>
       </rulesStrings>
       <rulesFiles>
-        <li>townname_fixed->Names/EmpireTown</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
@@ -234,13 +248,11 @@
   <RulePackDef>
     <defName>NamerPersonPR</defName>
     <include>
-      <li>EmpireNameUtility</li>
+      <li>PRNameUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=3)->[ImperialNameFirstMale] [ImperialNameLast]</li>
-        <li>r_name(p=2)->[ImperialNameFirstMale] [WordImperial]</li>
-        <li>r_name(p=2)->[WordImperial] [WordImperial]</li>
+        <li>r_name->[PRNameFirstMale] [PRNameLast]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -248,13 +260,11 @@
   <RulePackDef>
     <defName>NamerPersonPRFemale</defName>
     <include>
-      <li>EmpireNameUtility</li>
+      <li>PRNameUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=3)->[ImperialNameFirstFemale] [ImperialNameLast]</li>
-        <li>r_name(p=2)->[ImperialNameFirstFemale] [WordImperial]</li>
-        <li>r_name(p=2)->[WordImperial] [WordImperial]</li>
+        <li>r_name->[PRNameFirstFemale] [PRNameLast]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
