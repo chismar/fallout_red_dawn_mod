@@ -160,6 +160,7 @@ namespace RedScare
                             var pawn2 = thing as Pawn;
                             if (pawn2 == null)
                                 continue;
+
                             if (!pawn2.Dead && !pawn2.Downed && (!Props.onlyAffectsSameFaction || pawn2.Faction == pawn.Faction) && !AlreadyHasHediff(pawn2))
                             {
                                 if (!_previousThings.ContainsKey(pawn2))

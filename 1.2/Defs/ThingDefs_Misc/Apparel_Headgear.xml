@@ -335,23 +335,27 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
     </costList>
     <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.10</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>UpperHead</li>
+        <li>FullHead</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyPowerArmorHelmet/RedArmyPowerArmorHelmet</wornGraphicPath>
       <layers>

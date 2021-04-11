@@ -17,6 +17,11 @@
 		<powerPointsLossPerPawnCombatPowerRatio>100</powerPointsLossPerPawnCombatPowerRatio>
 		<powerPointPassiveGainPerDay>100</powerPointPassiveGainPerDay>
 		<raidPointsPerBase>300</raidPointsPerBase>
+		<permitCooldownDays>1~2</permitCooldownDays>
+		<introDelayFromStart>0.1~0.5</introDelayFromStart>
+		<introScript>FRS_PR_Allegiance</introScript>
+		<productionQuotaCooldownDays>4~7</productionQuotaCooldownDays>
+		<productionQuota>FRS_ProduceItem</productionQuota>
 	</RedScare.TotalWarDef>
 
 

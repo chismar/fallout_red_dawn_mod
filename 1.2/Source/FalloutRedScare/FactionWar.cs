@@ -13,12 +13,27 @@ namespace RedScare
 {
     public class FactionWar : IExposable
     {
+
+        public int nextPermitUsageTick;
+
+        public bool CanUsePermit()
+        {
+            return Find.TickManager.TicksGame >= nextPermitUsageTick;
+        }
+        public void UsePermit()
+        {
+            nextPermitUsageTick = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * this.def.permitCooldownDays.RandomInRange);
+        }
         public Faction faction;
         public TotalWarDef def;
         public float points;
         public int curScapeGoatCooldownTicks;
+        public int curProductionQuotaCooldownTicks;
         public int curBaseIncidentsCooldown;
-        public bool CanSpawnScapeGoatQuest => Find.TickManager.TicksGame >= curScapeGoatCooldownTicks && faction.HostileTo(Faction.OfPlayer);
+        public int cooldownForIntroQuest;
+        public bool CanSpawnScapeGoatQuest => Find.TickManager.TicksGame >= curScapeGoatCooldownTicks && faction.HostileTo(Faction.OfPlayer) &&
+            !Find.QuestManager.QuestsListForReading.Any(x => x.root != def.scapegoatQuestScript);
+        public bool CanSpawnProductionQuota => Find.TickManager.TicksGame >= curProductionQuotaCooldownTicks && faction.RelationWith(Faction.OfPlayer).kind == FactionRelationKind.Ally && !Find.QuestManager.QuestsListForReading.Any(x => x.root == def.productionQuota);
         public List<Settlement> FactionBases = new List<Settlement>();
         public IEnumerable<Settlement> FactionBasesCollect => Find.WorldObjects.SettlementBases.Where(x => x.Faction == faction);
         public bool CanSpawnBases => Find.TickManager.TicksGame >= curBaseIncidentsCooldown && points > (FactionBases.Count + 1) * this.def.powerPointsPerBase;
@@ -39,23 +54,42 @@ namespace RedScare
             Scribe_Defs.Look(ref def, nameof(def));
             Scribe_Values.Look(ref points, nameof(points));
             Scribe_Values.Look(ref curScapeGoatCooldownTicks, nameof(curScapeGoatCooldownTicks));
+            Scribe_Values.Look(ref curProductionQuotaCooldownTicks, nameof(curProductionQuotaCooldownTicks));
             Scribe_Values.Look(ref curBaseIncidentsCooldown, nameof(curBaseIncidentsCooldown));
+            Scribe_Values.Look(ref nextPermitUsageTick, nameof(nextPermitUsageTick));
+            Scribe_Values.Look(ref cooldownForIntroQuest, nameof(cooldownForIntroQuest));
             Scribe_References.Look(ref faction, nameof(faction));
+
         }
 
         public void Tick()
         {
             if (Find.TickManager.TicksGame % 60 == 0)
             {
+                if (cooldownForIntroQuest == 0)
+                    cooldownForIntroQuest = Find.TickManager.TicksGame + (int)(GenDate.TicksPerDay * def.introDelayFromStart.RandomInRange);
+                else if (cooldownForIntroQuest > 0)
+                    if (Find.TickManager.TicksGame > cooldownForIntroQuest)
+                    {
+                        Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(this.def.introScript, 0);
+                        QuestUtility.SendLetterQuestAvailable(quest);
+                        cooldownForIntroQuest = -1;
+                    }
                 FactionBases.Clear();
                 FactionBases.AddRange(FactionBasesCollect);
-                //Log.Message($"Faction: {faction}, points: {points}, def: {def}, curBaseIncidentsCooldown: {curBaseIncidentsCooldown}, curScapeGoatCooldownTicks: {curScapeGoatCooldownTicks}" +
-                //    $", CanSpawnBases: {CanSpawnBases}, CanAbandonBase: {CanAbandonBase}");
+                Log.Message($"Faction: {faction}, points: {points}, def: {def}, curBaseIncidentsCooldown: {curBaseIncidentsCooldown}, curScapeGoatCooldownTicks: {curScapeGoatCooldownTicks}" +
+                    $", CanSpawnBases: {CanSpawnBases}, CanAbandonBase: {CanAbandonBase}");
                 if (CanSpawnScapeGoatQuest)
                 {
                     Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(this.def.scapegoatQuestScript, 0);
                     QuestUtility.SendLetterQuestAvailable(quest);
                     curScapeGoatCooldownTicks = (int)(Find.TickManager.TicksGame + (GenDate.TicksPerDay * this.def.scapegoatCooldownDays.RandomInRange));
+                }
+                if (CanSpawnProductionQuota)
+                {
+                    Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(this.def.productionQuota, 0);
+                    QuestUtility.SendLetterQuestAvailable(quest);
+                    curProductionQuotaCooldownTicks = (int)(Find.TickManager.TicksGame + (GenDate.TicksPerDay * this.def.productionQuotaCooldownDays.RandomInRange));
                 }
                 if (CanSpawnBases)
                 {

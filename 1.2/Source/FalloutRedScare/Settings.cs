@@ -9,11 +9,6 @@ using Verse;
 
 namespace RedScare
 {
-    [DefOf]
-    public static class FRSDefOf
-    {
-        public static FactionDef FRS_PR;
-    }
     public class Settings : ModSettings
     {
         public static bool prUsesWealthForRaids;
@@ -65,18 +60,18 @@ namespace RedScare
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            if(FRSDefOf.FRS_PR != null)
-            listingStandard.CheckboxLabeled(nameof(Settings.prUsesWealthForRaids), ref Settings.prUsesWealthForRaids, nameof(Settings.prUsesWealthForRaids));
+            if (DefDatabase<FactionDef>.GetNamedSilentFail("FRS_PR") != null)
+                listingStandard.CheckboxLabeled(nameof(Settings.prUsesWealthForRaids), ref Settings.prUsesWealthForRaids, nameof(Settings.prUsesWealthForRaids));
 
             listingStandard.CheckboxLabeled(nameof(Settings.reinforcementsPowerPoints), ref Settings.reinforcementsPowerPoints, nameof(Settings.reinforcementsPowerPoints));
-            if(Settings.reinforcementsPowerPoints)
+            if (Settings.reinforcementsPowerPoints)
             {
                 listingStandard.Label($"Reinforcemenets power points: {Settings.powerpoints}");
                 listingStandard.TextFieldNumeric(ref Settings.powerpoints, ref buffer, 0, 100000);
             }
 
             listingStandard.CheckboxLabeled(nameof(Settings.overrideReinforcementsCooldown), ref Settings.overrideReinforcementsCooldown, nameof(Settings.overrideReinforcementsCooldown));
-            if(Settings.overrideReinforcementsCooldown)
+            if (Settings.overrideReinforcementsCooldown)
             {
                 listingStandard.Label($"Reinforcements cooldown days random range: min {Settings.spawnRange.min} max {Settings.spawnRange.max}");
                 listingStandard.TextFieldNumeric(ref Settings.spawnRange.min, ref buffer2, 0, Settings.spawnRange.max);

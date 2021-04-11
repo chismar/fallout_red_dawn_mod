@@ -3,9 +3,8 @@
 
 	<QuestScriptDef>
 		<defName>FRS_Scapegoat</defName>
-		<decreeSelectionWeight>1</decreeSelectionWeight>
 		<defaultChallengeRating>1</defaultChallengeRating>
-		<autoAccept>true</autoAccept>
+		<isRootSpecial>true</isRootSpecial>
 		<questNameRules>
 			<rulesStrings>
 				<li>questName->Scapegoat</li>

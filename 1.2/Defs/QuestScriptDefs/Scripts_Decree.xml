@@ -3,10 +3,9 @@
 
 	<QuestScriptDef>
 		<defName>FRS_ProduceItem</defName>
-		<decreeSelectionWeight>1</decreeSelectionWeight>
 		<defaultChallengeRating>1</defaultChallengeRating>
-		<autoAccept>true</autoAccept>
 		<canGiveRoyalFavor>true</canGiveRoyalFavor>
+		<isRootSpecial>true</isRootSpecial>
 		<questNameRules>
 			<rulesStrings>
 				<li>questName->[defToProduce_label] production plan</li>

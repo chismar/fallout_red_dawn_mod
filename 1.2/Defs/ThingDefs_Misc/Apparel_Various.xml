@@ -42,6 +42,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</wornGraphicPath>
       <layers>
@@ -96,6 +99,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</wornGraphicPath>
       <layers>
@@ -123,7 +129,7 @@
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <costList>
-      <Cloth>50</Cloth>
+      <Cloth>100</Cloth>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -149,6 +155,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</wornGraphicPath>
       <layers>
@@ -176,7 +185,7 @@
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
     <costList>
-      <Cloth>50</Cloth>
+      <Cloth>100</Cloth>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -202,6 +211,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</wornGraphicPath>
       <layers>
@@ -231,22 +243,24 @@
       <researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
     </recipeMaker>
     <costList>
-      <Cloth>50</Cloth>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>100</Plasteel>
+      <Uranium>20</Uranium>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
+      <WorkToMake>60000</WorkToMake>
+      <MaxHitPoints>340</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>34</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.12</MoveSpeed>
@@ -257,6 +271,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</wornGraphicPath>
       <layers>
@@ -285,25 +302,29 @@
       <researchPrerequisite>FRS_PLA_StealthSuits</researchPrerequisite>
     </recipeMaker>
     <costList>
-      <Cloth>50</Cloth>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <Uranium>10</Uranium>
     </costList>
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>14000</WorkToMake>
-      <Mass>7</Mass>
-      <Flammability>0.6</Flammability>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold>      <!-- like a cloth jacket -->
-      <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>32</Insulation_Cold>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>11</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.1</MoveSpeed>
+      <MeleeDodgeChance>0.5</MeleeDodgeChance>
+      <IncomingDamageFactor>0.6</IncomingDamageFactor>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -311,6 +332,9 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</wornGraphicPath>
       <layers>

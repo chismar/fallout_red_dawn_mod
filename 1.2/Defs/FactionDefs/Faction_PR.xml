@@ -15,7 +15,7 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>chairman</leaderTitle>
-    <royalFavorLabel>prestige</royalFavorLabel>
+    <royalFavorLabel>commendments</royalFavorLabel>
     <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <factionNameMaker>NamerFactionPR</factionNameMaker>

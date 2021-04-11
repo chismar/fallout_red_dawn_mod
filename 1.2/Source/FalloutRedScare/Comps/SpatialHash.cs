@@ -26,15 +26,17 @@ namespace RedScare
     [HarmonyPatch(typeof(Thing), nameof(Thing.Position), MethodType.Setter)]
     public static class PawnSpatialHasherSetPos
     {
-        public static void Prefix(Thing __instance, IntVec3 value)
+        public static void Postfix(Thing __instance, IntVec3 value)
         {
-            if (!(__instance is Pawn))
+            if (!(__instance is Pawn p))
                 return;
-            if (value == __instance.Position)
-                return;
-            if (!__instance.Spawned)
-                return;
+            //if (value == __instance.Position)
+            //   return;
+            //if (!__instance.Spawned)
+            //    return;
             var map = __instance.Map;
+            if (map == null)
+                return;
             if (SpatialHashMapComp.HashMapPerMap.TryGetValue(map, out var cmp))
             {
                 cmp.UpdateValue(__instance);
@@ -113,7 +115,7 @@ namespace RedScare
                     var cellZ = centralCell.z + z;
                     if (cellX < 0 || cellZ < 0)
                         continue;
-                    if (cellX >= spatialHash.GetLength(0) || cellZ >= spatialHash.GetLength(1))
+                    if (cellX >= cellCountX || cellZ >= cellCountZ)
                         continue;
                     var cell = spatialHash[cellX, cellZ];
                     if (cell == null)
