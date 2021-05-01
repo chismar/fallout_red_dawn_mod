@@ -48,7 +48,7 @@
     <costList>
       <Steel>30</Steel>
       <Plasteel>20</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -69,7 +69,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_BasicDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -122,7 +122,7 @@
     <costList>
       <Steel>45</Steel>
       <Plasteel>20</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -143,7 +143,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_BasicDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -195,7 +195,7 @@
     </building>
     <costList>
       <Steel>45</Steel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -217,7 +217,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_BasicDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -269,7 +269,7 @@
     </building>
     <costList>
       <Plasteel>45</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
@@ -291,7 +291,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_AutomatedDefensiveMeasures</li>
+      <li>FRS_PR_AutomatedMilitaryDrones</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -343,7 +343,7 @@
     </building>
     <costList>
       <Plasteel>65</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentIndustrial>4</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
@@ -364,7 +364,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_AutomatedDefensiveMeasures</li>
+      <li>FRS_PR_AutomatedMilitaryDrones</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -416,7 +416,7 @@
     </building>
     <costList>
       <Plasteel>65</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentIndustrial>4</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
@@ -454,7 +454,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>VFE_AutomatedDefensiveMeasures</li>
+      <li>FRS_PR_AutomatedMilitaryDrones</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
@@ -480,7 +480,7 @@
       <Plasteel>20</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
       <ComponentIndustrial>4</ComponentIndustrial>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
     </costList>
     <building>
       <buildingTags>
@@ -516,7 +516,7 @@
       <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
-      <li>VFE_BasicDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <drawerType>RealtimeOnly</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -544,7 +544,7 @@
       <Plasteel>10</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
       <ComponentIndustrial>2</ComponentIndustrial>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
     </costList>
     <building>
       <buildingTags>
@@ -579,7 +579,7 @@
       <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
-      <li>VFE_BasicDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <drawerType>RealtimeOnly</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -633,7 +633,7 @@
     <costList>
       <Steel>45</Steel>
       <Plasteel>30</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -654,7 +654,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>MAO_AdvancedDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
@@ -706,7 +706,7 @@
     <costList>
       <Steel>45</Steel>
       <Plasteel>30</Plasteel>
-      <VFE_ComponentMechanoid>1</VFE_ComponentMechanoid>
+      <Uranium>100</Uranium>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -727,7 +727,7 @@
     </comps>
     <designationCategory>VFE_Factory</designationCategory>
     <researchPrerequisites>
-      <li>MAO_AdvancedDroneAssembly</li>
+      <li>FRS_PR_MinitaturizedAtomicEngines</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>

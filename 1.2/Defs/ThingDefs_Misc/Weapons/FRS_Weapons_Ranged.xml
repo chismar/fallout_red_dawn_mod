@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <DamageDef Name="FRS_Burn">    
+  <DamageDef Name="FRS_Burn">
     <defName>FRS_Burn</defName>
     <label>burn</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
@@ -18,7 +18,7 @@
     <combatLogRules>Damage_Flame</combatLogRules>
     <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
   </DamageDef>
-  
+
   <ThingDef Name="FRS_AssaultRifle" ParentName="BaseHumanMakeableGun">
     <defName>FRS_AssaultRifle</defName>
     <label>PLA assault rifle</label>
@@ -110,41 +110,41 @@
       <texPath>FRS/Things/WeaponRanged/ChinesePistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <uiIconScale>1.4</uiIconScale>
-    <soundInteract>Interact_Revolver</soundInteract>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <statBases>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>1.2</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <weaponTags>
-      <li>RedArmy</li>
-    </weaponTags>
-    <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Autopistol</defaultProjectile>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
-        <soundCast>Shot_Autopistol</soundCast>
+        <range>20</range>
+        <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -219,8 +219,9 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>FRS_PLA_AdvancedWeapons</researchPrerequisite>
       <skillRequirements>
-        <Crafting>3</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
@@ -306,9 +307,11 @@
       <Steel>60</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
+
     <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
@@ -344,7 +347,7 @@
     </tools>
   </ThingDef>
 
-  
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_HunterCarbine</defName>
     <label>PLA civilian carbine</label>
@@ -368,8 +371,9 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
@@ -428,8 +432,9 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
@@ -464,7 +469,7 @@
       </li>
     </tools>
   </ThingDef>
-  
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>FRS_CarbineBayonet</defName>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -489,8 +494,9 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>10</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
@@ -533,35 +539,41 @@
       <texPath>FRS/Things/WeaponRanged/ChineseBoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <statBases>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>1.2</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Autopistol</defaultProjectile>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>33.9</range>
-        <soundCast>Shot_Autopistol</soundCast>
+        <range>30.9</range>
+        <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -595,18 +607,21 @@
       <texPath>FRS/Things/WeaponRanged/LightMachineGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
+    <soundInteract>Interact_Rifle</soundInteract>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>34000</WorkToMake>
+      <WorkToMake>29000</WorkToMake>
       <Mass>8.5</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.48</AccuracyShort>
@@ -632,9 +647,6 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <weaponTags>
-      <li>RedArmy</li>
-    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -656,7 +668,7 @@
     </tools>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef Name = "FRS_SniperRifle" ParentName="BaseHumanMakeableGun">
     <defName>FRS_SniperRifle</defName>
     <label>PLA marksman rifle</label>
     <description>Standard issue marsman rifle, based on the Type 93 assault rifle design</description>
@@ -665,18 +677,21 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponTags>
+      <li>RedArmy</li>
+    </weaponTags>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <soundInteract>Interact_Rifle</soundInteract>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>45000</WorkToMake>
+      <WorkToMake>40000</WorkToMake>
       <Mass>4</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
@@ -719,9 +734,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <weaponTags>
-      <li>RedArmy</li>
-    </weaponTags>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>FRS_Bullet_SniperRifle</defName>
@@ -738,71 +750,18 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="FRS_SniperRifle">
     <defName>FRS_SniperRiflePrestige</defName>
     <label>Red Dragoon sniper rifle</label>
-    <description>A rifle that was specifically designed on a request of Red Dragoons stealth company founder, it combines deadly force, accuracy and bold red color, a sign of it's wielder boldness. Or posession of a stealth suit.</description>
+    <description>A rifle that was specifically designed on a request of Red Dragoons company founder, it combines deadly force, accuracy and bright red color, a sign of it's wielder boldness. Or posession of stealth technology.</description>
     <graphicData>
       <texPath>FRS/Things/WeaponRanged/SniperRifleType93</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <recipeMaker>
-      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>12</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
-      <WorkToMake>45000</WorkToMake>
-      <Mass>4</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.86</AccuracyMedium>
-      <AccuracyLong>0.88</AccuracyLong>
-      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+      <WorkToMake>50000</WorkToMake>
     </statBases>
-    <costList>
-      <Steel>100</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>FRS_Bullet_Incendiary</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <range>44.9</range>
-        <soundCast>Shot_SniperRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
     <weaponTags>
-      <li>RedArmy</li>
       <li>RedArmyPrestige</li>
     </weaponTags>
   </ThingDef>
@@ -1025,8 +984,7 @@
     </statBases>
     <techLevel>Spacer</techLevel>
     <weaponTags>
-      <li>Gun</li>
-      <li>GunSingleUse</li>
+      <li>RedArmy</li>
     </weaponTags>
     <tradeTags>
       <li>ExoticMisc</li>
@@ -1041,7 +999,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Plasteel>60</Plasteel>
+      <Steel>30</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <Chemfuel>30</Chemfuel>
     </costList>
