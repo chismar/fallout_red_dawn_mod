@@ -12,7 +12,12 @@
     <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
     <canBeInherited>False</canBeInherited>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
-    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>    
+    <permits>
+      <li>TradeSettlement_PR</li>
+      <li>TradeCaravan_PR</li>
+      <li>TradeOrbital_PR</li>
+    </permits>
     <requiredApparel>
       <li>
         <bodyPartGroupsMatchAny>
