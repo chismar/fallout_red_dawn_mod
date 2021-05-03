@@ -352,48 +352,10 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_PartyBase</defName>
+    <defName>FRS_PR_Captain</defName>
     <label>partcom</label>
-    <titleRequired>FRS_PartyCommitte</titleRequired>
+    <titleRequired>FRS_Captain</titleRequired>
     <techHediffsMoney>0~500</techHediffsMoney>
-  </PawnKindDef>
-  <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_Sec_Partcom</defName>
-    <label>partcom</label>
-    <titleRequired>FRS_PartyCommitte</titleRequired>
-    <techHediffsMoney>0~500</techHediffsMoney>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_Sec_Discom</defName>
-    <label>discom</label>
-    <titleRequired>FRS_DistrictCommitte</titleRequired>
-    <techHediffsMoney>300~800</techHediffsMoney>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_Sec_Citycom</defName>
-    <label>citycom</label>
-    <labelFemale>citycom</labelFemale>
-    <titleRequired>FRS_CityCommitte</titleRequired>
-    <techHediffsMoney>500~1000</techHediffsMoney>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_Sec_Statecom</defName>
-    <label>statecom</label>
-    <titleRequired>FRS_StateCommitte</titleRequired>
-    <techHediffsMoney>1000~1500</techHediffsMoney>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="FRS_PR_PartyBase">
-    <defName>FRS_PR_Sec_Centcom</defName>
-    <label>centcom</label>
-    <titleRequired>FRS_CentralCommitte</titleRequired>
-    <apparelMoney>9999999</apparelMoney>
-    <techHediffsChance>1</techHediffsChance>
-    <techHediffsMoney>3000~4000</techHediffsMoney>
-    <techHediffsMaxAmount>3</techHediffsMaxAmount>
   </PawnKindDef>
 
   <PawnKindDef ParentName="FRS_PR_PartyBase">

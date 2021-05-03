@@ -114,7 +114,7 @@
 			</pawnGroupMakers>
 			<points>5000</points>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,0)</uiPosition>
@@ -148,7 +148,7 @@
 			</pawnGroupMakers>
 			<points>500</points>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,4)</uiPosition>
@@ -170,7 +170,7 @@
       <shellsCount>3</shellsCount>
       <bombingRunAroundTargetMeters>-10~10</bombingRunAroundTargetMeters>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,1)</uiPosition>
@@ -192,7 +192,7 @@
 				<li>Bullet_Shell_EMP</li>
 			</shells>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,5)</uiPosition>
@@ -211,7 +211,7 @@
 				<li>MeleeWeapon_Club</li>
 			</weaponsToGivePrisoners>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,2)</uiPosition>
@@ -228,7 +228,7 @@
 			<radiusToSwitch>10</radiusToSwitch>
 			<giveThoughtToPlayerPawns>DebugBad</giveThoughtToPlayerPawns>
 		</workerSettings>
-		<minTitle>FRS_PartyCommitte</minTitle>
+		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,3)</uiPosition>
@@ -244,7 +244,7 @@
 			<shuttleQuestDef>FRS_Permit_CallShuttle</shuttleQuestDef>
 			<shuttleDef>FRS_Shuttle</shuttleDef>
 		</workerSettings>
-    <minTitle>FRS_PartyCommitte</minTitle>
+    <minTitle>FRS_Captain</minTitle>
     <faction>FRS_PR</faction>
     <permitPointCost>1</permitPointCost>
     <cooldownDays>40</cooldownDays>

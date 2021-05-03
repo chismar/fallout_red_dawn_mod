@@ -104,7 +104,7 @@
   <RoyalTitleDef ParentName="BasePartyRank">
     <defName>FRS_Captain</defName>
     <label>Captain</label>
-    <description>Captain rank and clearance level is offered to proven officers and party members, granting them enough autonomy to operate on their own judgement with minimal support. Logistical issues warrant such autonomy for any remote outpost commander.</description>
+    <description>Captain rank and clearance level is offered to proven officers and party members, granting them enough autonomy to operate on their own judgement with minimal support. Logistical issues warrant such autonomy for any remote outpost commander. Name comes from the usual status of such individuals as captains of exodus sleep-ships.</description>
     <seniority>0</seniority>
     <favorCost>1</favorCost>
     <commonality>1</commonality>
