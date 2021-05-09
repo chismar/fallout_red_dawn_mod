@@ -27,8 +27,8 @@
 	  
 	<RecipeDef ParentName="MakeStoneBlocksBase">
 		<defName>FRS_Make_ReinforcedConcrete</defName>
-		<label>make reinforced granite</label>
-		<description>Make reinforced granite from concrete and plasteel</description>
+		<label>make reinforced concrete</label>
+		<description>Make reinforced concrete from concrete and plasteel</description>
 		<ingredients>
 		<li>
 			<filter>

@@ -34,7 +34,7 @@
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -91,7 +91,7 @@
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -203,7 +203,7 @@
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -260,7 +260,7 @@
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -321,7 +321,7 @@
       <EquipDelay>14</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -380,9 +380,8 @@
       <EquipDelay>11</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>0.1</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
       <MeleeDodgeChance>0.5</MeleeDodgeChance>
-      <IncomingDamageFactor>0.6</IncomingDamageFactor>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -452,7 +451,7 @@
       <EquipDelay>3</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.12</MoveSpeed>
+      <GeneralLaborSpeed>0.15</GeneralLaborSpeed>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
