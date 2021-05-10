@@ -25,6 +25,9 @@ namespace RedScare
 
         private int ticksUntilExpired;
 
+        private Pawn wearer = null;
+
+
         [HarmonyPatch(typeof(CompReloadable), "UsedOnce")]
         internal static class Patch_UsedOnce
         {
@@ -50,14 +53,27 @@ namespace RedScare
         public override void CompTick()
         {
             base.CompTick();
-            ticksUntilExpired--;
-            if (ticksUntilExpired <= 0)
+            if (this.Wearer != null && this.Wearer != wearer)
             {
-                var hediff = this.Wearer.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
+                wearer = this.Wearer;
+                ticksUntilExpired--;
+                if (ticksUntilExpired <= 0)
+                {
+                    var hediff = wearer.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
+                    if (hediff != null)
+                    {
+                        wearer.health.RemoveHediff(hediff);
+                    }
+                }
+            }
+            else if (this.Wearer is null && wearer != null)
+            {
+                var hediff = wearer.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
                 if (hediff != null)
                 {
-                    this.Wearer.health.RemoveHediff(hediff);
+                    wearer.health.RemoveHediff(hediff);
                 }
+                wearer = null;
             }
         }
 
@@ -66,6 +82,7 @@ namespace RedScare
         {
             base.PostExposeData();
             Scribe_Values.Look(ref ticksUntilExpired, "ticksUntilExpired");
+            Scribe_References.Look(ref wearer, "wearer");
         }
     }
 
