@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ApparelComp_RestrictBodyType.cs" />
     <Compile Include="CompProperties_FRS_Shuttle.cs" />
+    <Compile Include="Comps\HediffComp_AIActivable.cs" />
+    <Compile Include="Comps\CompHediffActivationReloadable.cs" />
     <Compile Include="Comps\CompSpawnerPawnFromDamage.cs" />
     <Compile Include="Comps\RadialEffect.cs" />
     <Compile Include="Comps\ShuttleBomber.cs" />
@@ -50,8 +52,10 @@
     <Compile Include="Defs\FRSRoyalTitlePermitDef.cs" />
     <Compile Include="Defs\ReinforcementsIncidentDef.cs" />
     <Compile Include="Defs\ReinforcementsDef.cs" />
+    <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Reinforcements_Patches.cs" />
     <Compile Include="Incidents\IncidentWorker_Reinforcements.cs" />
+    <Compile Include="Interfaces\ICanBeCastedByAI.cs" />
     <Compile Include="Lasers\LaserMote.cs" />
     <Compile Include="Lasers\LaserRay.cs" />
     <Compile Include="Lasers\LaserRayDef.cs" />
@@ -90,6 +94,7 @@
     <Compile Include="QuestNodes\QuestNode_GetFactionFromDef.cs" />
     <Compile Include="QuestParts\QuestPart_SelectScapegoat.cs" />
     <Compile Include="FactionWar.cs" />
+    <Compile Include="Verbs\Verb_UseCompReloadable.cs" />
     <Compile Include="WorldComponent_Reinforcements.cs" />
     <Compile Include="WorldComponent_TotalWar.cs" />
   </ItemGroup>
