@@ -43,8 +43,7 @@
   <ItemGroup>
     <Compile Include="ApparelComp_RestrictBodyType.cs" />
     <Compile Include="CompProperties_FRS_Shuttle.cs" />
-    <Compile Include="Comps\HediffComp_AIActivable.cs" />
-    <Compile Include="Comps\CompHediffActivationReloadable.cs" />
+    <Compile Include="Comps\CompHediffActivation_Reloadable.cs" />
     <Compile Include="Comps\CompSpawnerPawnFromDamage.cs" />
     <Compile Include="Comps\RadialEffect.cs" />
     <Compile Include="Comps\ShuttleBomber.cs" />

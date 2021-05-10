@@ -15,11 +15,11 @@ namespace RedScare
         public HediffDef hediffDef;
         public CompProperties_HediffActivationReloadable()
         {
-            this.compClass = typeof(CompHediffActivationReloadable);
+            this.compClass = typeof(CompHediffActivation_Reloadable);
         }
     }
 
-    public class CompHediffActivationReloadable : CompReloadable
+    public abstract class CompHediffActivation_Reloadable : CompReloadable
 	{
         public CompProperties_HediffActivationReloadable Props => this.props as CompProperties_HediffActivationReloadable;
 
@@ -30,7 +30,7 @@ namespace RedScare
         {
             private static void Postfix(CompReloadable __instance)
             {
-                if (__instance is CompHediffActivationReloadable compHediffActivationReloadable)
+                if (__instance is CompHediffActivation_Reloadable compHediffActivationReloadable)
                 {
                     compHediffActivationReloadable.PostUsedOnce();
                 }
@@ -61,21 +61,36 @@ namespace RedScare
             }
         }
 
-        public float GetWeightAI()
-        {
-            var pawn = this.Wearer;
-            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
-            if (hediff is null)
-            {
-                return 0f;
-            }
-            var comp = hediff.TryGetComp<HediffComp_AIActivable>();
-            return comp.GetWeightAI();
-        }
+        public abstract float GetWeightAI();
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Values.Look(ref ticksUntilExpired, "ticksUntilExpired");
+        }
+    }
+
+    public class CompStealthActivation_Reloadable : CompHediffActivation_Reloadable
+    {
+        public override float GetWeightAI()
+        {
+            var pawn = this.Wearer;
+            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
+            if (hediff != null)
+            {
+                return 0f;
+            }
+            List<IAttackTarget> potentialTargetsFor = this.Wearer.Map.attackTargetsCache.GetPotentialTargetsFor(this.Wearer);
+            for (int i = 0; i < potentialTargetsFor.Count; i++)
+            {
+                if (GenHostility.IsActiveThreatTo(potentialTargetsFor[i], this.Wearer.Faction))
+                {
+                    if (potentialTargetsFor[i].Thing.Position.DistanceTo(this.Wearer.Position) <= 40f)
+                    {
+                        return 1f;
+                    }
+                }
+            }
+            return 0f;
         }
     }
 }

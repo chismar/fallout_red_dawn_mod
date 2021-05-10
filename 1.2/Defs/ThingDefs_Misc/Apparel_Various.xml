@@ -412,6 +412,7 @@
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="RedScare.CompProperties_HediffActivationReloadable">
+				<compClass>RedScare.CompStealthActivation_Reloadable</compClass>
 				<hediffDurationTicks>5000</hediffDurationTicks>
 				<hediffDef>FRS_Invisibility</hediffDef>
 				<maxCharges>5</maxCharges>
@@ -453,9 +454,6 @@
 		<comps>
 			<li Class="HediffCompProperties">
 				<compClass>HediffComp_Invisibility</compClass>
-			</li>
-			<li Class="RedScare.HediffCompProperties_HediffActivationAIActivable">
-				<compClass>HediffCompStealthAIActivable</compClass>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>

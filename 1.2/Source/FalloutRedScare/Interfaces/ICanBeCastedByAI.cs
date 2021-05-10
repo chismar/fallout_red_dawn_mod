@@ -12,7 +12,7 @@ namespace RedScare
 	{
 		bool CanBeUsed();
 		float GetWeight();
-		void UseOn(Thing target);
+		void UseDecideTarget(Thing target);
 		void TryUseDecideTarget();
 	}
 }

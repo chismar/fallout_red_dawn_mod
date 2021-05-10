@@ -9,40 +9,54 @@ using Verse.AI;
 
 namespace RedScare
 {
-	public class Verb_UseStealthCompReloadable : Verb, ICanBeCastedByAI
+	public class Verb_UseCompReloadable : Verb, ICanBeCastedByAI
 	{
-		public CompHediffActivationReloadable Comp => base.ReloadableCompSource as CompHediffActivationReloadable;
-		public bool CanBeUsed()
+		public CompHediffActivation_Reloadable Comp => base.ReloadableCompSource as CompHediffActivation_Reloadable;
+        public bool CanBeUsed()
         {
-			CompReloadable comp = base.ReloadableCompSource;
-			if (comp != null && comp.CanBeUsed)
-			{
-				return Comp.GetWeightAI() > 0;
-			}
-			return false;
-		}
+            CompReloadable comp = base.ReloadableCompSource;
+            if (comp != null && comp.CanBeUsed)
+            {
+                return Comp.GetWeightAI() > 0;
+            }
+            return false;
+        }
 
         public float GetWeight()
         {
-			return Comp.GetWeightAI();
-		}
+            return Comp.GetWeightAI();
+        }
 
         public void TryUseDecideTarget()
         {
-			if (this.verbProps.targetable)
+            if (this.verbProps.targetable)
             {
-				this.currentTarget = FindAttackTarget(CasterPawn);
+                this.currentTarget = FindAttackTarget(CasterPawn);
+            }
+            else if (!this.verbProps.violent)
+            {
+                this.currentTarget = CasterPawn;
+            }
+            if (this.currentTarget.IsValid)
+            {
+                TryCastShot();
+            }
+        }
+		public void UseDecideTarget(Thing target)
+		{
+			if (this.verbProps.targetable)
+			{
+				this.currentTarget = target;
 			}
 			else if (!this.verbProps.violent)
-            {
+			{
 				this.currentTarget = CasterPawn;
-            }
+			}
 			if (this.currentTarget.IsValid)
-            {
+			{
 				TryCastShot();
-            }
+			}
 		}
-
 		protected Thing FindAttackTarget(Pawn pawn)
 		{
 			TargetScanFlags targetScanFlags = TargetScanFlags.NeedLOSToPawns | TargetScanFlags.NeedReachableIfCantHitFromMyPos | TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable;
@@ -69,12 +83,6 @@ namespace RedScare
 			return false;
 		}
 
-
-		public void UseOn(Thing target)
-        {
-			this.currentTarget = target;
-            TryCastShot();
-        }
 		protected override bool TryCastShot()
 		{
 			CompReloadable comp = base.ReloadableCompSource;
