@@ -418,15 +418,17 @@
     </apparel>
 
   </ThingDef>
- <!-- <ThingDef ParentName="HatMakeableBase">
+
+
+  <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_GagarinPowerArmorHelmet</defName>
-    <label>red army winter headgear</label>
+    <label>Cosmonaut Power Armor Helmet</label>
     <description>red army winter headgear</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/GagarinPowerArmorHelmet</texPath>
+      <texPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/CosmonautHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
@@ -449,7 +451,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/GagarinPowerArmorHelmet</wornGraphicPath>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/CosmonautHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -460,10 +462,6 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
-
   </ThingDef>
-
-
-  </ThingDef>-->
 
 </Defs>
