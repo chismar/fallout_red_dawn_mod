@@ -3,10 +3,10 @@
 
 
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef Name="FRS_Apparel_RedArmyJumpsuit" ParentName="ApparelMakeableBase">
 		<defName>FRS_Apparel_RedArmyJumpsuit</defName>
-		<label>PLA jumpsuit</label>
-		<description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
+		<label>PLA Jumpsuit<label> 
+		<description>The standard green jumpsuit of the rank and file of the People’s Liberation Army. It can be made quickly in large quantities but provides little protection on its own. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -16,7 +16,7 @@
 			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<Cloth>50</Cloth>
+			<Cloth>75</Cloth>
 		</costList>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -61,10 +61,10 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyWinterJumpsuit</defName>
-		<label>PLA winter jumpsuit</label>
-		<description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make. Warm.</description>
+		<label>PLA Winter Jumpsuit<label> 
+		<description>The standard jumpsuit of the rank and file of the People’s Liberation Army. It can be made quickly in large quantities but provides little protection on its own. This jumpsuit is camouflaged for cold regions such as Alaska. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -73,55 +73,26 @@
 		<recipeMaker>
 			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
 		</recipeMaker>
-		<costList>
-			<Cloth>50</Cloth>
-		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>14000</WorkToMake>
-			<Mass>7</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
-			<!-- like a cloth jacket -->
-			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-			</bodyPartGroups>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>RedArmy</li>
-				<li>RedArmyConscript</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
-	<ThingDef ParentName="ApparelMakeableBase">
+
+	<ThingDef Name ="FRS_Apparel_RedArmyOfficerJumpsuit" ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyOfficerJumpsuit</defName>
-		<label>PLA officer jumpsuit</label>
-		<description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
+		<label>PLA Officer Jumpsuit<label> 
+		<description>A green jumpsuit often worn by the officers of the People’s Liberation Army. It’s adorned with a red armband signalizing the rank of the officer. While it looks dashing, its defensive capabilities aren’t great. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -133,74 +104,14 @@
 		<costList>
 			<Cloth>100</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>14000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
-			<!-- like a cloth jacket -->
-			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.12</MoveSpeed>
-		</equippedStatOffsets>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-			</bodyPartGroups>
-			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>RedArmy</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-	</ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>FRS_Apparel_RedArmyOfficerWinterJumpsuit</defName>
-		<label>PLA officer winter jumpsuit</label>
-		<description>A standard issue People's Liberation Army jumpsuit. Protects the owner from light shrapnel and elements, but not much else. Cheap to make. Warm.</description>
-		<graphicData>
-			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.00</drawSize>
-		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
-		</recipeMaker>
-		<costList>
-			<Cloth>100</Cloth>
-		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<Mass>7</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<!-- like a cloth jacket -->
 			<Insulation_Heat>3</Insulation_Heat>
@@ -210,33 +121,29 @@
 			<MoveSpeed>0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-			</bodyPartGroups>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="FRS_Apparel_RedArmyOfficerJumpsuit">
+		<defName>FRS_Apparel_RedArmyOfficerWinterJumpsuit</defName>
+		<label>PLA Officer Winter Jumpsuit<label> 
+		<description>A green and white jumpsuit often worn by the officers of the People’s Liberation Army. It’s adorned with a red armband signalizing the rank of the officer. This one is camouflaged for wintery regions, such as Alaska. </description>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<apparel>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>RedArmy</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
 
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyLongcoat</defName>
-		<label>PLA longcoat</label>
-		<description>A standard issue People's Liberation Army longcoat. Protects the owner from light shrapnel and elements, but not much else. Cheap to make.</description>
+		<label>PLA Longcoat<label> 
+		<description>A long, brown overcoat usually worn over a Jumpsuit by the citizens of the People’s Republic. It isolates well and provides some protection in a gun fight. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyLongCoat/CommunistOvercoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -246,48 +153,23 @@
 			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<Cloth>50</Cloth>
+			<Cloth>150</Cloth>
 		</costList>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<Mass>7</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
-			<!-- like a cloth jacket -->
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<Insulation_Cold>40.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.15</MoveSpeed>
+			<MoveSpeed>0.05</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-			</bodyPartGroups>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyLongCoat/CommunistOvercoat</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>RedArmy</li>
-				<li>RedArmyConscript</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -295,8 +177,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyPowerArmor</defName>
-		<label>PLA power armor</label>
-		<description>An answer to the power armor of imperialist dogs, this suit turns the soldier into a walking tank, capable of withstanding even a nuclear blast. Warning, prolonged radiation exposure is still deadly!</description>
+		<label>PLA Power Armour<label> 
+		<description>A Chinese suit of power armour. It functions very similarly like its American counterparts and is adorned with the symbols and mottos of the party. Like all power armour suits, it provides excellent protection against all but the most devastating attacks at the price of impaired mobility. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -354,8 +236,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyStealthSuit</defName>
-		<label>PLA stealth suit</label>
-		<description>A pinnacle of PLA military technology, as stealth suit is designed for sabotage operations against frontline enemy troops, as well as inflitration, assasination and spying. It doesn't protect the soldier much, but try shooting what you can't see!</description>
+		<label>PLA Stealth Suit<label> 
+		<description>An advanced stealth suit designed and manufactured by Chinese scientists to counter the American power armor suits. It features the most advanced cloaking technology ever devised and can make its wearer virtually invisible. While the tight black suit is significantly more protective than clothing, it’s not made to withstand a whole lot of damage. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -461,8 +343,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_CivilianSuit</defName>
-		<label>people's republic civilian suit</label>
-		<description>people's republic civilian suit</description>
+		<label>Civilian Clothes</label>
+		<description>Civilian clothes often worn by the citizens of the People’s Republic. These close-fitting overalls are work clothes for labourers and farmers and provide adequate protection against the elements but little to none against bullets and similar threats.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -520,8 +402,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyMilitantJumpsuit</defName>
-		<label>red army militant jumpsuit</label>
-		<description>red army militant jumpsuit</description>
+		<label>PLA Militant Jumpsuit<label> 
+		<description>An olive-green jumpsuit with a vest and a bandolier for carrying additional ammunition on the battlefield. It’s not as protective as heavy armor, but its padding makes it superior to regular clothing. </description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -579,8 +461,8 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_GagarinPowerArmor</defName>
-		<label>Cosmonaut Power Armor</label>
-		<description>people's republic cosmonaut based power armor suit</description>
+		<label>Russian Cosmonaut Power Armor<label>
+		<description>A suit of Russian power armor like they were issued to the militarized cosmonauts. It’s painted white, features a large amount of ammunition bags and bandoliers, and sports the communist red star painted on the chest. Like all power armor suits, it protects its wearer extremely well but also slows one down significantly.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
