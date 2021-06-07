@@ -137,6 +137,15 @@
       </options>
       </li>
     </pawnGroupMakers>
+	<modExtensions>
+		<li Class="RedScare.FactionModExtension">
+			<customShuttle>FRS_Shuttle</customShuttle>
+			<customShuttleIncoming>FRS_ShuttleIncoming</customShuttleIncoming>
+			<customShuttleLeaving>FRS_ShuttleLeaving</customShuttleLeaving>
+			<customShuttleCrashing>FRS_ShuttleCrashing</customShuttleCrashing>
+			<customShuttleCrashed>FRS_ShuttleCrashed</customShuttleCrashed>
+		</li>
+	</modExtensions>
   </FactionDef>
 
   <ThingSetMakerDef>

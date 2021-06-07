@@ -57,6 +57,27 @@ namespace RedScare
 									}
 								}
 							}
+							if (option.traitsToGive.Any())
+							{
+								var list = option.traitsToGive.Where(x => DefDatabase<TraitDef>.GetNamedSilentFail(x) != null).ToList().ListFullCopy();
+								while (list.Any())
+								{
+									var traitDefName = list.RandomElement();
+									var traitDef = DefDatabase<TraitDef>.GetNamed(traitDefName); 
+									int degree = RandomTraitDegree(traitDef);
+
+									if (TraitIsAllowed(__instance, traitDef, degree))
+									{
+										Trait trait = new Trait(traitDef, degree);
+										__instance.story.traits.GainTrait(trait);
+										break;
+									}
+									else
+									{
+										list.Remove(traitDefName);
+									}
+								}
+							}
 
 							if (option.goodIncidentsToSpawn.Any())
                             {
@@ -81,6 +102,28 @@ namespace RedScare
                     }
                 }
 			}
+		}
+		private static int RandomTraitDegree(TraitDef traitDef)
+		{
+			if (traitDef.degreeDatas.Count == 1)
+			{
+				return traitDef.degreeDatas[0].degree;
+			}
+			return traitDef.degreeDatas.RandomElementByWeight((TraitDegreeData dd) => dd.commonality).degree;
+		}
+		private static bool TraitIsAllowed(Pawn pawn, TraitDef newTraitDef, int degree)
+		{
+			if (pawn.story.traits.HasTrait(newTraitDef) || (pawn.kindDef.disallowedTraits != null && pawn.kindDef.disallowedTraits.Contains(newTraitDef))
+				|| (pawn.kindDef.requiredWorkTags != 0 && (newTraitDef.disabledWorkTags & pawn.kindDef.requiredWorkTags) != 0) || (pawn.Faction != null && Faction.OfPlayerSilentFail != null
+				&& pawn.Faction.HostileTo(Faction.OfPlayer) && !newTraitDef.allowOnHostileSpawn) || pawn.story.traits.allTraits.Any((Trait tr) => newTraitDef.ConflictsWith(tr))
+				|| (newTraitDef.requiredWorkTypes != null && pawn.OneOfWorkTypesIsDisabled(newTraitDef.requiredWorkTypes)) || pawn.WorkTagIsDisabled(newTraitDef.requiredWorkTags)
+				|| (newTraitDef.forcedPassions != null && pawn.workSettings != null && newTraitDef.forcedPassions.Any((SkillDef p) =>
+				p.IsDisabled(pawn.story.DisabledWorkTagsBackstoryAndTraits, pawn.GetDisabledWorkTypes(permanentOnly: true))))
+				|| pawn.story.childhood.DisallowsTrait(newTraitDef, degree) && (pawn.story.adulthood == null || pawn.story.adulthood.DisallowsTrait(newTraitDef, degree)))
+			{
+				return false;
+			}
+			return true;
 		}
 	}
 }

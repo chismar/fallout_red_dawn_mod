@@ -17,6 +17,9 @@
 						<goodwillGainPerRecrution>5</goodwillGainPerRecrution>
 						<messageReasonKey>FRS.RecruitMessage</messageReasonKey>
 						<thoughtOnRecrutionForEveryColonists>FRS_NewColonistRecruited</thoughtOnRecrutionForEveryColonists>
+						<traitsToGive>
+							<li>FRS_RedMember</li>
+						</traitsToGive>
 						<goodIncidentsToSpawn>
 							<li>ResourcePodCrash</li>
 							<li>PsychicSoothe</li>

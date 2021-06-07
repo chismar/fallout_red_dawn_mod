@@ -52,6 +52,7 @@
     <Compile Include="Defs\ReinforcementsIncidentDef.cs" />
     <Compile Include="Defs\ReinforcementsDef.cs" />
     <Compile Include="HarmonyPatches\Pawn_Patches.cs" />
+    <Compile Include="HarmonyPatches\Quest_Patches.cs" />
     <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Reinforcements_Patches.cs" />
     <Compile Include="Incidents\IncidentWorker_Reinforcements.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Lasers\LaserRayGraphic.cs" />
     <Compile Include="Lasers\LaserRayGun.cs" />
     <Compile Include="Lasers\LaserRayMaker.cs" />
+    <Compile Include="FactionModExtension.cs" />
     <Compile Include="RedStorytellerExtension.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Reinforcements.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="FactionWar.cs" />
     <Compile Include="Verbs\Verb_UseCompReloadable.cs" />
     <Compile Include="WorldComponent_Reinforcements.cs" />
+    <Compile Include="WorldComponent_QuestTracker.cs" />
     <Compile Include="WorldComponent_TotalWar.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,7 @@ namespace RedScare
         public FactionDef otherFaction;
         public int goodwillGainPerRecrution;
         public string messageReasonKey;
+        public List<string> traitsToGive;
         public ThoughtDef thoughtOnRecrutionForEveryColonists;
         public List<string> goodIncidentsToSpawn;
     }
