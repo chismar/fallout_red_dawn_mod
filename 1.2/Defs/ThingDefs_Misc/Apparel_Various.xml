@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
 	<ThingDef Name="FRS_Apparel_RedArmyJumpsuit" ParentName="ApparelMakeableBase">
 		<defName>FRS_Apparel_RedArmyJumpsuit</defName>
-		<label>PLA Jumpsuit<label> 
+		<label>PLA Jumpsuit</label> 
 		<description>The standard green jumpsuit of the rank and file of the People’s Liberation Army. It can be made quickly in large quantities but provides little protection on its own. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</texPath>
@@ -63,7 +60,7 @@
 
 	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyWinterJumpsuit</defName>
-		<label>PLA Winter Jumpsuit<label> 
+		<label>PLA Winter Jumpsuit</label> 
 		<description>The standard jumpsuit of the rank and file of the People’s Liberation Army. It can be made quickly in large quantities but provides little protection on its own. This jumpsuit is camouflaged for cold regions such as Alaska. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyWinterJumpsuit/RedArmyWinterJumpsuit</texPath>
@@ -91,7 +88,7 @@
 
 	<ThingDef Name ="FRS_Apparel_RedArmyOfficerJumpsuit" ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyOfficerJumpsuit</defName>
-		<label>PLA Officer Jumpsuit<label> 
+		<label>PLA Officer Jumpsuit</label> 
 		<description>A green jumpsuit often worn by the officers of the People’s Liberation Army. It’s adorned with a red armband signalizing the rank of the officer. While it looks dashing, its defensive capabilities aren’t great. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerJumpsuit/CommunistOfficer</texPath>
@@ -127,7 +124,7 @@
 
 	<ThingDef ParentName="FRS_Apparel_RedArmyOfficerJumpsuit">
 		<defName>FRS_Apparel_RedArmyOfficerWinterJumpsuit</defName>
-		<label>PLA Officer Winter Jumpsuit<label> 
+		<label>PLA Officer Winter Jumpsuit</label> 
 		<description>A green and white jumpsuit often worn by the officers of the People’s Liberation Army. It’s adorned with a red armband signalizing the rank of the officer. This one is camouflaged for wintery regions, such as Alaska. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyOfficerWinterJumpsuit/WinterCommunistOfficer</texPath>
@@ -142,7 +139,7 @@
 
 	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyLongcoat</defName>
-		<label>PLA Longcoat<label> 
+		<label>PLA Longcoat</label> 
 		<description>A long, brown overcoat usually worn over a Jumpsuit by the citizens of the People’s Republic. It isolates well and provides some protection in a gun fight. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyLongCoat/CommunistOvercoat</texPath>
@@ -177,7 +174,7 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyPowerArmor</defName>
-		<label>PLA Power Armour<label> 
+		<label>PLA Power Armour</label> 
 		<description>A Chinese suit of power armour. It functions very similarly like its American counterparts and is adorned with the symbols and mottos of the party. Like all power armour suits, it provides excellent protection against all but the most devastating attacks at the price of impaired mobility. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</texPath>
@@ -236,7 +233,7 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyStealthSuit</defName>
-		<label>PLA Stealth Suit<label> 
+		<label>PLA Stealth Suit</label> 
 		<description>An advanced stealth suit designed and manufactured by Chinese scientists to counter the American power armor suits. It features the most advanced cloaking technology ever devised and can make its wearer virtually invisible. While the tight black suit is significantly more protective than clothing, it’s not made to withstand a whole lot of damage. </description>
 		<graphicData>
 			<texPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</texPath>
@@ -402,7 +399,7 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_RedArmyMilitantJumpsuit</defName>
-		<label>PLA Militant Jumpsuit<label> 
+		<label>PLA Militant Jumpsuit</label> 
 		<description>An olive-green jumpsuit with a vest and a bandolier for carrying additional ammunition on the battlefield. It’s not as protective as heavy armor, but its padding makes it superior to regular clothing. </description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -461,7 +458,7 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>FRS_Apparel_GagarinPowerArmor</defName>
-		<label>Russian Cosmonaut Power Armor<label>
+		<label>Russian Cosmonaut Power Armor</label>
 		<description>A suit of Russian power armor like they were issued to the militarized cosmonauts. It’s painted white, features a large amount of ammunition bags and bandoliers, and sports the communist red star painted on the chest. Like all power armor suits, it protects its wearer extremely well but also slows one down significantly.</description>
 		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>

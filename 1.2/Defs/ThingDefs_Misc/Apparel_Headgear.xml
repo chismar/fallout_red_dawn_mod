@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyWinterHeadgear</defName>
     <label>Ushanka</label>
@@ -49,8 +48,8 @@
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySummerHeadgear</defName>
-    <label>PLA Helmet<label> 
-    <description>A simple helmet worn by the soldiers of the People’s Liberation Army. It protects fairly well against most threats, while being easy and cheap to manufacture but leaves the face unprotected. </description>
+    <label>PLA Helmet</label> 
+		<description>A simple helmet worn by the soldiers of the People’s Liberation Army. It protects fairly well against most threats, while being easy and cheap to manufacture but leaves the face unprotected. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
@@ -96,8 +95,8 @@
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyWinterHeadgearWithMask</defName>
-    <label>Masked Ushanka<label> 
-    <description>A reinforced warm cap of Russian origin made of fur and often worn by Chinese troopers. This one does not only cover the head and the ears but is worn over a mask with googles. As such it offers increased protection, especially against the cold.</description>
+    <label>Masked Ushanka</label> 
+		<description>A reinforced warm cap of Russian origin made of fur and often worn by Chinese troopers. This one does not only cover the head and the ears but is worn over a mask with googles. As such it offers increased protection, especially against the cold.</description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
@@ -142,8 +141,8 @@
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmySummerHeadgearWithMask</defName>
-    <label>PLA Masked Helmet<label> 
-    <description>A simple helmet worn by the soldiers of the People’s Liberation Army. It protects fairly well against most threats, while being easy and cheap to manufacture. This one is worn over a mask with googles which provides a bit additional protection for the face and against the elements. </description>
+    <label>PLA Masked Helmet</label> 
+		<description>A simple helmet worn by the soldiers of the People’s Liberation Army. It protects fairly well against most threats, while being easy and cheap to manufacture. This one is worn over a mask with googles which provides a bit additional protection for the face and against the elements. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
@@ -189,8 +188,8 @@
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyMilitantHat</defName>
-    <label>Militant Hat<label> 
-    <description> A green hat worn by many PLA engineers, medics and other troops who rarely join the thick of the fight, as well as communist insurgents. It features the red star of the communist party and is worn with a red facemask to keep dust and dirt at bay. </description>
+    <label>Militant Hat</label> 
+		<description> A green hat worn by many PLA engineers, medics and other troops who rarely join the thick of the fight, as well as communist insurgents. It features the red star of the communist party and is worn with a red facemask to keep dust and dirt at bay. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
     </recipeMaker>
@@ -234,8 +233,8 @@
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyStealthSuitHelmet</defName>
-    <label>Stealth Suit Helmet<label> 
-    <description>A helmet made to be worn with the Stealth Suit. Its orange vizor gives its wearer a frightening appearance. Fittingly, it is reminiscent to the masks once worn by Ninja’s and similar assassin groups. </description>
+    <label>Stealth Suit Helmet</label> 
+		<description>A helmet made to be worn with the Stealth Suit. Its orange vizor gives its wearer a frightening appearance. Fittingly, it is reminiscent to the masks once worn by Ninja’s and similar assassin groups. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StealthSuits</researchPrerequisite>
     </recipeMaker>
@@ -279,8 +278,8 @@
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyOfficerHat</defName>
-    <label>Officer Hat<label> 
-    <description>A cap usually worn by the People’s Liberation Army’s officers. It prominently features the red star symbol commonly associated with the Chinese communist party and serves mainly as a symbol of rank but offers little protection. </description>
+    <label>Officer Hat</label> 
+		<description>A cap usually worn by the People’s Liberation Army’s officers. It prominently features the red star symbol commonly associated with the Chinese communist party and serves mainly as a symbol of rank but offers little protection. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
     </recipeMaker>
@@ -324,8 +323,8 @@
   </ThingDef>
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyPowerArmorHelmet</defName>
-    <label>Power Armor Helmet<label> 
-    <description>A helmet for the Chinese power armour. It looks quite different compared to the T-series, as it features three prominent glowing dots, two of which serve as viewing slots for the occupant. Like all power armour it effectively shields its wearer against most attacks, much better than most other helmets but is quite heavy. </description>
+    <label>Power Armor Helmet</label> 
+		<description>A helmet for the Chinese power armour. It looks quite different compared to the T-series, as it features three prominent glowing dots, two of which serve as viewing slots for the occupant. Like all power armour it effectively shields its wearer against most attacks, much better than most other helmets but is quite heavy. </description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
     </recipeMaker>
@@ -374,8 +373,8 @@
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_CivilianHat</defName>
-    <label>Civilian Hat<label> 
-    <description>A simple hat often worn by Chinese workers, farmers, and other civilians. Its main use is shielding its wearer against the searing sun or keeping the head warm, as such it is of little use in battle. </description>
+    <label>Civilian Hat</label> 
+		<description>A simple hat often worn by Chinese workers, farmers, and other civilians. Its main use is shielding its wearer against the searing sun or keeping the head warm, as such it is of little use in battle. </description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -422,7 +421,7 @@
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_GagarinPowerArmorHelmet</defName>
-    <label>Russian Cosmonaut Power Armor Helmet<label>
+    <label>Russian Cosmonaut Power Armor Helmet</label>
     <description>A white helmet meant to be worn together with the corresponding suit of power armor, like they were issued to the militarized Russian cosmonauts. It’s very protective but quite heavy.</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>

@@ -4,7 +4,7 @@
 	<StorytellerDef ParentName="CassandraStoryteller">
 		<defName>FRS_RedGuardsman</defName>
 		<label>Red Guardsman</label>
-		<description>Red Guardsman desc</description>
+		<description>The imperialist dogs might occasionaly triumph, but be strong in the belief that life is wonderful. Be positive and believe that the Revolution will always win. Every human whom we convince into our believes will advance us one step closer to success.</description>
 		<portraitLarge>FRS/Storytellers/RedGuard</portraitLarge>
 		<portraitTiny>FRS/Storytellers/RedGuardTiny</portraitTiny>
 		<listOrder>20</listOrder>

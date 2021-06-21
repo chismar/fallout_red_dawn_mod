@@ -4,11 +4,18 @@
 	<author>Chismar</author>
 	<supportedVersions><li>1.2</li></supportedVersions>
 	<modDependencies>
-	    <li>
-	      <packageId>VanillaExpanded.VWEL</packageId>
+		<li>
+			<packageId>OskarPotocki.VFE.Mechanoid</packageId>
+			<displayName>Vanilla Factions Expanded - Mechanoids</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2329011599</steamWorkshopUrl>
+		</li>
+        <li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>VanillaExpanded.VFEM</packageId>
+			<packageId>isorex.mechanoidsaddon</packageId>
 		</li>
 		<li>
 			<packageId>RedScareFramework.RedScareFramework</packageId>
@@ -18,4 +25,14 @@
 	<description>
 		Communism detected on American soil!
 	</description>
+		<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>OskarPotocki.VFE.Mechanoid</li>
+		<li>drzhivago.docworld</li>
+		<li>LWM.DeepStorage</li>
+		<li>isorex.mechanoidsaddon</li>
+		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
+	</loadAfter>
 </ModMetaData>
