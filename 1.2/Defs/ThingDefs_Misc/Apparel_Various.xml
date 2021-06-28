@@ -20,16 +20,16 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<Mass>7</Mass>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.9</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.04</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<!-- like a cloth jacket -->
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.15</MoveSpeed>
@@ -37,16 +37,13 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
 				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyJumpsuit/RedArmyJumpsuit</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -72,10 +69,10 @@
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<WorkToMake>12000</WorkToMake>
+			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.04</ArmorRating_Heat>
 			<Insulation_Cold>40</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
@@ -106,13 +103,13 @@
 			<WorkToMake>14000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.06</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<!-- like a cloth jacket -->
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.15</MoveSpeed>
@@ -156,9 +153,9 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
-			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.06</ArmorRating_Heat>
 			<Insulation_Cold>40.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 		</statBases>
@@ -220,6 +217,7 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
+				<li>Mid</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -254,17 +252,17 @@
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
 			<MaxHitPoints>280</MaxHitPoints>
-			<Mass>9</Mass>
+			<Mass>4.6</Mass>
 			<Flammability>0.4</Flammability>
 			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.46</ArmorRating_Heat>
 			<Insulation_Cold>32</Insulation_Cold>
 			<Insulation_Heat>9</Insulation_Heat>
-			<EquipDelay>11</EquipDelay>
+			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>0.15</MoveSpeed>
+			<MoveSpeed>0.18</MoveSpeed>
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
@@ -280,6 +278,8 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
+				<li>Mid</li>
+				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -363,16 +363,16 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>1800</MaxHitPoints>
+			<WorkToMake>13000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.02</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<GeneralLaborSpeed>0.15</GeneralLaborSpeed>
@@ -386,7 +386,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/CivilianSuit/CivilianClothes</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -424,12 +424,12 @@
 			<WorkToMake>14000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.12</MoveSpeed>
@@ -443,7 +443,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyMilitantJumpsuit/Militant</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
+				<li>OnSkin</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -464,7 +464,7 @@
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<graphicData>
@@ -472,26 +472,31 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.00</drawSize>
 		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
+		</recipeMaker>
 		<costList>
-			<Cloth>50</Cloth>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<Uranium>20</Uranium>
 		</costList>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<Mass>7</Mass>
-			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
-			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>340</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>34</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.12</MoveSpeed>
+			<MoveSpeed>0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -503,6 +508,7 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/Cosmonaut</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
+				<li>Mid</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>

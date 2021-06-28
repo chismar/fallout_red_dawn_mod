@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
@@ -13,16 +14,17 @@ namespace RedScare
         {
             if (pawn.Faction != Faction.OfPlayer)
             {
-                var verbs = pawn.VerbTracker.AllVerbs.OfType<ICanBeCastedByAI>()
-                    .Concat(pawn.apparel.AllApparelVerbs.OfType<ICanBeCastedByAI>())
-                    .Concat(pawn.equipment.AllEquipmentVerbs.OfType<ICanBeCastedByAI>());
+                var verbs = (pawn.VerbTracker?.AllVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>())
+                    .Concat(pawn.apparel?.AllApparelVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>())
+                    .Concat(pawn.equipment?.AllEquipmentVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>());
                 if (verbs.Any())
                 {
                     var castableVerbs = verbs.Where(x => x.CanBeUsed());
                     if (castableVerbs.Any())
                     {
                         var chosenVerb = verbs.RandomElementByWeight(x => x.GetWeight());
-                        chosenVerb.TryUseDecideTarget();
+                        if (chosenVerb != null)
+                            chosenVerb.TryUseDecideTarget();
                     }
                 }
             }
@@ -35,16 +37,17 @@ namespace RedScare
         {
             if (__instance.Faction != Faction.OfPlayer)
             {
-                var verbs = __instance.VerbTracker.AllVerbs.OfType<ICanBeCastedByAI>()
-                    .Concat(__instance.apparel.AllApparelVerbs.OfType<ICanBeCastedByAI>())
-                    .Concat(__instance.equipment.AllEquipmentVerbs.OfType<ICanBeCastedByAI>());
+                var verbs = (__instance.VerbTracker?.AllVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>())
+                    .Concat(__instance.apparel?.AllApparelVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>())
+                    .Concat(__instance.equipment?.AllEquipmentVerbs.OfType<ICanBeCastedByAI>() ?? Array.Empty<ICanBeCastedByAI>());
                 if (verbs.Any())
                 {
                     var castableVerbs = verbs.Where(x => x.CanBeUsed());
                     if (castableVerbs.Any())
                     {
                         var chosenVerb = verbs.RandomElementByWeight(x => x.GetWeight());
-                        chosenVerb.UseDecideTarget(target);
+                        if (chosenVerb != null)
+                            chosenVerb.UseDecideTarget(target);
                     }
                 }
             }
