@@ -461,7 +461,7 @@
 		<label>Russian Cosmonaut Power Armor</label>
 		<description>A suit of Russian power armor like they were issued to the militarized cosmonauts. It’s painted white, features a large amount of ammunition bags and bandoliers, and sports the communist red star painted on the chest. Like all power armor suits, it protects its wearer extremely well but also slows one down significantly.</description>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>7</Crafting>
@@ -472,17 +472,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.00</drawSize>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
-		</recipeMaker>
 		<costList>
 			<ComponentSpacer>4</ComponentSpacer>
 			<Plasteel>100</Plasteel>
 			<Uranium>20</Uranium>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>

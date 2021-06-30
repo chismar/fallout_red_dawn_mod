@@ -197,7 +197,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyMilitantHat</defName>
     <label>Militant Hat</label> 
-		<description> A green hat worn by many PLA engineers, medics and other troops who rarely join the thick of the fight, as well as communist insurgents. It features the red star of the communist party and is worn with a red facemask to keep dust and dirt at bay.</description>
+		<description>A green hat worn by many PLA engineers, medics and other troops who rarely join the thick of the fight, as well as communist insurgents. It features the red star of the communist party and is worn with a red facemask to keep dust and dirt at bay.</description>
     <recipeMaker>
       <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
     </recipeMaker>
