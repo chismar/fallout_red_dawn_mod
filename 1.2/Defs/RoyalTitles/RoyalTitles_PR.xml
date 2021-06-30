@@ -146,7 +146,7 @@
   <RoyalTitleDef ParentName="BasePartyRank">
     <defName>FRS_HeadOfOperations</defName>
     <label>Head of Operations</label>
-    <description>HO rank comes with authority that is only rivaled by Central Committe members. Your ability is proven, and you are expected to manage direct strikes, surveillance and collection of even more resources, establishing well defended bases. </description>
+    <description>HO rank comes with authority that is only rivaled by Central Committe members. Your ability is proven, and you are expected to manage direct strikes, surveillance and collection of even more resources, establishing well defended bases.</description>
     <seniority>300</seniority>
     <favorCost>12</favorCost>
     <minExpectation>High</minExpectation>
