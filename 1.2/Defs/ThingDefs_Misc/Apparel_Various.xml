@@ -149,9 +149,6 @@
 		<costList>
 			<Cloth>150</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.09</ArmorRating_Blunt>
@@ -217,7 +214,7 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyPowerArmor/RedArmyPowerArmor</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
-				<li>Mid</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
@@ -278,7 +275,7 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyStealthSuit/RedArmyStealthSuit</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
-				<li>Mid</li>
+				<li>Middle</li>
 				<li>OnSkin</li>
 			</layers>
 			<tags>
@@ -477,6 +474,9 @@
 			<Plasteel>100</Plasteel>
 			<Uranium>20</Uranium>
 		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>
@@ -502,7 +502,7 @@
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/GagarinPowerArmor/Cosmonaut</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
-				<li>Mid</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>RedArmy</li>
