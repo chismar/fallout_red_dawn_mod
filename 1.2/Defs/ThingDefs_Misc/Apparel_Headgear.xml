@@ -386,7 +386,7 @@
     <label>Civilian Hat</label> 
 		<description>A simple hat often worn by Chinese workers, farmers, and other civilians. Its main use is shielding its wearer against the searing sun or keeping the head warm, as such it is of little use in battle.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/CivilianHat/Civilianhat</texPath>
@@ -434,7 +434,7 @@
     <label>Russian Cosmonaut Power Armor Helmet</label>
     <description>A white helmet meant to be worn together with the corresponding suit of power armor, like they were issued to the militarized Russian cosmonauts. It’s very protective but quite heavy.</description>
     <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <researchPrerequisite>FRS_PLA_MechanizedInfantry</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/CosmonautHelmet</texPath>

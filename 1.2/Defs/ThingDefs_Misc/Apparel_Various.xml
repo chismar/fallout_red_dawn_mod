@@ -340,7 +340,7 @@
 		<label>Civilian Clothes</label>
 		<description>Civilian clothes often worn by the citizens of the People’s Republic. These close-fitting overalls are work clothes for labourers and farmers and provide adequate protection against the elements but little to none against bullets and similar threats.</description>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
@@ -399,7 +399,7 @@
 		<label>PLA Militant Jumpsuit</label> 
 		<description>An olive-green jumpsuit with a vest and a bandolier for carrying additional ammunition on the battlefield. It’s not as protective as heavy armor, but its padding makes it superior to regular clothing.</description>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisite>FRS_PLA_Surplus</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
