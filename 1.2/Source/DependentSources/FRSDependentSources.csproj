@@ -56,13 +56,6 @@
     <Compile Include="StandaloneMachine.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FalloutRedScare\RedScare.csproj">
-      <Project>{33732c60-7aa8-4999-a39d-879e3da25e10}</Project>
-      <Name>RedScare</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
       <Version>1.2.2753</Version>
     </PackageReference>
