@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RedScare.TotalWarDef>
+	<FalloutCore.TotalWarDef>
 		<defName>FRS_PR_TotalWar</defName>
 		<factionDef>FRS_PR</factionDef>
 		<scapegoatCooldownDays>6~12</scapegoatCooldownDays>
@@ -22,7 +22,7 @@
 		<introScript>FRS_PR_Allegiance</introScript>
 		<productionQuotaCooldownDays>4~7</productionQuotaCooldownDays>
 		<productionQuota>FRS_ProduceItem</productionQuota>
-	</RedScare.TotalWarDef>
+	</FalloutCore.TotalWarDef>
 
 
 </Defs>

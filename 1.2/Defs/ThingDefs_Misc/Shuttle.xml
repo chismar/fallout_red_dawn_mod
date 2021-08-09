@@ -48,7 +48,7 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="RedScare.CompProperties_FRS_Shuttle" >
+      <li Class="FalloutCore.CompProperties_FRS_Shuttle" >
         <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
       </li>
       <li Class="CompProperties_Launchable">
@@ -153,7 +153,7 @@
   <ThingDef ParentName="FRS_ShuttleSkyfallerBase">
     <defName>FRS_ShuttleLeaving</defName>
     <label>shuttle (leaving)</label>
-    <thingClass>DropPodLeaving</thingClass>
+    <thingClass>FlyShipLeaving</thingClass>
     <skyfaller>
       <reversed>true</reversed>
       <anticipationSound>Shuttle_Leaving</anticipationSound>

@@ -88,16 +88,16 @@
   </RoyalTitlePermitDef>
 -->
 
-	<RedScare.FRSRoyalTitlePermitDef>
+	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdrop</defName>
 		<label>shuttle squad airdrop</label>
 		<description>shuttle squad airdrop.</description>
-		<workerClass>RedScare.CallAirSupport</workerClass>
-		<workerSettings Class="RedScare.AirSupportSettings"> 
+		<workerClass>FalloutCore.CallAirSupport</workerClass>
+		<workerSettings Class="FalloutCore.AirSupportSettings"> 
 			<shuttleDef>FRS_Shuttle</shuttleDef>
 			<shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
 			<pawnGroupMakers>
-				<li Class="RedScare.PawnGroupMakerPR">
+				<li Class="FalloutCore.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
@@ -119,19 +119,19 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,0)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-  </RedScare.FRSRoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
   
-  <RedScare.FRSRoyalTitlePermitDef>
+  <FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdropInsertion</defName>
 		<label>shuttle squad airdrop insertion</label>
 		<description>shuttle squad airdrop insertion.</description>
-		<workerClass>RedScare.CallAirSupportTargeted</workerClass>
-		<workerSettings Class="RedScare.AirSupportSettingsTargeted"> 
+		<workerClass>FalloutCore.CallAirSupportTargeted</workerClass>
+		<workerSettings Class="FalloutCore.AirSupportSettingsTargeted"> 
       <shuttleDef>FRS_Shuttle</shuttleDef>
       <shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
       <radius>50</radius>
 			<pawnGroupMakers>
-				<li Class="RedScare.PawnGroupMakerPR">
+				<li Class="FalloutCore.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
@@ -153,14 +153,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,4)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</RedScare.FRSRoyalTitlePermitDef>
+	</FalloutCore.FRSRoyalTitlePermitDef>
 	
-	<RedScare.FRSRoyalTitlePermitDef>
+	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombingLiberators</defName>
 		<label>liberator bombing bombing</label>
 		<description>liberator bombing.</description>
-		<workerClass>RedScare.AirBombing</workerClass>
-		<workerSettings Class="RedScare.AirBombingSettings"> 
+		<workerClass>FalloutCore.AirBombing</workerClass>
+		<workerSettings Class="FalloutCore.AirBombingSettings"> 
 			<airBombingCommandKey>FRS.AirBombingLabelLiberators</airBombingCommandKey>
 			<shootingLineAngle>0</shootingLineAngle>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
@@ -175,14 +175,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,1)</uiPosition>
     <cooldownDays>60</cooldownDays>
-  </RedScare.FRSRoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
   
-	<RedScare.FRSRoyalTitlePermitDef>
+	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_AirBombing</defName>
 		<label>air bombing</label>
 		<description>air bombing.</description>
-		<workerClass>RedScare.AirBombing</workerClass>
-		<workerSettings Class="RedScare.AirBombingSettings"> 
+		<workerClass>FalloutCore.AirBombing</workerClass>
+		<workerSettings Class="FalloutCore.AirBombingSettings"> 
 			<airBombingCommandKey>FRS.AirBombingLabel</airBombingCommandKey>
 			<shootingLineAngle>0</shootingLineAngle>
 			<skyfallerBomber>FRS_ShuttleBomberLeaving</skyfallerBomber>
@@ -197,14 +197,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,5)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</RedScare.FRSRoyalTitlePermitDef>
+	</FalloutCore.FRSRoyalTitlePermitDef>
 
-	<RedScare.FRSRoyalTitlePermitDef>
+	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_StartRebellion</defName>
 		<label>start rebellion</label>
 		<description>start rebellion.</description>
-		<workerClass>RedScare.StartRebellion</workerClass>
-		<workerSettings Class="RedScare.RebellionSettings"> 
+		<workerClass>FalloutCore.StartRebellion</workerClass>
+		<workerSettings Class="FalloutCore.RebellionSettings"> 
 			<rebellionCommandKey>FRS.StartRebellionLabel</rebellionCommandKey>
 			<rebellionNoPrisonersAvailableKey>FRS.NoPrisonersAvailableLabel</rebellionNoPrisonersAvailableKey>
 			<weaponsToGivePrisoners>
@@ -216,14 +216,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,2)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-	</RedScare.FRSRoyalTitlePermitDef>
+	</FalloutCore.FRSRoyalTitlePermitDef>
 	
-	<RedScare.FRSRoyalTitlePermitDef>
+	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_SwitchSides</defName>
 		<label>switch sides</label>
 		<description>switch sides.</description>
-		<workerClass>RedScare.SwitchSides</workerClass>
-		<workerSettings Class="RedScare.SwitchSidesSettings"> 
+		<workerClass>FalloutCore.SwitchSides</workerClass>
+		<workerSettings Class="FalloutCore.SwitchSidesSettings"> 
 			<switchSidesCommandKey>FRS.SwitchSidesLabel</switchSidesCommandKey>
 			<radiusToSwitch>10</radiusToSwitch>
 			<giveThoughtToPlayerPawns>DebugBad</giveThoughtToPlayerPawns>
@@ -233,14 +233,14 @@
 		<permitPointCost>1</permitPointCost>
 		<uiPosition>(0,3)</uiPosition>
 		<cooldownDays>60</cooldownDays>
-  </RedScare.FRSRoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
   
-  <RedScare.FRSRoyalTitlePermitDef>
+  <FalloutCore.FRSRoyalTitlePermitDef>
     <defName>CallTransportShuttle_PR</defName>
     <label>red call transport shuttle</label>
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
-    <workerClass>RedScare.CallSpecifiedShuttle</workerClass>
-		<workerSettings Class="RedScare.CallSpecifiedShuttleSettings"> 
+    <workerClass>FalloutCore.CallSpecifiedShuttle</workerClass>
+		<workerSettings Class="FalloutCore.CallSpecifiedShuttleSettings"> 
 			<shuttleQuestDef>FRS_Permit_CallShuttle</shuttleQuestDef>
 			<shuttleDef>FRS_Shuttle</shuttleDef>
 		</workerSettings>
@@ -255,7 +255,7 @@
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>
     </royalAid>
-  </RedScare.FRSRoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 	<!--
 	
   <RoyalTitlePermitDef>

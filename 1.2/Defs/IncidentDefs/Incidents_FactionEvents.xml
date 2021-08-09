@@ -8,7 +8,7 @@
     <targetTags>
       <li>World</li>
     </targetTags>
-    <workerClass>RedScare.IncidentWorker_BaseAbandoned</workerClass>
+    <workerClass>FalloutCore.IncidentWorker_BaseAbandoned</workerClass>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>PositiveEvent</letterDef>
@@ -24,7 +24,7 @@
     <targetTags>
       <li>World</li>
     </targetTags>
-    <workerClass>RedScare.IncidentWorker_FactionBaseSpawned</workerClass>
+    <workerClass>FalloutCore.IncidentWorker_FactionBaseSpawned</workerClass>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>ThreatSmall</letterDef>
@@ -39,7 +39,7 @@
     <targetTags>
       <li>World</li>
     </targetTags>
-    <workerClass>RedScare.IncidentWorker_FactionBaseSpawned</workerClass>
+    <workerClass>FalloutCore.IncidentWorker_FactionBaseSpawned</workerClass>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>ThreatBig</letterDef>

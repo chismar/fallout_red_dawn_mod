@@ -25,7 +25,7 @@
         </li>
 
         <!-- Generate shuttle -->
-        <li Class="RedScare.QuestNode_GenerateSpecifiedShuttle">
+        <li Class="FalloutCore.QuestNode_GenerateSpecifiedShuttle">
           <shuttle>FRS_Shuttle</shuttle>
           <storeAs>shuttle</storeAs>
           <permitShuttle>true</permitShuttle>

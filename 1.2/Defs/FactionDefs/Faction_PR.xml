@@ -90,7 +90,7 @@
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
       <!-- Traders - TODO -->
-      <li Class="RedScare.PawnGroupMakerPR">
+      <li Class="FalloutCore.PawnGroupMakerPR">
         <kindDef>Trader</kindDef>
         <traders>
           <FRS_PR_Common_Trader>1</FRS_PR_Common_Trader>
@@ -111,7 +111,7 @@
           <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
         </guards>
       </li>
-      <li Class="RedScare.PawnGroupMakerPR">
+      <li Class="FalloutCore.PawnGroupMakerPR">
         <!-- Normal fights -->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
@@ -124,7 +124,7 @@
           <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
         </options>
       </li>
-      <li Class="RedScare.PawnGroupMakerPR">
+      <li Class="FalloutCore.PawnGroupMakerPR">
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <kindDef>Settlement</kindDef>
         <options>
@@ -138,7 +138,7 @@
       </li>
     </pawnGroupMakers>
 	<modExtensions>
-		<li Class="RedScare.FactionModExtension">
+		<li Class="FalloutCore.FactionModExtension">
 			<customShuttle>FRS_Shuttle</customShuttle>
 			<customShuttleIncoming>FRS_ShuttleIncoming</customShuttleIncoming>
 			<customShuttleLeaving>FRS_ShuttleLeaving</customShuttleLeaving>

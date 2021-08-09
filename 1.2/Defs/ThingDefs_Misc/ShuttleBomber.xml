@@ -5,7 +5,7 @@
   <ThingDef ParentName="SkyfallerBase">
     <defName>FRS_ShuttleBomberLeaving</defName>
     <label>aircraft (incoming)</label>
-    <thingClass>RedScare.ShuttleBomber</thingClass>
+    <thingClass>FalloutCore.ShuttleBomber</thingClass>
     <graphicData>
       <texPath>FRS/Things/Skyfaller/ChineseBomber</texPath>
       <graphicClass>Graphic_Single</graphicClass>

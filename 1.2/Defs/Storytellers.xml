@@ -9,7 +9,7 @@
 		<portraitTiny>FRS/Storytellers/RedGuardTiny</portraitTiny>
 		<listOrder>20</listOrder>
 		<modExtensions>
-			<li Class="RedScare.RedStorytellerExtension">
+			<li Class="FalloutCore.RedStorytellerExtension">
 				<options>
 					<li>
 						<playerFaction>AutonomousPeoplesRepublic</playerFaction>

@@ -23,7 +23,7 @@
 		</questDescriptionRules>
 		<root Class="QuestNode_Sequence">
 			<nodes>
-				<li Class="RedScare.QuestNode_GetFactionFromDef">
+				<li Class="FalloutCore.QuestNode_GetFactionFromDef">
 					<factionDef>FRS_PR</factionDef>
 					<storeAs>askerFaction</storeAs>
 					<minimumGoodwillWithPlayer>10</minimumGoodwillWithPlayer>
@@ -31,7 +31,7 @@
 
 				<li Class="QuestNode_GetMap" />
 
-				<li Class="RedScare.QuestNode_GetThingPlayerCanProduce">
+				<li Class="FalloutCore.QuestNode_GetThingPlayerCanProduce">
 					<storeProductionItemDefAs>defToProduce</storeProductionItemDefAs>
 					<storeProductionItemStuffAs>stuffToProduce</storeProductionItemStuffAs>
 					<storeProductionItemCountAs>countToProduce</storeProductionItemCountAs>
@@ -57,7 +57,7 @@
 					<inSignal>AllProduced</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
-							<li Class="RedScare.QuestNode_GenerateSpecifiedShuttle">
+							<li Class="FalloutCore.QuestNode_GenerateSpecifiedShuttle">
 								<shuttle>FRS_Shuttle</shuttle>
 								<requiredDef>$defToProduce</requiredDef>
 								<requiredStuff>$stuffToProduce</requiredStuff>
@@ -128,7 +128,7 @@
 					<inSignal>shuttle.SentUnsatisfied</inSignal>
 					<node Class="QuestNode_End" />
 				</li>
-				<li Class="RedScare.QuestNode_SetRewards">
+				<li Class="FalloutCore.QuestNode_SetRewards">
 					<inSignal>shuttle.SentSatisfied</inSignal>
 					<goodwillRange>10~20</goodwillRange>
 					<favorRange>10~20</favorRange>
@@ -137,7 +137,7 @@
 					<inSignal>shuttle.SentSatisfied</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
-							<li Class="RedScare.QuestNode_FactionPointsChange">
+							<li Class="FalloutCore.QuestNode_FactionPointsChange">
 								<faction>$askerFaction</faction>
 								<points>5000</points>
 							</li>

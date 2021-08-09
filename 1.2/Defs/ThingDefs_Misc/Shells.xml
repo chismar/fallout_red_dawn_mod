@@ -37,8 +37,8 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<comps>
-			<li Class="RedScare.CompProperties_SpawnerPawnFromDamage">
-				<compClass>RedScare.CompSpawnerPawnFromDamage</compClass>
+			<li Class="FalloutCore.CompProperties_SpawnerPawnFromDamage">
+				<compClass>FalloutCore.CompSpawnerPawnFromDamage</compClass>
 				<spawnablePawnKinds>
 					<li>FRS_Mechanoids_Liberator</li>
 				</spawnablePawnKinds>

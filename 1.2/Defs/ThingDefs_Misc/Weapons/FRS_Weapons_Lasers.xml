@@ -153,7 +153,7 @@
     <positionRadius>0.3</positionRadius>
   </EffecterDef>
 
-  <RedScare.Lasers.LaserRayGunDef Name="FRS_BaseLaserGun" Abstract="True" ParentName="BaseWeapon">
+  <FalloutCore.FRSLaserRayGunDef Name="FRS_BaseLaserGun" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Ultra</techLevel>
     <smeltable>true</smeltable>
 	  <tradeability>Sellable</tradeability>
@@ -188,11 +188,11 @@
       <recipeUsers />
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker>
-  </RedScare.Lasers.LaserRayGunDef>
+  </FalloutCore.FRSLaserRayGunDef>
   
   <ThingDef>
     <defName>FRS_BeamGraphic</defName>
-    <thingClass>RedScare.Lasers.LaserRayGraphic</thingClass>
+    <thingClass>FalloutCore.FRSLaserRayGraphic</thingClass>
     <drawOffscreen>true</drawOffscreen>
     <label>laser beam</label>
     <category>Projectile</category>
@@ -203,7 +203,7 @@
   </ThingDef>
 
   <ThingDef Abstract="True" Name="FRS_Bullet_LaserGeneric" ParentName="BaseBullet">
-    <thingClass>RedScare.Lasers.LaserRay</thingClass>
+    <thingClass>FalloutCore.FRSLaserRayDef</thingClass>
     <drawOffscreen>true</drawOffscreen>
     <beamGraphic>FRS_BeamGraphic</beamGraphic>
 
@@ -225,7 +225,7 @@
     <seam>0.25</seam>
   </ThingDef>
 
-  <ThingDef ParentName="FRS_Bullet_LaserGeneric" Class="RedScare.Lasers.LaserRayDef">
+  <ThingDef ParentName="FRS_Bullet_LaserGeneric" Class="FalloutCore.FRSLaserRayDef">
     <defName>FRS_Bullet_LaserPistol</defName>
     <label>laser shot</label>
     <description>laser shot</description>
@@ -259,9 +259,9 @@
     </subSounds>
   </SoundDef>
 
-  <RedScare.Lasers.LaserRayGunDef ParentName="FRS_BaseLaserGun">
+  <FalloutCore.FRSLaserRayGunDef ParentName="FRS_BaseLaserGun">
     <defName>FRS_Gun_LaserPistol</defName>
-    <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
+    <thingClass>FalloutCore.FRSLaserRayGun</thingClass>
     <barrelLength>1.2</barrelLength>
     <label>Cosmonaut's laser pistol</label>
     <description>Cosmonaut's laser pistol is an advanced sidearm developed for the People's Republic space stations crew, praised by it's accuracy, effiency and low weight.</description>
@@ -338,11 +338,11 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </RedScare.Lasers.LaserRayGunDef>
+  </FalloutCore.FRSLaserRayGunDef>
 
-  <RedScare.Lasers.LaserRayGunDef ParentName="BaseGunWithQuality">
+  <FalloutCore.FRSLaserRayGunDef ParentName="BaseGunWithQuality">
     <defName>FRS_Gun_LaserGunLiberator</defName>
-    <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
+    <thingClass>FalloutCore.FRSLaserRayGun</thingClass>
     <label>liberator laser gun</label>
     <description>liberator laser gun</description>
     <graphicData>
@@ -402,11 +402,11 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </RedScare.Lasers.LaserRayGunDef>
+  </FalloutCore.FRSLaserRayGunDef>
 
-  <RedScare.Lasers.LaserRayGunDef ParentName="FRS_BaseLaserGun">
+  <FalloutCore.FRSLaserRayGunDef ParentName="FRS_BaseLaserGun">
     <defName>FRS_Gun_LaserSMG</defName>
-    <thingClass>RedScare.Lasers.LaserRayGun</thingClass>
+    <thingClass>FalloutCore.FRSLaserRayGun</thingClass>
     <label>Cosmonaut's laser SMG</label>
     <description>Cosmonaut's laser SMG is an advanced standard issue weapon of People's Republic space troops. Capable of outputting high volumes of fire accurately, necessary to handle any threat encountered in deep space.</description>
     <graphicData>
@@ -482,6 +482,6 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-  </RedScare.Lasers.LaserRayGunDef>
+  </FalloutCore.FRSLaserRayGunDef>
 
 </Defs>

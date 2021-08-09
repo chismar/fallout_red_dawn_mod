@@ -271,7 +271,7 @@
     </disallowedTraits>
   </PawnKindDef>
 
-  <RedScare.RestrictedBodyPawnKindDef ParentName="FRS_PR_StealthDragoonBase">
+  <FalloutCore.RestrictedBodyPawnKindDef ParentName="FRS_PR_StealthDragoonBase">
     <defName>FRS_PR_StealthDragoon</defName>
     <label>stealth dragoon</label>
     <skills>
@@ -292,7 +292,7 @@
       <li>Female</li>
       <li>Thin</li>
     </restrictBodyTypesTo>
-  </RedScare.RestrictedBodyPawnKindDef>
+  </FalloutCore.RestrictedBodyPawnKindDef>
 
 
   <PawnKindDef Name="FRS_PR_PowerArmorSoldierBase" Abstract="True" ParentName="FRS_PR_RedArmySoldier">

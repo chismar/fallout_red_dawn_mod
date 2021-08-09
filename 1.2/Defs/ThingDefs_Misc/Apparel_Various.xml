@@ -287,8 +287,8 @@
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="RedScare.CompProperties_HediffActivationReloadable">
-				<compClass>RedScare.CompStealthActivation_Reloadable</compClass>
+			<li Class="FalloutCore.CompProperties_HediffActivationReloadable">
+				<compClass>FalloutCore.CompStealthActivation_Reloadable</compClass>
 				<hediffDurationTicks>5000</hediffDurationTicks>
 				<hediffDef>FRS_Invisibility</hediffDef>
 				<maxCharges>5</maxCharges>
@@ -300,7 +300,7 @@
 				<chargeNoun>stealth mode</chargeNoun>
 				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 			</li>
-			<li Class="RedScare.CompProperties_ApparelComp_RestrictBodyType">
+			<li Class="FalloutCore.CompProperties_ApparelComp_RestrictBodyType">
 				<restrictBodyTypes>
 					<li>Hulk</li>
 					<li>Fat</li>
@@ -309,7 +309,7 @@
 		</comps>
 		<verbs>
 			<li>
-				<verbClass>RedScare.Verb_UseCompReloadable</verbClass>
+				<verbClass>FalloutCore.Verb_UseCompReloadable</verbClass>
 				<label>stealth mode</label>
 				<commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
 				<violent>false</violent>

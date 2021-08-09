@@ -10,7 +10,7 @@
         <li Class="ThinkNode_ConditionalOfPlayerFactionOrPlayerGuestOrPlayerPrisoner">
         <invert>true</invert>
           <subNodes>
-            <li Class="RedScare.JobGiver_AIPermit" />
+            <li Class="FalloutCore.JobGiver_AIPermit" />
           </subNodes>
         </li>
       </subNodes>
