@@ -40,7 +40,7 @@
     <throneRoomRequirements>
       <li Class="RoomRequirement_HasAssignedThroneAnyOf">
         <things>
-          <li>Throne</li>
+          <li>Armchair</li>
         </things>
       </li>
       <li Class="RoomRequirement_Area">
@@ -68,7 +68,7 @@
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
-        <area>16</area>
+        <area>10</area>
       </li>
       <li Class="RoomRequirement_TerrainWithTags">
         <labelKey>RoomRequirementAllFloored</labelKey>
