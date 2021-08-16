@@ -13,7 +13,8 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Steel>15</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
@@ -61,7 +62,8 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Steel>15</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
@@ -110,7 +112,8 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Steel>15</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
@@ -158,7 +161,8 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Steel>15</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
@@ -207,7 +211,7 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
@@ -297,7 +301,7 @@
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <costList>
-      <Steel>50</Steel>
+      <Cloth>50</Cloth>
     </costList>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>

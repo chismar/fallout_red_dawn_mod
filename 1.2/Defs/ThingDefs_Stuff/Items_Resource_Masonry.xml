@@ -87,7 +87,7 @@
 			<stuffAdjective>concrete</stuffAdjective>
 			<appearance>ConcreteAM</appearance>
 			<statOffsets>
-				<WorkToBuild>20</WorkToBuild>
+				<WorkToBuild>1</WorkToBuild>
 			</statOffsets>
 			<statFactors>
 				<Beauty>1</Beauty>  
@@ -130,7 +130,7 @@
 			<stuffAdjective>reinforced concrete</stuffAdjective>
 			<appearance>ReinforcedConcreteAM</appearance>
 			<statOffsets>
-				<WorkToBuild>20</WorkToBuild>
+				<WorkToBuild>1</WorkToBuild>
 			</statOffsets>
 			<statFactors>
 				<Beauty>0.9</Beauty>  
