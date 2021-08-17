@@ -139,6 +139,7 @@
 			<customShuttleLeaving>FRS_ShuttleLeaving</customShuttleLeaving>
 			<customShuttleCrashing>FRS_ShuttleCrashing</customShuttleCrashing>
 			<customShuttleCrashed>FRS_ShuttleCrashed</customShuttleCrashed>
+			<customTransportShipDef>FRS_Ship_Shuttle</customTransportShipDef>
 		</li>
 	</modExtensions>
   </FactionDef>

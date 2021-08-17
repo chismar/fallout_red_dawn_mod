@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <TransportShipDef>
+    <defName>FRS_Ship_Shuttle</defName>
+    <label>shuttle</label>
+    <shipThing>FRS_Shuttle</shipThing>
+    <arrivingSkyfaller>FRS_ShuttleIncoming</arrivingSkyfaller>
+    <leavingSkyfaller>FRS_ShuttleLeaving</leavingSkyfaller>
+    <worldObject>TravelingShuttle</worldObject>
+    <maxLaunchDistance>70</maxLaunchDistance>
+  </TransportShipDef>
+  
   <ThingDef Name="FRS_ShuttleBase" ParentName="BuildingBase">
     <defName>FRS_Shuttle</defName>
     <label>red shuttle</label>
@@ -25,6 +35,7 @@
       <Flammability>1</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
+    <canOverlapZones>true</canOverlapZones>
     <killedLeavings>
       <Steel>100</Steel>
       <Plasteel>35</Plasteel>
@@ -35,6 +46,7 @@
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
     <drawerType>MapMeshOnly</drawerType>
     <repairEffect>ConstructMetal</repairEffect>
     <forceDebugSpawnable>true</forceDebugSpawnable>
@@ -48,14 +60,7 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="FalloutCore.CompProperties_FRS_Shuttle" >
-        <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
-      </li>
-      <li Class="CompProperties_Launchable">
-        <requireFuel>false</requireFuel>
-        <fixedLaunchDistanceMax>70</fixedLaunchDistanceMax>
-        <skyfallerLeaving>FRS_ShuttleLeaving</skyfallerLeaving>
-      </li>
+      <li Class="CompProperties_Shuttle"></li>
       <li Class="CompProperties_Transporter">
         <massCapacity>1000</massCapacity>
         <max1PerGroup>true</max1PerGroup>

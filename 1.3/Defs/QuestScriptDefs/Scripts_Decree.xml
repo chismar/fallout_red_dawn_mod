@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<QuestScriptDef>
@@ -29,7 +29,7 @@
 					<minimumGoodwillWithPlayer>10</minimumGoodwillWithPlayer>
 				</li>
 
-				<li Class="QuestNode_GetMap" />
+				<li Class="QuestNode_GetMap"/>
 
 				<li Class="FalloutCore.QuestNode_GetThingPlayerCanProduce">
 					<storeProductionItemDefAs>defToProduce</storeProductionItemDefAs>
@@ -57,43 +57,70 @@
 					<inSignal>AllProduced</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
-							<li Class="FalloutCore.QuestNode_GenerateSpecifiedShuttle">
-								<shuttle>FRS_Shuttle</shuttle>
-								<requiredDef>$defToProduce</requiredDef>
-								<requiredStuff>$stuffToProduce</requiredStuff>
-								<requiredCount>$countToProduce</requiredCount>
-								<storeAs>shuttle</storeAs>
-							</li>
-							<li Class="QuestNode_SpawnSkyfaller">
-								<skyfallerDef>FRS_ShuttleIncoming</skyfallerDef>
-								<innerThings>$shuttle</innerThings>
-								<tryLandInShipLandingZone>True</tryLandInShipLandingZone>
-								<lookForSafeSpot>True</lookForSafeSpot>
-							</li>
-							<li Class="QuestNode_SendShuttleAwayOnCleanup">
-								<shuttle>$shuttle</shuttle>
-							</li>
-							<li Class="QuestNode_InspectString">
-								<targets>$laborers</targets>
-								<inspectString TKey="InspectStringDepartShuttle">Should depart on shuttle</inspectString>
-							</li>
+
 							<li Class="QuestNode_Letter">
 								<label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
 								<text TKey="LetterTextShuttleArrivedForLaborers">A shuttle has arrived to collect the items.</text>
 								<lookTargets>$shuttle</lookTargets>
 							</li>
-							<li Class="QuestNode_ShuttleLeaveDelay">
-								<delayTicks>$(1*60000)</delayTicks>
-								<shuttle>$shuttle</shuttle>
+
+							<li Class="QuestNode_ShuttleDelay">
+								<delayTicks>7500</delayTicks>
 								<node Class="QuestNode_Sequence">
 									<nodes>
-										<li Class="QuestNode_SendShuttleAway">
-											<shuttle>$shuttle</shuttle>
+										<li Class="FalloutCore.QuestNode_SetRequiredItems">
+											<requiredDef>$defToProduce</requiredDef>
+											<requiredStuff>$stuffToProduce</requiredStuff>
+											<requiredCount>$countToProduce</requiredCount>
 										</li>
-										<li Class="QuestNode_End"/>
+										
+										<li Class="QuestNode_GenerateShuttle">
+											<requiredItems>$requiredItems</requiredItems>
+											<storeAs>pickupShipThing</storeAs>
+										</li>
+										
+										<!-- Generate the transport ship -->
+										<li Class="QuestNode_GenerateTransportShip">
+											<def>FRS_Ship_Shuttle</def>
+											<shipThing>$pickupShipThing</shipThing>
+											<storeAs>pickUpShip</storeAs>
+										</li>
+
+										<!-- Add jobs -->
+										<li Class="QuestNode_AddShipJob_Arrive">
+											<transportShip>$pickUpShip</transportShip>
+											<shipJobStartMode>Instant</shipJobStartMode>
+										</li>
+										<li Class="QuestNode_AddShipJob_Wait">
+											<jobDef>WaitTime</jobDef>
+											<ticks>60000</ticks>
+											<transportShip>$pickUpShip</transportShip>
+											<leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
+										</li>
+										<li Class="QuestNode_AddShipJob_FlyAway">
+											<transportShip>$pickUpShip</transportShip>
+										</li>
+
+										<!-- Send away on cleanup -->
+										<li Class="QuestNode_SendTransportShipAwayOnCleanup">
+											<transportShip>$pickUpShip</transportShip>
+											<unsatisfiedDropMode>All</unsatisfiedDropMode>
+										</li>
+
+										<li Class="QuestNode_InspectString">
+											<targets>$asker</targets>
+											<inspectString TKey="InspectStringDepartShuttle">Should depart on shuttle</inspectString>
+										</li>
+
+										<li Class="QuestNode_Letter">
+											<label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
+											<text TKey="LetterTextShuttleArrived">The shuttle has arrived to collect the items.</text>
+											<lookTargets>$pickupShipThing</lookTargets>
+										</li>
 									</nodes>
 								</node>
 							</li>
+
 						</nodes>
 					</node>
 				</li>
@@ -111,30 +138,30 @@
 
 				<!-- Departure shuttle is destroyed -->
 				<li Class="QuestNode_Signal">
-					<inSignal>shuttle.Destroyed</inSignal>
+					<inSignal>pickupShipThing.Destroyed</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
 							<!--<li Class="QuestNode_ChangeFactionGoodwill">
 								<faction>$askerFaction</faction>
 								<change>$goodwillChangeOnShuttleDestroyed</change>
 							</li> -->
-							<li Class="QuestNode_End" />
+							<li Class="QuestNode_End"/>
 						</nodes>
 					</node>
 				</li>
 
 				<!-- Shuttle sent -->
 				<li Class="QuestNode_Signal">
-					<inSignal>shuttle.SentUnsatisfied</inSignal>
-					<node Class="QuestNode_End" />
+					<inSignal>pickupShipThing.SentUnsatisfied</inSignal>
+					<node Class="QuestNode_End"/>
 				</li>
 				<li Class="FalloutCore.QuestNode_SetRewards">
-					<inSignal>shuttle.SentSatisfied</inSignal>
+					<inSignal>pickupShipThing.SentSatisfied</inSignal>
 					<goodwillRange>10~20</goodwillRange>
 					<favorRange>10~20</favorRange>
 				</li>
 				<li Class="QuestNode_Signal">
-					<inSignal>shuttle.SentSatisfied</inSignal>
+					<inSignal>pickupShipThing.SentSatisfied</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
 							<li Class="FalloutCore.QuestNode_FactionPointsChange">
@@ -156,7 +183,7 @@
 				<!-- End if the permit's faction becomes hostile -->
 				<li Class="QuestNode_Signal">
 					<inSignal>permitFaction.BecameHostileToPlayer</inSignal>
-					<node Class="QuestNode_End" />
+					<node Class="QuestNode_End"/>
 				</li>
 
 
