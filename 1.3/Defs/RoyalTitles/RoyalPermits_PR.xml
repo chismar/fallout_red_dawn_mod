@@ -213,15 +213,11 @@
 		<cooldownDays>60</cooldownDays>
   </FalloutCore.FRSRoyalTitlePermitDef>
   
-  <FalloutCore.FRSRoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
     <defName>CallTransportShuttle_PR</defName>
     <label>red call transport shuttle</label>
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
-    <workerClass>FalloutCore.CallSpecifiedShuttle</workerClass>
-		<workerSettings Class="FalloutCore.CallSpecifiedShuttleSettings"> 
-			<shuttleQuestDef>FRS_Permit_CallShuttle</shuttleQuestDef>
-			<shuttleDef>FRS_Shuttle</shuttleDef>
-		</workerSettings>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
     <minTitle>FRS_Captain</minTitle>
     <faction>FRS_PR</faction>
     <permitPointCost>1</permitPointCost>
@@ -233,7 +229,7 @@
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>
     </royalAid>
-  </FalloutCore.FRSRoyalTitlePermitDef>
+  </RoyalTitlePermitDef>
 	<!--
 	
   <RoyalTitlePermitDef>
