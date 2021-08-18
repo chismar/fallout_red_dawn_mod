@@ -10,6 +10,10 @@
 			<filter>
 			  <thingDefs>
 				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+				<li>BlocksGranite</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksLimestone</li>
 			  </thingDefs>
 			</filter>
 			<count>10</count>
@@ -17,6 +21,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 		  <thingDefs>
+			<li>BlocksLimestone</li>
+			<li>BlocksSlate</li>
+			<li>BlocksGranite</li>
+			<li>BlocksSandstone</li>
 			<li>BlocksLimestone</li>
 		  </thingDefs>
 		</fixedIngredientFilter>
