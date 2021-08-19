@@ -40,7 +40,7 @@
     <throneRoomRequirements>
       <li Class="RoomRequirement_HasAssignedThroneAnyOf">
         <things>
-          <li>Armchair</li>
+          <li>FRS_Throne</li>
         </things>
       </li>
       <li Class="RoomRequirement_Area">
