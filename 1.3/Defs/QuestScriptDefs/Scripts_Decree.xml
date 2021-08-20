@@ -46,7 +46,7 @@
 					<totalMarketValuePerPlayerWealth>0.05~0.15</totalMarketValuePerPlayerWealth>
 				</li>
 
-				<li Class="QuestNode_ThingsProduced">
+				<li Class="FalloutCore.QuestNode_ThingsStored">
 					<def>$defToProduce</def>
 					<stuff>$stuffToProduce</stuff>
 					<count>$countToProduce</count>
