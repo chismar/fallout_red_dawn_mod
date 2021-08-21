@@ -1,4 +1,6 @@
-<ThingDef ParentName="FurnitureWithQualityBase">
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>FRS_Throne</defName>
     <label>comfortable chair</label>
     <drawGUIOverlay>true</drawGUIOverlay>
@@ -7,7 +9,9 @@
     <defaultPlacingRot>South</defaultPlacingRot>
     <altitudeLayer>Building</altitudeLayer>
     <category>Building</category>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <hasInteractionCell>true</hasInteractionCell>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
@@ -87,3 +91,5 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
   </ThingDef>
+
+</Defs>
