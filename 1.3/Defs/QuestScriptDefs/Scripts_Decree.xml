@@ -65,7 +65,7 @@
 							</li>
 
 							<li Class="QuestNode_ShuttleDelay">
-								<delayTicks>7500</delayTicks>
+								<delayTicks>100</delayTicks>
 								<node Class="QuestNode_Sequence">
 									<nodes>
 										<li Class="FalloutCore.QuestNode_SetRequiredItems">

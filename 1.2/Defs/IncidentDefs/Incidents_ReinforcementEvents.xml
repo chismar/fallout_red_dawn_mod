@@ -9,6 +9,8 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>FalloutCore.IncidentWorker_Reinforcements</workerClass>
+    <calledFaction>FRS_PR</calledFaction>
+    <assignedFaction>AutonomousPeoplesRepublic</assignedFaction>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>ThreatSmall</letterDef>
@@ -22,18 +24,18 @@
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
-            <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
-            <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
-            <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
-            <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
-            <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
-            <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
+            <FRS_PR_RedArmyConscriptSummer>200</FRS_PR_RedArmyConscriptSummer>
+            <FRS_PR_RedArmyConscriptWinter>200</FRS_PR_RedArmyConscriptWinter>
+            <FRS_PR_RedArmyConscriptSummerWithMask>200</FRS_PR_RedArmyConscriptSummerWithMask>
+            <FRS_PR_RedArmyConscriptWinterWithMask>200</FRS_PR_RedArmyConscriptWinterWithMask>
+            <FRS_PR_RedArmyMilitant>200</FRS_PR_RedArmyMilitant>
+            <FRS_PR_RedArmyOfficer>50</FRS_PR_RedArmyOfficer>
             <FRS_PR_StealthDragoon>2</FRS_PR_StealthDragoon>
             <FRS_PR_PowerArmorSoldier>2</FRS_PR_PowerArmorSoldier>
 					</options>
 				</li>
 			</pawnGroupMakers>
-			<points>500</points>
+			<points>300</points>
     </airSupportSettings>
   </FalloutCore.ReinforcementsIncidentDef>
   

@@ -3,7 +3,7 @@
 
   <IncidentDef>
     <defName>FRS_PR_BaseAbandoned</defName>
-    <label>Faction base abandoned</label>
+    <label>communist base abandoned</label>
     <category>Misc</category>
     <targetTags>
       <li>World</li>
@@ -12,15 +12,15 @@
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>PositiveEvent</letterDef>
-    <letterLabel>{FACTION_name}'s base abandoned</letterLabel>
-    <letterText>{FACTION_name}'s base abandoned.</letterText>
+    <letterLabel>communist base abandoned</letterLabel>
+    <letterText>communist base abandoned.</letterText>
   </IncidentDef>
   
   
   <IncidentDef>
     <defName>FRS_PR_SmallBaseSpawned</defName>
-    <label>small base spawned</label>
-    <category>ThreatSmall</category>
+    <label>small communist base spawned</label>
+    <category>Misc</category>
     <targetTags>
       <li>World</li>
     </targetTags>
@@ -34,8 +34,8 @@
   
   <IncidentDef>
     <defName>FRS_PR_BigBaseSpawned</defName>
-    <label>big base spawned</label>
-    <category>ThreatBig</category>
+    <label>big communist base spawned</label>
+    <category>Misc</category>
     <targetTags>
       <li>World</li>
     </targetTags>
