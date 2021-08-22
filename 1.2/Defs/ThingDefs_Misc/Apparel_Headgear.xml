@@ -335,7 +335,7 @@
     </apparel>
 
   </ThingDef>
-  <ThingDef ParentName="HatMakeableBase">
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>FRS_Apparel_RedArmyPowerArmorHelmet</defName>
     <label>Power Armor Helmet</label> 
 		<description>A helmet for the Chinese power armour. It looks quite different compared to the T-series, as it features three prominent glowing dots, two of which serve as viewing slots for the occupant. Like all power armour it effectively shields its wearer against most attacks, much better than most other helmets but is quite heavy.</description>
