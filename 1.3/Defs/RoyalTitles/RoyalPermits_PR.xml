@@ -94,8 +94,6 @@
 		<description>shuttle squad airdrop.</description>
 		<workerClass>FalloutCore.CallAirSupport</workerClass>
 		<workerSettings Class="FalloutCore.AirSupportSettings"> 
-			<shuttleDef>FRS_Shuttle</shuttleDef>
-			<shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
 			<pawnGroupMakers>
 				<li Class="FalloutCore.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
@@ -127,8 +125,6 @@
 		<description>shuttle squad airdrop insertion.</description>
 		<workerClass>FalloutCore.CallAirSupportTargeted</workerClass>
 		<workerSettings Class="FalloutCore.AirSupportSettingsTargeted"> 
-      <shuttleDef>FRS_Shuttle</shuttleDef>
-      <shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
       <radius>50</radius>
 			<pawnGroupMakers>
 				<li Class="FalloutCore.PawnGroupMakerPR">

@@ -17,8 +17,6 @@
     <letterLabel>reinforcements have arrived</letterLabel>
     <letterText>reinforcements have arrived</letterText>
     <airSupportSettings>
-      <shuttleDef>FRS_Shuttle</shuttleDef>
-      <shuttleSkyfallerIncoming>FRS_ShuttleIncoming</shuttleSkyfallerIncoming>
 			<pawnGroupMakers>
 				<li>
 					<kindDef>Combat</kindDef>
