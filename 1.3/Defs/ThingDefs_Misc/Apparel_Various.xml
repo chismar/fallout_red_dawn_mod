@@ -166,7 +166,7 @@
 
 
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>FRS_Apparel_RedArmyPowerArmor</defName>
 		<label>PLA Power Armour</label> 
 		<description>A Chinese suit of power armour. It functions very similarly like its American counterparts and is adorned with the symbols and mottos of the party. Like all power armour suits, it provides excellent protection against all but the most devastating attacks at the price of impaired mobility.</description>
@@ -226,7 +226,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>FRS_Apparel_RedArmyStealthSuit</defName>
 		<label>PLA Stealth Suit</label> 
 		<description>An advanced stealth suit designed and manufactured by Chinese scientists to counter the American power armor suits. It features the most advanced cloaking technology ever devised and can make its wearer virtually invisible. While the tight black suit is significantly more protective than clothing, it’s not made to withstand a whole lot of damage.</description>
@@ -335,7 +335,7 @@
 		</comps>
 	</HediffDef>
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_CivilianSuit</defName>
 		<label>Civilian Clothes</label>
 		<description>Civilian clothes often worn by the citizens of the People’s Republic. These close-fitting overalls are work clothes for labourers and farmers and provide adequate protection against the elements but little to none against bullets and similar threats.</description>
@@ -394,7 +394,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
 		<defName>FRS_Apparel_RedArmyMilitantJumpsuit</defName>
 		<label>PLA Militant Jumpsuit</label> 
 		<description>An olive-green jumpsuit with a vest and a bandolier for carrying additional ammunition on the battlefield. It’s not as protective as heavy armor, but its padding makes it superior to regular clothing.</description>
@@ -453,7 +453,7 @@
 
 
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ApparelArmorPowerBase">
 		<defName>FRS_Apparel_GagarinPowerArmor</defName>
 		<label>Russian Cosmonaut Power Armor</label>
 		<description>A suit of Russian power armor like they were issued to the militarized cosmonauts. It’s painted white, features a large amount of ammunition bags and bandoliers, and sports the communist red star painted on the chest. Like all power armor suits, it protects its wearer extremely well but also slows one down significantly.</description>
