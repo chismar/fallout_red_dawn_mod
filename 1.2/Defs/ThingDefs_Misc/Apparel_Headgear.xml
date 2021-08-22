@@ -385,7 +385,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="HatMakeableBase">
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>FRS_Apparel_CivilianHat</defName>
     <label>Civilian Hat</label> 
 		<description>A simple hat often worn by Chinese workers, farmers, and other civilians. Its main use is shielding its wearer against the searing sun or keeping the head warm, as such it is of little use in battle.</description>
@@ -433,7 +433,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="HatMakeableBase">
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>FRS_Apparel_GagarinPowerArmorHelmet</defName>
     <label>Russian Cosmonaut Power Armor Helmet</label>
     <description>A white helmet meant to be worn together with the corresponding suit of power armor, like they were issued to the militarized Russian cosmonauts. It’s very protective but quite heavy.</description>
