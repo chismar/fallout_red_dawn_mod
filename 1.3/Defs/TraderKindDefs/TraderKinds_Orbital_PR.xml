@@ -135,11 +135,14 @@
         <countRange>1~2</countRange>
       </li>
 
+
       <!-- Apparel -->
       <li Class="StockGenerator_Clothes">
+        <apparelTag>RedArmy</apparelTag>
         <countRange>10~16</countRange>
       </li>
       <li Class="StockGenerator_Armor">
+        <apparelTag>RedArmy</apparelTag>
         <countRange>2~4</countRange>
       </li>
 
