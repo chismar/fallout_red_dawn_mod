@@ -33,7 +33,8 @@
 					</options>
 				</li>
 			</pawnGroupMakers>
-			<points>50</points>
+			<points>200</points>
+      <traderToUseForResourcesGeneration>FRS_PR_Caravan_TraderGeneral</traderToUseForResourcesGeneration>
     </airSupportSettings>
   </FalloutCore.ReinforcementsIncidentDef>
   
