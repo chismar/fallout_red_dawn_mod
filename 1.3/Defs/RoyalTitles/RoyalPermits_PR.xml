@@ -68,7 +68,7 @@
     </royalAid>
   </FalloutCore.FRSRoyalTitlePermitDef>
 
-  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase">
+  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase_PR">
     <defName>GlitterMedDrop_PR</defName>
     <label>red glitter med drop</label>
     <description>Call for a drop of 5 glitterworld medicine.</description>
