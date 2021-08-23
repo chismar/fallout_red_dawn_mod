@@ -158,8 +158,11 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.05</MoveSpeed>
-		</equippedStatOffsets>
+		</equippedStatOffsets>			
 		<apparel>
+			<layers>
+				<li>Middle</li>
+			</layers>
 			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/RedArmyLongCoat/CommunistOvercoat</wornGraphicPath>
 		</apparel>
 	</ThingDef>

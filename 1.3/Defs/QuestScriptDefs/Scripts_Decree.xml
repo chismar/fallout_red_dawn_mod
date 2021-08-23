@@ -38,6 +38,7 @@
 					<storeProductionItemLabelAs>thingToProduceLabel</storeProductionItemLabelAs>
 					<thingDefTags>
 						<li>RedArmy</li>
+						<li>Manufactured</li>
 					</thingDefTags>
 					<thingStuffCandidates>
 						<li>Steel</li>

@@ -16,7 +16,7 @@
         <li>QuestHospitalityCommon</li>
       </include>
       <rulesStrings>
-        <li>questDescription->People's Republic has broadcasted a message for all loyal remaining forces to confirm allegiance. Do you?</li>
+        <li>questDescription->People's Republic high command has broadcasted a message for all loyal remaining forces to confirm allegiance. Do you?</li>
       </rulesStrings>
     </questDescriptionRules>
 

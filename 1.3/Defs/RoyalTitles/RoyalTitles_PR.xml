@@ -109,6 +109,7 @@
     <favorCost>1</favorCost>
     <commonality>1</commonality>
     <maxPsylinkLevel>1</maxPsylinkLevel>
+    <permitPointsAwarded>1</permitPointsAwarded>
 
   </RoyalTitleDef>
 
@@ -119,7 +120,7 @@
     <description>Facility director rank and clearance is offered to those who've manage to establish self-sustaining outpost. It comes with more significant support from the HQ, in order to secure a promising foothold for the socialism.</description>
     <seniority>100</seniority>
     <favorCost>12</favorCost>
-    <permitPointsAwarded>1</permitPointsAwarded>
+    <permitPointsAwarded>2</permitPointsAwarded>
     <grantedAbilities>
       <li>Speech</li>
     </grantedAbilities>
@@ -136,7 +137,7 @@
     <changeHeirQuestPoints>1200</changeHeirQuestPoints>
     <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
     <commonality>1</commonality>
-    <permitPointsAwarded>1</permitPointsAwarded>
+    <permitPointsAwarded>2</permitPointsAwarded>
     <grantedAbilities>
       <li>Speech</li>
     </grantedAbilities>
@@ -153,7 +154,7 @@
     <changeHeirQuestPoints>1600</changeHeirQuestPoints>
     <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
     <decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
-    <permitPointsAwarded>1</permitPointsAwarded>
+    <permitPointsAwarded>2</permitPointsAwarded>
     <grantedAbilities>
       <li>Speech</li>
     </grantedAbilities>
@@ -172,7 +173,7 @@
     <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
     <commonality>1</commonality>
     <canBeInherited>False</canBeInherited>
-    <permitPointsAwarded>1</permitPointsAwarded>
+    <permitPointsAwarded>2</permitPointsAwarded>
     <grantedAbilities>
       <li>Speech</li>
     </grantedAbilities>

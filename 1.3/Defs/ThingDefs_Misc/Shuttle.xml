@@ -13,8 +13,8 @@
   
   <ThingDef Name="FRS_ShuttleBase" ParentName="BuildingBase">
     <defName>FRS_Shuttle</defName>
-    <label>red shuttle</label>
-    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+    <label>Vertibird</label>
+    <description>Vertibird of communist block origin</description>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>50</pathCost>
     <blockWind>true</blockWind>
@@ -60,7 +60,7 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="CompProperties_Shuttle"></li>
+      <li Class="CompProperties_Vertibird"></li>
       <li Class="CompProperties_Transporter">
         <massCapacity>1000</massCapacity>
         <max1PerGroup>true</max1PerGroup>

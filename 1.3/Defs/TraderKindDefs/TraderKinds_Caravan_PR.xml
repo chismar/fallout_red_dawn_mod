@@ -225,4 +225,19 @@
   </TraderKindDef>
 
 
+  <TraderKindDef>
+    <defName>FRS_PR_Caravan_TributeCollector</defName>
+    <label>royal tribute collector</label>
+    <requestable>False</requestable>
+    <commonality>1</commonality>
+    <category>TributeCollector</category>
+    <faction>FRS_PR</faction>
+    <permitRequiredForTrading>TradeCaravan_PR</permitRequiredForTrading>
+    <tradeCurrency>Favor</tradeCurrency>
+    <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
+    <stockGenerators>
+      <!-- Buying -->
+      <li Class="StockGenerator_BuySlaves" />
+    </stockGenerators>
+  </TraderKindDef>
 </Defs>

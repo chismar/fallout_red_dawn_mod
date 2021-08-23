@@ -16,11 +16,11 @@
     <defName>TradeCaravan_PR</defName>
     <label>trade with caravans</label>
   </RoyalTitlePermitDef>
-	<!--
 
   <RoyalTitlePermitDef Name="DropResourcesBase_PR" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
     <faction>FRS_PR</faction>
+    <minTitle>FRS_Captain</minTitle>
     <permitPointCost>1</permitPointCost>
     <cooldownDays>45</cooldownDays>
     <usableOnWorldMap>true</usableOnWorldMap>
@@ -33,9 +33,6 @@
     <defName>SteelDrop_PR</defName>
     <label>red steel drop</label>
     <description>Call for a drop of 250 steel.</description>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
     <uiPosition>(0,0)</uiPosition>
     <royalAid>
       <itemsToDrop>
@@ -49,7 +46,6 @@
     <defName>FoodDrop_PR</defName>
     <label>red food drop</label>
     <description>Call for a drop of 20 packaged survival meals.</description>
-    <minTitle>FRS_PartyCommitte</minTitle>
     <uiPosition>(0,1)</uiPosition>
     <royalAid>
       <itemsToDrop>
@@ -63,8 +59,7 @@
     <defName>SilverDrop_PR</defName>
     <label>red silver drop</label>
     <description>Call for a drop of 500 silver.</description>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <uiPosition>(0,4)</uiPosition>
+    <uiPosition>(0,2)</uiPosition>
     <royalAid>
       <itemsToDrop>
         <Silver>500</Silver>
@@ -77,8 +72,7 @@
     <defName>GlitterMedDrop_PR</defName>
     <label>red glitter med drop</label>
     <description>Call for a drop of 5 glitterworld medicine.</description>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <uiPosition>(0,8)</uiPosition>
+    <uiPosition>(0,3)</uiPosition>
     <royalAid>
       <itemsToDrop>
         <MedicineUltratech>5</MedicineUltratech>
@@ -86,7 +80,6 @@
       <favorCost>8</favorCost>
     </royalAid>
   </RoyalTitlePermitDef>
--->
 
 	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdrop</defName>
@@ -99,24 +92,29 @@
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
-            <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
-            <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
-            <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
-            <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
-            <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
-            <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
+            <FRS_PR_RedArmyConscriptSummer>200</FRS_PR_RedArmyConscriptSummer>
+            <FRS_PR_RedArmyConscriptWinter>200</FRS_PR_RedArmyConscriptWinter>
+            <FRS_PR_RedArmyConscriptSummerWithMask>200</FRS_PR_RedArmyConscriptSummerWithMask>
+            <FRS_PR_RedArmyConscriptWinterWithMask>200</FRS_PR_RedArmyConscriptWinterWithMask>
+            <FRS_PR_RedArmyMilitant>500</FRS_PR_RedArmyMilitant>
+            <FRS_PR_RedArmyOfficer>100</FRS_PR_RedArmyOfficer>
             <FRS_PR_StealthDragoon>2</FRS_PR_StealthDragoon>
             <FRS_PR_PowerArmorSoldier>2</FRS_PR_PowerArmorSoldier>
 					</options>
 				</li>
 			</pawnGroupMakers>
-			<points>5000</points>
+			<points>750</points>
 		</workerSettings>
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,0)</uiPosition>
+		<uiPosition>(0,4)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
   </FalloutCore.FRSRoyalTitlePermitDef>
   
   <FalloutCore.FRSRoyalTitlePermitDef>
@@ -131,24 +129,29 @@
 					<kindDef>Combat</kindDef>
 					<commonality>100</commonality>
 					<options>
-            <FRS_PR_RedArmyConscriptSummer>2</FRS_PR_RedArmyConscriptSummer>
-            <FRS_PR_RedArmyConscriptWinter>2</FRS_PR_RedArmyConscriptWinter>
-            <FRS_PR_RedArmyConscriptSummerWithMask>2</FRS_PR_RedArmyConscriptSummerWithMask>
-            <FRS_PR_RedArmyConscriptWinterWithMask>2</FRS_PR_RedArmyConscriptWinterWithMask>
-            <FRS_PR_RedArmyMilitant>5</FRS_PR_RedArmyMilitant>
-            <FRS_PR_RedArmyOfficer>1</FRS_PR_RedArmyOfficer>
+            <FRS_PR_RedArmyConscriptSummer>200</FRS_PR_RedArmyConscriptSummer>
+            <FRS_PR_RedArmyConscriptWinter>200</FRS_PR_RedArmyConscriptWinter>
+            <FRS_PR_RedArmyConscriptSummerWithMask>200</FRS_PR_RedArmyConscriptSummerWithMask>
+            <FRS_PR_RedArmyConscriptWinterWithMask>200</FRS_PR_RedArmyConscriptWinterWithMask>
+            <FRS_PR_RedArmyMilitant>500</FRS_PR_RedArmyMilitant>
+            <FRS_PR_RedArmyOfficer>100</FRS_PR_RedArmyOfficer>
             <FRS_PR_StealthDragoon>2</FRS_PR_StealthDragoon>
             <FRS_PR_PowerArmorSoldier>2</FRS_PR_PowerArmorSoldier>
 					</options>
 				</li>
 			</pawnGroupMakers>
-			<points>500</points>
+			<points>150</points>
 		</workerSettings>
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,4)</uiPosition>
+		<uiPosition>(0,5)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
 	</FalloutCore.FRSRoyalTitlePermitDef>
 	
 	<FalloutCore.FRSRoyalTitlePermitDef>
@@ -169,8 +172,13 @@
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,5)</uiPosition>
+		<uiPosition>(0,6)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>100</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
 	</FalloutCore.FRSRoyalTitlePermitDef>
 
 	<FalloutCore.FRSRoyalTitlePermitDef>
@@ -188,8 +196,13 @@
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,2)</uiPosition>
+		<uiPosition>(0,7)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
 	</FalloutCore.FRSRoyalTitlePermitDef>
 	
 	<FalloutCore.FRSRoyalTitlePermitDef>
@@ -205,8 +218,13 @@
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,3)</uiPosition>
+		<uiPosition>(0,8)</uiPosition>
 		<cooldownDays>60</cooldownDays>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
   </FalloutCore.FRSRoyalTitlePermitDef>
   
   <RoyalTitlePermitDef>
@@ -219,24 +237,24 @@
     <permitPointCost>1</permitPointCost>
     <cooldownDays>40</cooldownDays>
     <usableOnWorldMap>true</usableOnWorldMap>
-    <uiPosition>(0,6)</uiPosition>
+    <uiPosition>(0,9)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>
     </royalAid>
   </RoyalTitlePermitDef>
-	<!--
+
 	
   <RoyalTitlePermitDef>
     <defName>CallLaborerTeam_PR</defName>
     <label>red call laborer team</label>
     <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
     <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
+    <minTitle>FRS_Captain</minTitle>
     <faction>FRS_PR</faction>
     <permitPointCost>1</permitPointCost>
-    <uiPosition>(0,2)</uiPosition>
+    <uiPosition>(0,10)</uiPosition>
     <royalAid>
       <favorCost>4</favorCost>
       <pawnKindDef>FRS_PR_Common_Worker</pawnKindDef>
@@ -251,11 +269,11 @@
     <label>red call laborer gang</label>
     <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
     <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
+    <minTitle>FRS_Captain</minTitle>
     <faction>FRS_PR</faction>
     <permitPointCost>1</permitPointCost>
     <prerequisite>CallLaborerTeam</prerequisite>
-    <uiPosition>(1,2)</uiPosition>
+    <uiPosition>(0,11)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
       <pawnKindDef>FRS_PR_Common_Worker</pawnKindDef>
@@ -265,106 +283,7 @@
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
 
-
-  <RoyalTitlePermitDef>
-    <defName>CallMilitaryAidSmall_PR</defName>
-    <label>red call trooper squad</label>
-    <description>Call a group of 4 light troopers to aid you in battle.</description>
-    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <uiPosition>(0,3)</uiPosition>
-    <royalAid>
-      <favorCost>4</favorCost>
-      <pawnKindDef>FRS_PR_Fighter_Trooper</pawnKindDef>
-      <pawnCount>4</pawnCount>
-      <targetingRange>39.9</targetingRange>
-    </royalAid>
-    <cooldownDays>40</cooldownDays>
-  </RoyalTitlePermitDef>
-
-  <RoyalTitlePermitDef>
-    <defName>CallMilitaryAidLarge_PR</defName>
-    <label>red call janissary squad</label>
-    <description>Call a group of 4 professional janissaries to aid you in battle.</description>
-    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <uiPosition>(0,7)</uiPosition>
-    <royalAid>
-      <favorCost>6</favorCost>
-      <pawnKindDef>FRS_PR_Fighter_Janissary</pawnKindDef>
-      <pawnCount>4</pawnCount>
-      <targetingRange>39.9</targetingRange>
-    </royalAid>
-    <cooldownDays>50</cooldownDays>
-  </RoyalTitlePermitDef>
-
-  <RoyalTitlePermitDef>
-    <defName>CallMilitaryAidGrand_PR</defName>
-    <label>red call cataphract squad</label>
-    <description>Call a group of 4 heavy cataphracts to aid you in battle.</description>
-    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <prerequisite>CallMilitaryAidLarge</prerequisite>
-    <uiPosition>(1,7)</uiPosition>
-    <royalAid>
-      <favorCost>8</favorCost>
-      <pawnKindDef>FRS_PR_Fighter_Cataphract</pawnKindDef>
-      <pawnCount>4</pawnCount>
-      <targetingRange>39.9</targetingRange>
-    </royalAid>
-    <cooldownDays>60</cooldownDays>
-  </RoyalTitlePermitDef>
-
-  <RoyalTitlePermitDef>
-    <defName>CallOrbitalStrike_PR</defName>
-    <label>red call aerodrone strike</label>
-    <description>Call a single-impact aerodrone strike at a target position.</description>
-    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <cooldownDays>45</cooldownDays>
-    <uiPosition>(0,5)</uiPosition>
-    <royalAid>
-      <favorCost>6</favorCost>
-      <targetingRange>44.9</targetingRange>
-      <radius>2.9</radius>
-      <explosionRadiusRange>7.9</explosionRadiusRange>
-      <explosionCount>1</explosionCount>
-      <intervalTicks>60</intervalTicks>
-      <warmupTicks>120</warmupTicks>
-    </royalAid>
-  </RoyalTitlePermitDef>
-
-  <RoyalTitlePermitDef>
-    <defName>CallOrbitalSalvo_PR</defName>
-    <label>red call aerodrone salvo</label>
-    <description>Call a salvo of aerodrone strikes around a target position.</description>
-    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
-    <minTitle>FRS_PartyCommitte</minTitle>
-    <faction>FRS_PR</faction>
-    <permitPointCost>1</permitPointCost>
-    <prerequisite>CallOrbitalStrike</prerequisite>
-    <cooldownDays>60</cooldownDays>
-    <uiPosition>(1,5)</uiPosition>
-    <royalAid>
-      <favorCost>8</favorCost>
-      <targetingRange>44.9</targetingRange>
-      <radius>7.9</radius>
-      <explosionRadiusRange>5.9</explosionRadiusRange>
-      <explosionCount>6</explosionCount>
-      <intervalTicks>60</intervalTicks>
-      <warmupTicks>120</warmupTicks>
-    </royalAid>
-  </RoyalTitlePermitDef>
   
   
   
-  -->
 </Defs>
