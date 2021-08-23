@@ -3,7 +3,7 @@
 
   <PawnsArrivalModeDef>
     <defName>ShuttleRaid</defName>
-    <workerClass>PawnsArrivalModeWorker_ShuttleRaid</workerClass>
+    <workerClass>FalloutCore.PawnsArrivalModeWorker_ShuttleRaid</workerClass>
     <selectionWeightCurve>
       <points>
         <li>(300, 1)</li>

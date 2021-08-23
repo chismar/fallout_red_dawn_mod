@@ -128,11 +128,9 @@
         <weaponTag>RedArmy</weaponTag>
         <countRange>3~6</countRange>
       </li>
-      <li Class="StockGenerator_Category">
-        <categoryDef>WeaponsMelee</categoryDef>
+      <li Class="StockGenerator_WeaponsMelee">
         <weaponTag>RedArmyMelee</weaponTag>
-        <thingDefCountRange>3~4</thingDefCountRange>
-        <countRange>1~2</countRange>
+        <countRange>4~8</countRange>
       </li>
 
 
@@ -142,7 +140,6 @@
         <countRange>10~16</countRange>
       </li>
       <li Class="StockGenerator_Armor">
-        <apparelTag>RedArmy</apparelTag>
         <countRange>2~4</countRange>
       </li>
 

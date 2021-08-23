@@ -15,9 +15,6 @@
 		<costList>
 			<Cloth>75</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>12000</WorkToMake>
@@ -186,9 +183,6 @@
 			<Plasteel>100</Plasteel>
 			<Uranium>20</Uranium>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>
@@ -246,9 +240,6 @@
 			<Plasteel>80</Plasteel>
 			<Uranium>10</Uranium>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
 			<MaxHitPoints>280</MaxHitPoints>
@@ -364,9 +355,6 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>1800</MaxHitPoints>
 			<WorkToMake>13000</WorkToMake>
@@ -421,9 +409,6 @@
 		<costList>
 			<Cloth>50</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>14000</WorkToMake>
@@ -482,9 +467,6 @@
 			<Plasteel>100</Plasteel>
 			<Uranium>20</Uranium>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>
