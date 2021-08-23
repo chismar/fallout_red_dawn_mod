@@ -19,7 +19,7 @@
 		<minTitle>FRS_Captain</minTitle>
 		<faction>FRS_PR</faction>
 		<permitPointCost>1</permitPointCost>
-		<uiPosition>(0,1)</uiPosition>
+		<uiPosition>(0,12)</uiPosition>
     <cooldownDays>60</cooldownDays>
   </FalloutCore.FRSRoyalTitlePermitDef>
   

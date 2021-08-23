@@ -35,6 +35,7 @@
 			</pawnGroupMakers>
 			<points>200</points>
       <traderToUseForResourcesGeneration>FRS_PR_Caravan_TraderGeneral</traderToUseForResourcesGeneration>
+      <chanceToGetItem>1</chanceToGetItem>
     </airSupportSettings>
   </FalloutCore.ReinforcementsIncidentDef>
   

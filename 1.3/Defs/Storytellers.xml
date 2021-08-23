@@ -20,18 +20,7 @@
 						<traitsToGive>
 							<li>FRS_RedMember</li>
 						</traitsToGive>
-						<goodIncidentsToSpawn>
-							<li>ResourcePodCrash</li>
-							<li>PsychicSoothe</li>
-							<li>SelfTame</li>
-							<li>AmbrosiaSprout</li>
-							<li>FarmAnimalsWanderIn</li>
-							<li>WandererJoin</li>
-							<li>RefugeePodCrash</li>
-							<li>ThrumboPasses</li>
-							<li>MeteoriteImpact</li>
-							<li>WildManWandersIn</li>
-						</goodIncidentsToSpawn>
+						<goodIncidentsToSpawnWhenQuestIsFinished><li>FRS_PR_ReinforcementsArrived</li></goodIncidentsToSpawnWhenQuestIsFinished>
 					</li>
 				</options>
 			</li>
