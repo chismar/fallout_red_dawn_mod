@@ -203,7 +203,7 @@
   </ThingDef>
 
   <ThingDef Abstract="True" Name="FRS_Bullet_LaserGeneric" ParentName="BaseBullet">
-    <thingClass>FalloutCore.FRSLaserRayDef</thingClass>
+    <thingClass>FalloutCore.FRSLaserRay</thingClass>
     <drawOffscreen>true</drawOffscreen>
     <beamGraphic>FRS_BeamGraphic</beamGraphic>
 

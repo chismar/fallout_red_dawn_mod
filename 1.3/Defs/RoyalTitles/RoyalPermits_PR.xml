@@ -17,7 +17,7 @@
     <label>trade with caravans</label>
   </RoyalTitlePermitDef>
 
-  <RoyalTitlePermitDef Name="DropResourcesBase_PR" Abstract="True">
+  <FalloutCore.FRSRoyalTitlePermitDef Name="DropResourcesBase_PR" Abstract="True">
     <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
     <faction>FRS_PR</faction>
     <minTitle>FRS_Captain</minTitle>
@@ -27,9 +27,9 @@
     <royalAid>
       <targetingRange>39.9</targetingRange>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef ParentName="DropResourcesBase_PR">
+  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase_PR">
     <defName>SteelDrop_PR</defName>
     <label>red steel drop</label>
     <description>Call for a drop of 250 steel.</description>
@@ -40,9 +40,9 @@
       </itemsToDrop>
       <favorCost>4</favorCost>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
-  <RoyalTitlePermitDef ParentName="DropResourcesBase_PR">
+  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase_PR">
     <defName>FoodDrop_PR</defName>
     <label>red food drop</label>
     <description>Call for a drop of 20 packaged survival meals.</description>
@@ -53,9 +53,9 @@
       </itemsToDrop>
       <favorCost>4</favorCost>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
-  <RoyalTitlePermitDef ParentName="DropResourcesBase_PR">
+  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase_PR">
     <defName>SilverDrop_PR</defName>
     <label>red silver drop</label>
     <description>Call for a drop of 500 silver.</description>
@@ -66,9 +66,9 @@
       </itemsToDrop>
       <favorCost>6</favorCost>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
-  <RoyalTitlePermitDef ParentName="DropResourcesBase">
+  <FalloutCore.FRSRoyalTitlePermitDef ParentName="DropResourcesBase">
     <defName>GlitterMedDrop_PR</defName>
     <label>red glitter med drop</label>
     <description>Call for a drop of 5 glitterworld medicine.</description>
@@ -79,7 +79,7 @@
       </itemsToDrop>
       <favorCost>8</favorCost>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
 	<FalloutCore.FRSRoyalTitlePermitDef>
 		<defName>FRS_PR_ShuttleSquadAirdrop</defName>
@@ -227,7 +227,7 @@
     </royalAid>
   </FalloutCore.FRSRoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef>
+  <FalloutCore.FRSRoyalTitlePermitDef>
     <defName>CallTransportShuttle_PR</defName>
     <label>red call transport shuttle</label>
     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
@@ -243,10 +243,10 @@
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>
     </royalAid>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
 	
-  <RoyalTitlePermitDef>
+  <FalloutCore.FRSRoyalTitlePermitDef>
     <defName>CallLaborerTeam_PR</defName>
     <label>red call laborer team</label>
     <description>Call a group of 4 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
@@ -262,9 +262,9 @@
       <aidDurationDays>4</aidDurationDays>
     </royalAid>
     <cooldownDays>60</cooldownDays>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
  
-  <RoyalTitlePermitDef>
+  <FalloutCore.FRSRoyalTitlePermitDef>
     <defName>CallLaborerGang_PR</defName>
     <label>red call laborer gang</label>
     <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
@@ -281,7 +281,7 @@
       <aidDurationDays>4</aidDurationDays>
     </royalAid>
     <cooldownDays>60</cooldownDays>
-  </RoyalTitlePermitDef>
+  </FalloutCore.FRSRoyalTitlePermitDef>
 
   
   
