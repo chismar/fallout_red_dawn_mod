@@ -272,7 +272,7 @@
     <minTitle>FRS_Captain</minTitle>
     <faction>FRS_PR</faction>
     <permitPointCost>1</permitPointCost>
-    <prerequisite>CallLaborerTeam</prerequisite>
+    <prerequisite>CallLaborerTeam_PR</prerequisite>
     <uiPosition>(0,11)</uiPosition>
     <royalAid>
       <favorCost>8</favorCost>
