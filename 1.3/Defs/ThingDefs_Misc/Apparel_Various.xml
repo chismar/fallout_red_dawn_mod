@@ -15,6 +15,9 @@
 		<costList>
 			<Cloth>75</Cloth>
 		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>12000</WorkToMake>
