@@ -10,7 +10,7 @@
     </targetTags>
     <workerClass>FalloutCore.IncidentWorker_Reinforcements</workerClass>
     <calledFaction>FRS_PR</calledFaction>
-    <assignedFaction>AutonomousPeoplesRepublic</assignedFaction>
+    <assignedFaction>CommunistBase</assignedFaction>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <letterDef>ThreatSmall</letterDef>

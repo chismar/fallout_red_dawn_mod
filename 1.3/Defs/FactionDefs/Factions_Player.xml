@@ -7,18 +7,18 @@
       <li>(1, 1, 0.2)</li>
     </colorSpectrum>
   </FactionDef>
-  
+
   <PawnKindDef ParentName="BasePlayerPawnKind">
     <defName>FRS_Colonist</defName>
     <label>colonist</label>
-	<initialWillRange>0~3</initialWillRange>
-	<initialResistanceRange>7~12</initialResistanceRange>
-    <defaultFactionType>AutonomousPeoplesRepublic</defaultFactionType>
+    <initialWillRange>0~3</initialWillRange>
+    <initialResistanceRange>7~12</initialResistanceRange>
+    <defaultFactionType>CommunistBase</defaultFactionType>
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>
       <li>RedArmyConscript</li>
     </apparelTags>
-    <apparelRequired>  
+    <apparelRequired>
       <li>FRS_Apparel_RedArmyJumpsuit</li>
     </apparelRequired>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -38,7 +38,7 @@
   </PawnKindDef>
 
   <FactionDef ParentName="PeoplesRepublic">
-    <defName>AutonomousPeoplesRepublic</defName>
+    <defName>CommunistBase</defName>
     <label>Socialists</label>
     <description>An outpost of socialists</description>
     <isPlayer>true</isPlayer>
@@ -53,10 +53,12 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>FRS/World/WorldObjects/Expanding/Player_PR</factionIconPath>    
+    <factionIconPath>FRS/World/WorldObjects/Expanding/Player_PR</factionIconPath>
     <factionNameMaker>NamerFactionPR</factionNameMaker>
-    <settlementNameMaker>NamerSettlementPR</settlementNameMaker>    
-    <allowedCultures><li>FRS_PRСulture</li></allowedCultures>
+    <settlementNameMaker>NamerSettlementPR</settlementNameMaker>
+    <allowedCultures>
+      <li>FRS_PRСulture</li>
+    </allowedCultures>
     <playerInitialSettlementNameMaker>NamerSettlementPR</playerInitialSettlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
@@ -71,6 +73,16 @@
         <li>Synthread</li>
       </thingDefs>
     </apparelStuffFilter>
+    <modExtensions>
+      <li Class="FalloutCore.FactionModExtension">
+        <customShuttle>FRS_Shuttle</customShuttle>
+        <customShuttleIncoming>FRS_ShuttleIncoming</customShuttleIncoming>
+        <customShuttleLeaving>FRS_ShuttleLeaving</customShuttleLeaving>
+        <customShuttleCrashing>FRS_ShuttleCrashing</customShuttleCrashing>
+        <customShuttleCrashed>FRS_ShuttleCrashed</customShuttleCrashed>
+        <customTransportShipDef>FRS_Ship_Shuttle</customTransportShipDef>
+      </li>
+    </modExtensions>
   </FactionDef>
-  
+
 </Defs>

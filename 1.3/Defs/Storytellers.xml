@@ -12,7 +12,7 @@
 			<li Class="FalloutCore.RedStorytellerExtension">
 				<options>
 					<li>
-						<playerFaction>AutonomousPeoplesRepublic</playerFaction>
+						<playerFaction>CommunistBase</playerFaction>
 						<otherFaction>FRS_PR</otherFaction>
 						<goodwillGainPerRecrution>5</goodwillGainPerRecrution>
 						<messageReasonKey>FRS.RecruitMessage</messageReasonKey>

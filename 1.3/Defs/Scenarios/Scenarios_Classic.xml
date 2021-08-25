@@ -4,12 +4,12 @@
   <ScenarioDef Name="Socialists">
     <defName>Socialists</defName>
     <label>Socialists</label>
-    <description>Socialist insurgents!</description>
+    <description>You have been dispatched to a remote patch of land on a twinblade, with an order to set up an outpost in the name of the Motherland and the Party. Are you a loyal squad of People's Liberation Army or a team of mutinees?</description>
     <scenario>
-      <summary>Socialist insurgents!</summary>
+      <summary>PLA Outpost</summary>
       <playerFaction>
         <def>PlayerFaction</def>
-        <factionDef>AutonomousPeoplesRepublic</factionDef>
+        <factionDef>CommunistBase</factionDef>
       </playerFaction>
       <parts>
       <!-- Config pages -->
@@ -30,9 +30,7 @@
 
         <!-- Player starting stuff spawn method-->
         <li Class="ScenPart_PlayerPawnsArriveMethod">
-          <def>PlayerPawnsArriveMethod</def>
-          <method>DropPods</method>
-          <visible>false</visible>
+          <def>ShuttleArrival</def>
         </li>
 
         <!-- Player pawns modifiers -->

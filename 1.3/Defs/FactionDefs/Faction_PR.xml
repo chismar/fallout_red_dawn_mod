@@ -28,7 +28,7 @@
       <li>PlayerTribe</li>
       <li>PlayerColony</li>
       <li>Ancients</li>
-      <li>AutonomousPeoplesRepublic</li>
+      <li>CommunistBase</li>
     </permanentEnemyToEveryoneExcept>
     <techLevel>Ultra</techLevel>
     <backstoryFilters>
