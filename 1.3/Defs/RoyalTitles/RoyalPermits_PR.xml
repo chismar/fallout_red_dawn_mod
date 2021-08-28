@@ -87,6 +87,7 @@
 		<description>shuttle squad airdrop.</description>
 		<workerClass>FalloutCore.CallAirSupport</workerClass>
 		<workerSettings Class="FalloutCore.AirSupportSettings"> 
+      <maxPawns>10</maxPawns>
 			<pawnGroupMakers>
 				<li Class="FalloutCore.PawnGroupMakerPR">
 					<kindDef>Combat</kindDef>
@@ -123,6 +124,7 @@
 		<description>shuttle squad airdrop insertion.</description>
 		<workerClass>FalloutCore.CallAirSupportTargeted</workerClass>
 		<workerSettings Class="FalloutCore.AirSupportSettingsTargeted"> 
+      <maxPawns>10</maxPawns>
       <radius>50</radius>
 			<pawnGroupMakers>
 				<li Class="FalloutCore.PawnGroupMakerPR">

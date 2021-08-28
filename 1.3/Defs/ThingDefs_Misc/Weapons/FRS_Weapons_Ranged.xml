@@ -281,7 +281,7 @@
     <costList>
       <Steel>100</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-      <Gold>50</Gold>
+      <Gold>5</Gold>
     </costList>
   </ThingDef>
 
@@ -570,7 +570,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <defaultProjectile>Bullet_Autopistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>30.9</range>
         <soundCast>Shot_Revolver</soundCast>

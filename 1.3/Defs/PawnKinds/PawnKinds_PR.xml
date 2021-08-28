@@ -100,7 +100,7 @@
 				<categories>
 					<li>ImperialCommon</li>
 				</categories>
-</li>
+			</li>
 		</backstoryFiltersOverride>
     <styleItemTags>
       <li>
@@ -156,7 +156,7 @@
     </styleItemTags>
 		<invNutrition>2.55</invNutrition>
 		<itemQuality>Normal</itemQuality>
-		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<weaponTags>
 			<li>RedArmy</li>
 		</weaponTags>
@@ -164,7 +164,7 @@
 			<li>RedArmy</li>
 		</apparelTags>
 		<techHediffsChance>0.3</techHediffsChance>
-		<techHediffsMoney>1000~1500</techHediffsMoney>
+		<techHediffsMoney>500~700</techHediffsMoney>
 		<disallowedTraits>
 			<li>BodyPurist</li>
 		</disallowedTraits>
@@ -176,7 +176,7 @@
 
 
 	<PawnKindDef Name="FRS_PR_RedArmyConscriptBase" ParentName="FRS_PR_RedArmySoldier" Abstract="True">
-		<label>conscript</label>
+		<label>soldier</label>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
@@ -251,7 +251,7 @@
 
 	<PawnKindDef ParentName="FRS_PR_RedArmySoldier">
 		<defName>FRS_PR_RedArmyMilitant</defName>
-		<label>militant</label>
+		<label>conscript</label>
 		<skills>
 			<li>
 				<skill>Shooting</skill>
@@ -269,6 +269,8 @@
 		<disallowedTraits>
 			<li>Brawler</li>
 		</disallowedTraits>
+		<apparelMoney>1000~1500</apparelMoney>
+		<weaponMoney>200~500</weaponMoney>
 	</PawnKindDef>
 
 	<PawnKindDef Name="FRS_PR_StealthDragoonBase" Abstract="True" ParentName="FRS_PR_RedArmySoldier">

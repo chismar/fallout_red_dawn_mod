@@ -29,7 +29,7 @@
         </li>
 
         <!-- Player starting stuff spawn method-->
-        <li Class="ScenPart_PlayerPawnsArriveMethod">
+        <li Class="FalloutCore.ScenPart_PlayerPawnsArriveMethodInVertibids">
           <def>ShuttleArrival</def>
         </li>
 
