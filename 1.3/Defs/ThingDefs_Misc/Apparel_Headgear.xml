@@ -243,7 +243,7 @@
     </apparel>
 
   </ThingDef>
-  <ThingDef ParentName="ApparelArmorPowerBase">
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>FRS_Apparel_RedArmyStealthSuitHelmet</defName>
     <label>PLA Stealth Suit Helmet</label> 
 		<description>A helmet made to be worn with the Stealth Suit. Its orange vizor gives its wearer a frightening appearance. Fittingly, it is reminiscent to the masks once worn by Ninja’s and similar assassin groups.</description>
@@ -272,7 +272,7 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>UpperHead</li>
+        <li>FullHead</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/RedArmyStealthSuitHelmet/RedArmyStealthSuitHelmet</wornGraphicPath>
       <layers>
@@ -466,7 +466,7 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>UpperHead</li>
+        <li>FullHead</li>
       </bodyPartGroups>
       <wornGraphicPath>FRS/Pawn/Humanlike/Headgear/GagarinPowerArmorHelmet/CosmonautHelmet</wornGraphicPath>
       <layers>
