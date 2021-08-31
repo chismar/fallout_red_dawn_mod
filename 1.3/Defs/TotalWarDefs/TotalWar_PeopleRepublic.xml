@@ -14,7 +14,7 @@
 			<li>FRS_PR_BigBaseSpawned</li>
 		</factionBaseSpawnIncidents>
 		<factionBaseAbandonIncident>FRS_PR_BaseAbandoned</factionBaseAbandonIncident>
-		<powerPointsLossPerPawnCombatPowerRatio>100</powerPointsLossPerPawnCombatPowerRatio>
+		<powerPointsLossPerPawnCombatPowerRatio>1</powerPointsLossPerPawnCombatPowerRatio>
 		<powerPointPassiveGainPerDay>100</powerPointPassiveGainPerDay>
 		<raidPointsPerBase>300</raidPointsPerBase>
 		<permitCooldownDays>1~2</permitCooldownDays>
