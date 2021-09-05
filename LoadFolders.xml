@@ -6,6 +6,8 @@
 		<li IfModActive="OskarPotocki.VFE.Mechanoid_copy">VFEM/</li>
 		<li IfModActive="isorex.mechanoidsaddon">VFEMAddon/</li>
 		<li IfModActive="isorex.mechanoidsaddon_copy">VFEMAddon/</li>
+		<li IfNotModActive="RamRod.FalloutCore">FCore/</li>
+		<li IfNotModActive="RamRod.FalloutCore_copy">FCore/</li>
 		
 	</v1.3>
 </loadFolders>
