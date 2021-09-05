@@ -60,7 +60,7 @@
       <li>ITab_ContentsTransporter</li>
     </inspectorTabs>
     <comps>
-      <li Class="FalloutCore.CompProperties_Vertibird"></li>
+	  <li Class="CompProperties_Shuttle"/>
       <li Class="CompProperties_Transporter">
         <massCapacity>1000</massCapacity>
         <max1PerGroup>true</max1PerGroup>
