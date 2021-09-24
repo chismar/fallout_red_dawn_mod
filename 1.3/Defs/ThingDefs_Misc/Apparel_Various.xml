@@ -20,12 +20,12 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>8500</WorkToMake>
 			<Mass>1.9</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<!-- like a cloth jacket -->
 			<Insulation_Heat>3</Insulation_Heat>
@@ -70,9 +70,9 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>12000</WorkToMake>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<Insulation_Cold>40</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
@@ -103,9 +103,9 @@
 			<WorkToMake>14000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.06</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<!-- like a cloth jacket -->
 			<Insulation_Heat>3</Insulation_Heat>
@@ -150,9 +150,9 @@
 			<Cloth>150</Cloth>
 		</costList>
 		<statBases>
-			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.09</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.06</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
 			<Insulation_Cold>40.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 		</statBases>
@@ -187,7 +187,7 @@
 			<Uranium>20</Uranium>
 		</costList>
 		<statBases>
-			<WorkToMake>60000</WorkToMake>
+			<WorkToMake>68000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>
 			<Mass>12</Mass>
 			<Flammability>0.4</Flammability>
@@ -248,7 +248,7 @@
 			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>4.6</Mass>
 			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.46</ArmorRating_Heat>
 			<Insulation_Cold>32</Insulation_Cold>
@@ -363,9 +363,9 @@
 			<WorkToMake>13000</WorkToMake>
 			<Mass>7</Mass>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.02</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
@@ -532,6 +532,66 @@
 			</layers>
 			<tags>
 				<li>RedArmy</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- PLA Combat Vest -->
+
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>FRS_Apparel_PLA_Combat_Vest</defName>
+		<label>PLA Combat Vest</label>
+		<description>Standard Issue PLA combat Vest.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/PLA_Combat_Vest/PLACombatVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>2.9</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.18</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.09</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>15</Cloth>
+			<Steel>45</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/PLA_Combat_Vest/PLACombatVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RedArmy</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
@@ -540,6 +600,161 @@
 		</apparel>
 	</ThingDef>
 
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>FRS_Apparel_PLA_Combat_Vest_Heavy</defName>
+		<label>PLA Heavy Combat Vest</label>
+		<description>Standard Issue PLA heavy combat Vest.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/PLA_Combat_Vest/PLAHeavyCombatVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>2.9</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.18</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>20</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/PLA_Combat_Vest/PLAHeavyCombatVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>RedArmy</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
+	<!-- PLA Submariners Uniform -->
+
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
+		<defName>FRS_Apparel_PLA_Submariners_Uniform</defName>
+		<label>PLA Submariners Uniform</label>
+		<description>A water resistant coat used by the PLA by Sailors aboard the yangtze class submarines.</description>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/PLASubmarinerUniform/PLASubmarinerUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Cloth>150</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>40.4</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.35</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/PLASubmarinerUniform/PLASubmarinerUniform</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Communist Spy Outfit -->
+
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
+		<defName>FRS_Apparel_Commusnit_Spy_Outfit</defName>
+		<label>PLA Communist Spy Outfit</label>
+		<description>Learn the secrets of the bourgeoisie by going fashionably under cover. And rejoice: all styles have been approved as non-deviant by the Party.</description>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/SpyOutfit/CommusnistSpyOutfit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Cloth>150</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>10.4</Insulation_Cold>
+			<Insulation_Heat>10.4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.68</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/SpyOutfit/CommusnistSpyOutfit</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<!-- Pioneer Outfit -->
+
+	<ThingDef ParentName="FRS_Apparel_RedArmyJumpsuit">
+		<defName>FRS_Apparel_Pioneer_Outfit</defName>
+		<label>PLA Pioneer Outfit</label>
+		<description>The wonderful uniform worn by our brave young people who have been given the opportunity to serve our glorious Nation!</description>
+		<graphicData>
+			<texPath>FRS/Pawn/Humanlike/Apparel/Pioneer/PioneerUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Cloth>125</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.9</ArmorRating_Heat>
+			<Insulation_Cold>5.4</Insulation_Cold>
+			<Insulation_Heat>5.4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.5</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>FRS/Pawn/Humanlike/Apparel/Pioneer/PioneerUniform</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 
 </Defs>

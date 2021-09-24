@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <ThingDef ParentName="HatMakeableBase">
     <defName>FRS_Apparel_RedArmyWinterHeadgear</defName>
     <label>PLA Ushanka</label>
@@ -20,10 +21,10 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
+      <ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
@@ -69,10 +70,10 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
+      <ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.19</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
@@ -119,10 +120,10 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
-			<Insulation_Cold>40</Insulation_Cold>
+      <ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.19</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
@@ -168,10 +169,10 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.04</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
+      <ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.19</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
@@ -307,10 +308,10 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.14</Mass>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.06</ArmorRating_Heat>
-			<Insulation_Cold>14.4</Insulation_Cold>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.09</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
@@ -449,7 +450,7 @@
       <ComponentSpacer>2</ComponentSpacer>
       <Plasteel>40</Plasteel>
     </costList>
-   <statBases>
+    <statBases>
       <WorkToMake>22000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.5</Mass>
@@ -475,6 +476,52 @@
       <tags>
         <li>IndustrialBasic</li>
 				<li>EVA</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>FRS_Apparel_CommusnistSpyOutfitHeadgear</defName>
+    <label>PLA Ushanka</label>
+    <description>Learn the secrets of the bourgeoisie by going fashionably under cover. And rejoice: all styles have been approved as non-deviant by the Party.</description>
+    <recipeMaker>
+      <researchPrerequisite>FRS_PLA_StandardIssueGear</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>FRS/Pawn/Humanlike/Apparel/SpyOutfit/CommusnistSpyHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>50</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.10</NegotiationAbility>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>FRS/Pawn/Humanlike/Apparel/SpyOutfit/CommusnistSpyHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>RedArmy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
