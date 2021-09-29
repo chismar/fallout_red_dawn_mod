@@ -22,6 +22,21 @@
     <factionNameMaker>NamerFactionPR</factionNameMaker>
     <settlementNameMaker>NamerSettlementPR</settlementNameMaker>
     <factionIconPath>FRS/World/WorldObjects/Expanding/PR</factionIconPath>
+
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <FRS_Structure_Socialist MayRequire="Ludeon.RimWorld.Ideology">1</FRS_Structure_Socialist>
+    </structureMemeWeights>
+
+
     <permanentEnemyToEveryoneExcept>
       <li>OutlanderCivil</li>
       <li>TribeCivil</li>
@@ -273,5 +288,73 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <MemeDef>
+    <defName>FRS_Structure_Socialist</defName>
+    <label>communist</label>
+    <description>No gods, only the Party.</description>
+    <category>Structure</category>
+    <iconPath>UI/Structures/Structure_Ideological</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>HQ</worshipRoomLabel>
+    <randomizationSelectionWeightFactor>5</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
+    <consumableBuildings>
+      <li>SacrificialFlag</li>
+    </consumableBuildings>
+    <renderOrder>-1</renderOrder>
+    <generalRules>
+      <rulesStrings>
+        <li>r_ideoName(p=99)->[memeAdjective] [memeCreed]</li>
+        <li>r_ideoName(p=99)->[memeCreed]</li>
+        <li>memeAdjective->ethical</li>
+        <li>memeAdjective->moral</li>
+        <li>memeAdjective->awoken</li>
+        <li>memeAdjective->ultravisionary</li>
+        <li>memeAdjective->orthodox</li>
+        <li>memeAdjective->reformist</li>
+        <li>memeAdjective->militarist</li>
+        <li>memeAdjective->revolutionary</li>
+        <li>memeAdjective->modern</li>
+        <li>memeAdjective->scientific</li>
+        <li>memeCreed->socialism</li>
+        <li>memeCreed->people's justice</li>
+        <li>memeHyphenPrefix->ideo</li>
+        <li>memeLeaderNoun->chairman</li>
+        <li>memeLeaderNoun->secretary</li>
+        <li>memeLeaderNoun->leader</li>
+        <li>memeLeaderNoun->chief</li>
+        <li>memeLeaderNoun->commander</li>
+        <li>memeLeaderAdjective->high</li>
+        <li>memeLeaderAdjective->paramount</li>
+        <li>memeLeaderAdjective->supreme</li>
+        <li>memeLeaderAdjective->first</li>
+        <li>memeMoralist->commissar</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li>
+          <def>IdeologicalFounder</def>
+          <weight>1</weight>
+        </li>
+        <li>
+          <def>IdeologicalLesson</def>
+          <weight>3</weight>
+        </li>
+      </patterns>
+      <constants>
+        <li><key>structure_ideological</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Ideology</ideoName>
+        <theme>ideology</theme>
+        <adjective>socialist</adjective>
+        <member>socialist</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
 
 </Defs>
